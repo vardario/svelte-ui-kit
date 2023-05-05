@@ -22,7 +22,7 @@ Get started with a collection of responsive image components coded with the util
 
 ```html
 <script>
-  import { Img } from 'flowbite-svelte';
+  import { Img } from '@vardario/svelte-ui-kit';
 </script>
 ```
 
@@ -32,7 +32,7 @@ Use this example to show the a responsive image that wonâ€™t grow beyond the max
 
 ```svelte example class="flex justify-center" hideScript
 <script>
-  import { Img } from 'flowbite-svelte';
+  import { Img } from '@vardario/svelte-ui-kit';
 </script>
 
 <Img src="/images/examples/image-1@2x.jpg" alt="sample 1"/>
@@ -44,7 +44,7 @@ This example can be used to add a caption for the image often used inside articl
 
 ```svelte example class="flex justify-center" hideScript
 <script>
-  import { Img } from 'flowbite-svelte';
+  import { Img } from '@vardario/svelte-ui-kit';
 </script>
 
 <Img src="/images/examples/image-1@2x.jpg" alt="sample 1" caption="Image caption" />
@@ -60,7 +60,7 @@ Use this example to apply rounded corners to the image by using the rounded-size
 
 ```svelte example class="flex justify-center" hideScript
 <script>
-  import { Img } from 'flowbite-svelte';
+  import { Img } from '@vardario/svelte-ui-kit';
 </script>
 
 <Img src="/images/examples/image-1@2x.jpg" alt="sample 1" size="max-w-lg" class="rounded-lg" />
@@ -72,7 +72,7 @@ Use this example to mask the image inside a circle using the rounded-full utilit
 
 ```svelte example class="flex justify-center" hideScript
 <script>
-  import { Img } from 'flowbite-svelte';
+  import { Img } from '@vardario/svelte-ui-kit';
 </script>
 
 <Img src="/images/examples/image-4@2x.jpg" alt="sample 1" size="w-96" imgClass="h-96" class="rounded-full" />
@@ -84,7 +84,7 @@ This example can be used to show a shadow effect for the image using the shadow-
 
 ```svelte example class="flex justify-center" hideScript
 <script>
-  import { Img } from 'flowbite-svelte';
+  import { Img } from '@vardario/svelte-ui-kit';
 </script>
 
 <Img src="/images/examples/image-2@2x.jpg" alt="sample 1" size="max-w-xl"  class="shadow-xl dark:shadow-gray-800" />
@@ -96,7 +96,7 @@ Use the srcset attribute to set Retina-ready images with double resolution.
 
 ```svelte example class="flex justify-center" hideScript
 <script>
-  import { Img } from 'flowbite-svelte';
+  import { Img } from '@vardario/svelte-ui-kit';
 </script>
 
 <Img srcset="/images/examples/image-1.jpg 1x, /images/examples/image-1@2x.jpg 2x" alt="sample 1" size="w-full max-w-xl" class="rounded-lg"/>
@@ -108,7 +108,7 @@ Use this example to make the image a card item with a link and a short text desc
 
 ```svelte example class="flex justify-center" hideScript
 <script>
-  import { Img } from 'flowbite-svelte';
+  import { Img } from '@vardario/svelte-ui-kit';
 </script>
 
 <Img src="/images/examples/content-gallery-3.png" alt="sample 1" class="rounded-lg" figClass="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" captionClass="absolute bottom-6 px-4 text-lg text-white" caption="Do you want to get notified when a new component is added to Flowbite?" />
@@ -124,7 +124,7 @@ Use the filter option and apply a grayscale to the image element using the grays
 
 ```svelte example class="flex justify-center" hideScript
 <script>
-  import { Img } from 'flowbite-svelte';
+  import { Img } from '@vardario/svelte-ui-kit';
 </script>
 
 <Img src="/images/examples/content-gallery-3.png" size="max-w-lg" alt="My gallery" class="rounded-lg transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" />
@@ -136,7 +136,7 @@ Apply a blur by using the blur-size utility class from Tailwind CSS to an image 
 
 ```svelte example class="flex justify-center" hideScript
 <script>
-  import { Img } from 'flowbite-svelte';
+  import { Img } from '@vardario/svelte-ui-kit';
 </script>
 
 <Img src="/images/examples/content-gallery-3.png" size="max-w-lg" alt="My gallery" class="rounded-lg transition-all duration-300 blur-sm hover:blur-none" />
@@ -152,7 +152,7 @@ By default, the image component will be aligned to the left side of the page.
 
 ```svelte example hideScript
 <script>
-  import { Img } from 'flowbite-svelte';
+  import { Img } from '@vardario/svelte-ui-kit';
 </script>
 
 <Img src="/images/examples/image-1@2x.jpg" size="max-w-lg" alt="sample 1"/>
@@ -164,7 +164,7 @@ Horizontally align the image to the center of the page using the `mx-auto` class
 
 ```svelte example hideScript
 <script>
-  import { Img } from 'flowbite-svelte';
+  import { Img } from '@vardario/svelte-ui-kit';
 </script>
 
 <Img src="/images/examples/image-1@2x.jpg" size="max-w-lg" alignment="mx-auto" alt="sample 1"/>
@@ -176,7 +176,7 @@ Use the `ml-auto` class to align the image to the right side of the page.
 
 ```svelte example hideScript
 <script>
-  import { Img } from 'flowbite-svelte';
+  import { Img } from '@vardario/svelte-ui-kit';
 </script>
 
 <Img src="/images/examples/image-1@2x.jpg" size="max-w-lg" alignment="ml-auto" alt="sample 1"/>
@@ -192,7 +192,7 @@ Use the `max-w-xs` class to set a small size of the image.
 
 ```svelte example class="flex justify-center" hideScript
 <script>
-  import { Img } from 'flowbite-svelte';
+  import { Img } from '@vardario/svelte-ui-kit';
 </script>
 
 <Img src="/images/examples/image-1@2x.jpg" size="max-w-xs" alt="sample 1"/>
@@ -204,7 +204,7 @@ Use the `max-w-md` class to set a medium size of the image.
 
 ```svelte example class="flex justify-center" hideScript
 <script>
-  import { Img } from 'flowbite-svelte';
+  import { Img } from '@vardario/svelte-ui-kit';
 </script>
 
 <Img src="/images/examples/image-1@2x.jpg" size="max-w-md" alt="sample 1"/>
@@ -216,7 +216,7 @@ Use the max-w-xl class to set a large size of the image.
 
 ```svelte example class="flex justify-center" hideScript
 <script>
-  import { Img } from 'flowbite-svelte';
+  import { Img } from '@vardario/svelte-ui-kit';
 </script>
 
 <Img src="/images/examples/image-1@2x.jpg" size="max-w-xl" alt="sample 1"/>
@@ -228,7 +228,7 @@ Use the max-w-full class to set the full width of the image as long as it doesnâ
 
 ```svelte example class="flex justify-center" hideScript
 <script>
-  import { Img } from 'flowbite-svelte';
+  import { Img } from '@vardario/svelte-ui-kit';
 </script>
 
 <Img src="/images/examples/image-1@2x.jpg" size="max-w-full" alt="sample 1"/>

@@ -25,7 +25,7 @@ You will also find more advanced search components on this page including dropdo
 
 ```svelte example hideOutput
 <script>
-  import { Search } from 'flowbite-svelte'
+  import { Search } from '@vardario/svelte-ui-kit'
 </script>
 ```
 
@@ -33,7 +33,7 @@ You will also find more advanced search components on this page including dropdo
 
 ```svelte example hideScript class="flex flex-col gap-4"
 <script>
-  import { Search, Button } from 'flowbite-svelte'
+  import { Search, Button } from '@vardario/svelte-ui-kit'
 </script>
 
 <Search >
@@ -47,7 +47,7 @@ Use the simplest form of a search input component with an icon and a search butt
 
 ```svelte example hideScript class="flex flex-col gap-4"
 <script>
-  import { Search, Button } from 'flowbite-svelte'
+  import { Search, Button } from '@vardario/svelte-ui-kit'
 </script>
 
 <form class="flex gap-2">
@@ -64,7 +64,7 @@ Get started with this example if you would like to enable voice search for your 
 
 ```svelte example class="space-y-4"
 <script>
-  import { Search, Button } from 'flowbite-svelte'
+  import { Search, Button } from '@vardario/svelte-ui-kit'
   function handleVoiceBtn() {
     alert('You clicked voice button');
   }

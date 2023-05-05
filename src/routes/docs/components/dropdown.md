@@ -33,7 +33,7 @@ The dropdown component can be used to show a list of menu items when clicking on
 
 ```svelte example hideOutput
 <script>
-  import { Dropdown, DropdownItem, DropdownDivider, DropdownHeader } from 'flowbite-svelte'
+  import { Dropdown, DropdownItem, DropdownDivider, DropdownHeader } from '@vardario/svelte-ui-kit'
 </script>
 ```
 
@@ -43,7 +43,7 @@ If you want to show a dropdown menu when clicking on an element add the `Dropdow
 
 ```svelte example class="flex justify-center items-start h-64"
 <script>
-  import { Button, Dropdown, DropdownItem, Chevron } from 'flowbite-svelte'
+  import { Button, Dropdown, DropdownItem, Chevron } from '@vardario/svelte-ui-kit'
 </script>
 
 <Button><Chevron>Dropdown button</Chevron></Button>
@@ -62,7 +62,7 @@ Note that you have a natural divider between main content of the `Dropdown` and 
 
 ```svelte example class="flex justify-center items-start h-64"
 <script>
-  import { Button, Dropdown, DropdownItem, DropdownDivider, Chevron } from 'flowbite-svelte'
+  import { Button, Dropdown, DropdownItem, DropdownDivider, Chevron } from '@vardario/svelte-ui-kit'
 </script>
 <Button><Chevron>Dropdown button</Chevron></Button>
 <Dropdown>
@@ -80,7 +80,7 @@ Use this example to show extra information outside of the list of menu items ins
 
 ```svelte example class="flex justify-center items-start h-80"
 <script>
-  import { Button, Dropdown, DropdownItem, DropdownDivider, DropdownHeader, Chevron } from 'flowbite-svelte'
+  import { Button, Dropdown, DropdownItem, DropdownDivider, DropdownHeader, Chevron } from '@vardario/svelte-ui-kit'
 </script>
 
 <Button><Chevron>Dropdown button</Chevron></Button>
@@ -102,7 +102,7 @@ Use this example to enable multi-level dropdown menus by adding stacked elements
 
 ```svelte example class="flex justify-center items-start h-64"
 <script>
-  import { Button, Dropdown, DropdownItem, DropdownDivider, Chevron } from 'flowbite-svelte'
+  import { Button, Dropdown, DropdownItem, DropdownDivider, Chevron } from '@vardario/svelte-ui-kit'
 </script>
 
 <Button><Chevron>Dropdown button</Chevron></Button>
@@ -125,7 +125,7 @@ When you want to control your dropdown open status via javascript code you can b
 
 ```svelte example class="flex justify-center items-start h-64"
 <script>
-  import { Button, Dropdown, DropdownItem, DropdownDivider, Chevron } from 'flowbite-svelte'
+  import { Button, Dropdown, DropdownItem, DropdownDivider, Chevron } from '@vardario/svelte-ui-kit'
   let dropdownOpen = false;
 </script>
 
@@ -149,7 +149,7 @@ Add multiple checkbox elements inside your dropdown menu to enable more advanced
 
 ```svelte example class="flex justify-center items-start h-52"
 <script>
-  import { Button, Dropdown, DropdownItem, Chevron, Checkbox } from 'flowbite-svelte'
+  import { Button, Dropdown, DropdownItem, Chevron, Checkbox } from '@vardario/svelte-ui-kit'
 </script>
 
 <Button><Chevron>Dropdown checkbox</Chevron></Button>
@@ -172,7 +172,7 @@ Use this example to update the background color of a menu item when using a list
 
 ```svelte example class="flex justify-center items-start h-56"
 <script>
-  import { Button, Dropdown, DropdownItem, Chevron, Checkbox } from 'flowbite-svelte'
+  import { Button, Dropdown, DropdownItem, Chevron, Checkbox } from '@vardario/svelte-ui-kit'
 </script>
 
 <Button><Chevron>Dropdown checkbox</Chevron></Button>
@@ -195,7 +195,7 @@ Add an extra helper text to each checkbox element inside the dropdown menu list 
 
 ```svelte example class="flex justify-center items-start h-96"
 <script>
-  import { Button, Dropdown, DropdownItem, Chevron, Checkbox, Helper } from 'flowbite-svelte'
+  import { Button, Dropdown, DropdownItem, Chevron, Checkbox, Helper } from '@vardario/svelte-ui-kit'
 </script>
 
 <Button><Chevron>Dropdown checkbox</Chevron></Button>
@@ -221,7 +221,7 @@ Add multiple radio elements inside your dropdown menu to enable more advanced in
 
 ```svelte example class="flex justify-center items-start h-64"
 <script>
-  import { Button, Dropdown, DropdownItem, Chevron, Radio } from 'flowbite-svelte'
+  import { Button, Dropdown, DropdownItem, Chevron, Radio } from '@vardario/svelte-ui-kit'
   let group1=2;
 </script>
 
@@ -245,7 +245,7 @@ Use this example to update the background color of a menu item when using a list
 
 ```svelte example class="flex justify-center items-start h-64"
 <script>
-  import { Button, Dropdown, DropdownItem, Chevron, Radio } from 'flowbite-svelte'
+  import { Button, Dropdown, DropdownItem, Chevron, Radio } from '@vardario/svelte-ui-kit'
   let group2=2;
 </script>
 
@@ -269,7 +269,7 @@ Add an extra helper text to each radio element inside the dropdown menu list wit
 
 ```svelte example class="flex justify-center items-start h-96"
 <script>
-  import { Button, Dropdown, DropdownItem, Chevron, Radio, Helper} from 'flowbite-svelte'
+  import { Button, Dropdown, DropdownItem, Chevron, Radio, Helper} from '@vardario/svelte-ui-kit'
   let group3=2;
 </script>
 
@@ -296,7 +296,7 @@ Show a list of toggle switch elements inside the dropdown menu to enable a yes o
 
 ```svelte example class="flex justify-center items-start h-64"
 <script>
-  import { Button, Dropdown, DropdownItem, Chevron, Toggle } from 'flowbite-svelte'
+  import { Button, Dropdown, DropdownItem, Chevron, Toggle } from '@vardario/svelte-ui-kit'
   let group2=2;
 </script>
 
@@ -320,7 +320,7 @@ Show a list of toggle switch elements inside the dropdown menu to enable a yes o
 
 ```svelte example class="flex justify-center items-start h-96"
 <script>
-  import { Button, Dropdown, DropdownItem, Chevron, DropdownDivider, Navbar, NavBrand, NavHamburger, NavUl, NavLi } from 'flowbite-svelte'
+  import { Button, Dropdown, DropdownItem, Chevron, DropdownDivider, Navbar, NavBrand, NavHamburger, NavUl, NavLi } from '@vardario/svelte-ui-kit'
   let group3=2;
 </script>
 
@@ -352,7 +352,7 @@ This example can be used when you want to show a long list of items that won’t
 
 ```svelte example class="flex justify-center items-start h-80"
 <script>
-  import { Button, Dropdown, DropdownItem, Chevron, Avatar } from 'flowbite-svelte'
+  import { Button, Dropdown, DropdownItem, Chevron, Avatar } from '@vardario/svelte-ui-kit'
 </script>
 
 <Button><Chevron>Project users</Chevron></Button>
@@ -387,7 +387,7 @@ Use this example if you want to add a search bar inside the dropdown menu to be 
 
 ```svelte example class="flex justify-center items-start h-96"
 <script>
-  import { Button, Dropdown, DropdownItem, Chevron, Checkbox, Search } from 'flowbite-svelte'
+  import { Button, Dropdown, DropdownItem, Chevron, Checkbox, Search } from '@vardario/svelte-ui-kit'
 </script>
 
 <Button><Chevron>Project users</Chevron></Button>
@@ -425,7 +425,7 @@ Use the menu icon trigger element on components such as cards as an alternative 
 
 ```svelte example class="flex justify-center items-start gap-4 h-60"
 <script>
-  import { Button, Dropdown, DropdownItem, ToolbarButton, MenuButton, DropdownDivider } from 'flowbite-svelte'
+  import { Button, Dropdown, DropdownItem, ToolbarButton, MenuButton, DropdownDivider } from '@vardario/svelte-ui-kit'
 </script>
 <MenuButton class="dots-menu dark:text-white" />
 <MenuButton class="dots-menu dark:text-white" vertical />
@@ -443,7 +443,7 @@ Use this example to show a list of notifications inside your application by prov
 
 ```svelte example class="flex justify-center items-start h-96"
 <script>
-  import { Button, Dropdown, DropdownItem, DropdownHeader, Avatar } from 'flowbite-svelte'
+  import { Button, Dropdown, DropdownItem, DropdownHeader, Avatar } from '@vardario/svelte-ui-kit'
 </script>
 
 <div id="bell" class="inline-flex items-center text-sm font-medium text-center text-gray-500 hover:text-gray-900 focus:outline-none dark:hover:text-white dark:text-gray-400">
@@ -490,7 +490,7 @@ This example can be used to show a list of menu items and options when a user is
 
 ```svelte example class="flex justify-center items-start h-80"
 <script>
-  import { Button, Dropdown, DropdownItem, Avatar, DropdownHeader, DropdownDivider } from 'flowbite-svelte'
+  import { Button, Dropdown, DropdownItem, Avatar, DropdownHeader, DropdownDivider } from '@vardario/svelte-ui-kit'
 </script>
 
 <Avatar class="acs" src="/images/profile-picture-3.webp" dot={{color:'green'}} />
@@ -512,7 +512,7 @@ Use this example to also show the name or email of the user next to the avatar f
 
 ```svelte example class="flex justify-center items-start h-80"
 <script>
-  import { Button, Dropdown, DropdownItem, Avatar, DropdownHeader, DropdownDivider } from 'flowbite-svelte'
+  import { Button, Dropdown, DropdownItem, Avatar, DropdownHeader, DropdownDivider } from '@vardario/svelte-ui-kit'
 </script>
 
 <Button pill color="light" id="avatar_with_name" class="!p-1">
@@ -537,7 +537,7 @@ Use this example to also show the name or email of the user next to the avatar f
 
 ```svelte example class="flex justify-center items-start gap-4 h-80"
 <script>
-  import { Button, Dropdown, DropdownItem, Chevron } from 'flowbite-svelte'
+  import { Button, Dropdown, DropdownItem, Chevron } from '@vardario/svelte-ui-kit'
 </script>
 
 <Dropdown triggeredBy=".sizes">
@@ -556,7 +556,7 @@ You can also use the `placement={top|right|bottom|left}` options to choose the p
 
 ```svelte example
 <script>
-  import { Button, Dropdown, DropdownItem, Chevron } from 'flowbite-svelte'
+  import { Button, Dropdown, DropdownItem, Chevron } from '@vardario/svelte-ui-kit'
   let placement = 'left';
 </script>
 
@@ -582,7 +582,7 @@ You can also use the `placement={top|right|bottom|left}` options to choose the p
 
 ```svelte example class="flex justify-center items-center gap-2 h-96"
 <script>
-  import { Button, Dropdown, DropdownItem, Chevron } from 'flowbite-svelte'
+  import { Button, Dropdown, DropdownItem, Chevron } from '@vardario/svelte-ui-kit'
   let placement='left'
 </script>
 
@@ -603,7 +603,7 @@ Therefore you can catch standard events on it like `on:click`.
 
 ```svelte example class="flex justify-center items-start h-40"
 <script>
-  import { Button, Dropdown, DropdownItem, Checkbox, Chevron } from 'flowbite-svelte'
+  import { Button, Dropdown, DropdownItem, Checkbox, Chevron } from '@vardario/svelte-ui-kit'
   const handleClick = (e)=> {
     e.preventDefault();
     alert ('Clicked on: ' + e.target)

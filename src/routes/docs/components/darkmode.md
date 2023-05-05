@@ -40,7 +40,7 @@ const config = {
 ```svelte example
 <!-- src/routes/+layout.svelte -->
 <script>
-  import { DarkMode } from 'flowbite-svelte';
+  import { DarkMode } from '@vardario/svelte-ui-kit';
 </script>
 
 <DarkMode />
@@ -52,7 +52,7 @@ const config = {
 
 ```svelte example
 <script>
-  import { DarkMode } from 'flowbite-svelte';
+  import { DarkMode } from '@vardario/svelte-ui-kit';
 
   let btnClass = 'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-xl p-2';
 </script>
@@ -64,7 +64,7 @@ const config = {
 
 ```svelte example
 <script>
-  import { DarkMode } from 'flowbite-svelte';
+  import { DarkMode } from '@vardario/svelte-ui-kit';
 </script>
 
 <DarkMode class="text-2xl" />
@@ -76,7 +76,7 @@ const config = {
 
 ```svelte example
 <script>
-  import { DarkMode } from 'flowbite-svelte';
+  import { DarkMode } from '@vardario/svelte-ui-kit';
 </script>
 
 <DarkMode class="text-lg">

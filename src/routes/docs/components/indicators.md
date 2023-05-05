@@ -23,7 +23,7 @@ The indicator component can be used as a small element positioned absolutely rel
 
 ```svelte example hideOutput
 <script>
-  import { Indicator } from "flowbite-svelte"
+  import { Indicator } from "@vardario/svelte-ui-kit"
 </script>
 ```
 
@@ -33,7 +33,7 @@ Use this example to create a simple indicator with multiple colors and position 
 
 ```svelte example class="flex gap-2"
 <script>
-  import { Indicator } from 'flowbite-svelte'
+  import { Indicator } from '@vardario/svelte-ui-kit'
 </script>
 
 <Indicator color="gray"/>
@@ -53,7 +53,7 @@ This example can be used as a legend indicator for charts to also add a text nex
 
 ```svelte example class="text-sm font-medium text-gray-900 dark:text-white flex gap-2"
 <script>
-  import { Indicator } from 'flowbite-svelte'
+  import { Indicator } from '@vardario/svelte-ui-kit'
 </script>
 
 <span class="flex items-center"><Indicator size="sm" color="blue" class="mr-1.5"/>Visitors</span>
@@ -68,7 +68,7 @@ This example can be used to show a number count inside the indicator and positio
 
 ```svelte example class="space-y-4"
 <script>
-  import { Indicator, Button } from 'flowbite-svelte'
+  import { Indicator, Button } from '@vardario/svelte-ui-kit'
 </script>
 
   <Button size="lg" class="relative">
@@ -89,7 +89,7 @@ Use this example to show a status indicator for the currently logged in user by 
 
 ```svelte example class="flex gap-2"
 <script>
-  import { Indicator, Avatar } from 'flowbite-svelte'
+  import { Indicator, Avatar } from '@vardario/svelte-ui-kit'
 </script>
 
 <Avatar src="/images/profile-picture-5.webp" dot={{color:"green", size: "lg", placement:"top-right"}} />
@@ -103,7 +103,7 @@ This example can be used to add an indicator inside of a badge component.
 
 ```svelte example class="flex gap-2"
 <script>
-  import { Indicator, Avatar, Badge } from 'flowbite-svelte'
+  import { Indicator, Avatar, Badge } from '@vardario/svelte-ui-kit'
 </script>
 
 <ul class="max-w-sm divide-y divide-gray-200 dark:divide-gray-700 w-full">
@@ -142,7 +142,7 @@ You can also use the indicators inside of a stepper component when completing a 
 
 ```svelte example class="space-y-8"
 <script>
-  import { Indicator } from 'flowbite-svelte'
+  import { Indicator } from '@vardario/svelte-ui-kit'
 </script>
 
 <ol class="flex items-center">
@@ -243,7 +243,7 @@ Use these examples to position the indicator component anywhere relative to the 
 
 ```svelte example class="flex gap-4"
 <script>
-  import { Indicator } from 'flowbite-svelte'
+  import { Indicator } from '@vardario/svelte-ui-kit'
 </script>
 
 <div class="w-56 h-56 relative bg-gray-100 borer border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700" >

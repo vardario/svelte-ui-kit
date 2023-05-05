@@ -32,7 +32,7 @@ primary: { "50": "#fff1f2", "100": "#ffe4e6", "200": "#fecdd3", "300": "#fda4af"
 
 ```svelte example class="flex flex-col gap-4" hideScript
 <script>
-  import { Button, Alert, Card, Navbar, NavBrand, NavLi, NavUl, NavHamburger, Toast } from 'flowbite-svelte';
+  import { Button, Alert, Card, Navbar, NavBrand, NavLi, NavUl, NavHamburger, Toast } from '@vardario/svelte-ui-kit';
 </script>
 
 <Button color="primary">Primary</Button>

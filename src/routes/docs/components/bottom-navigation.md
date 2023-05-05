@@ -28,7 +28,7 @@ Check out multiple examples of the bottom navigation component based on various 
 
 ```svelte example hideOutput
 <script>
-  import { BottomNav, BottomNavItem } from "flowbite-svelte"
+  import { BottomNav, BottomNavItem } from "@vardario/svelte-ui-kit"
 </script>
 ```
 
@@ -38,7 +38,7 @@ Use the default bottom navigation bar example to show a list of menu items as bu
 
 ```svelte example class="flex flex-col relative" hideScript 
 <script>
-  import { BottomNav, BottomNavItem, Skeleton, ImagePlaceholder } from "flowbite-svelte"
+  import { BottomNav, BottomNavItem, Skeleton, ImagePlaceholder } from "@vardario/svelte-ui-kit"
 </script>
 
 <Skeleton class="py-4"/>
@@ -75,7 +75,7 @@ This example can be used to show a border between the menu items inside the bott
 
 ```svelte example class="flex flex-col relative" hideScript
 <script>
-  import { BottomNav, BottomNavItem, Skeleton, ImagePlaceholder } from "flowbite-svelte"
+  import { BottomNav, BottomNavItem, Skeleton, ImagePlaceholder } from "@vardario/svelte-ui-kit"
 </script>
 
 <Skeleton class="py-4"/>
@@ -112,7 +112,7 @@ Use this example to show a CTA button in the center of the navigation component 
 
 ```svelte example class="flex flex-col relative" hideScript
 <script>
-  import { BottomNav, BottomNavItem, Tooltip, Skeleton, ImagePlaceholder } from "flowbite-svelte"
+  import { BottomNav, BottomNavItem, Tooltip, Skeleton, ImagePlaceholder } from "@vardario/svelte-ui-kit"
 </script>
 
 <Skeleton class="py-4"/>
@@ -161,7 +161,7 @@ This example be used to paginate multiple pages on a single view alongside other
 
 ```svelte example class="flex flex-col relative" hideScript
 <script>
-  import { BottomNav, BottomNavItem, Tooltip, Skeleton, ImagePlaceholder } from "flowbite-svelte"
+  import { BottomNav, BottomNavItem, Tooltip, Skeleton, ImagePlaceholder } from "@vardario/svelte-ui-kit"
 </script>
 
 <Skeleton class="py-4"/>
@@ -216,7 +216,7 @@ This example be used to paginate multiple pages on a single view alongside other
 
 ```svelte example class="flex flex-col relative" hideScript
 <script>
-  import { BottomNav, BottomNavItem, BottomNavHeader, BottomNavHeaderItem, Tooltip, Skeleton, ImagePlaceholder } from "flowbite-svelte"
+  import { BottomNav, BottomNavItem, BottomNavHeader, BottomNavHeaderItem, Tooltip, Skeleton, ImagePlaceholder } from "@vardario/svelte-ui-kit"
 </script>
 
 <Skeleton class="py-4"/>
@@ -268,7 +268,7 @@ You can even use the other bottom navbar examples to exchange the default one pr
 
 ```svelte example class="flex justify-center"
 <script>
-  import { BottomNav, BottomNavItem, Card, Listgroup, Avatar } from "flowbite-svelte"
+  import { BottomNav, BottomNavItem, Card, Listgroup, Avatar } from "@vardario/svelte-ui-kit"
   let list = [
     { img: { src: "/images/profile-picture-1.webp", alt: "Neil Sims",},
       comment: 'New message from <span class="font-medium text-gray-900 dark:text-white">Jese Leos</span>: "Hey, what\'s up? All set for the presentation?"',

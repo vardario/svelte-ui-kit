@@ -24,7 +24,7 @@ Use `CloseButton` component to close a component.
 
 ```svelte example
 <script>
-	import { CloseButton } from 'flowbite-svelte'
+	import { CloseButton } from '@vardario/svelte-ui-kit'
 	export let visible = true;
 </script>
 

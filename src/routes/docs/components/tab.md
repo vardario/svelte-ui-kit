@@ -25,7 +25,7 @@ The tabs component can be used either as an extra navigational hierarchy complem
 
 ```svelte example hideOutput
 <script>
-  import { Tabs, TabItem } from 'flowbite-svelte';
+  import { Tabs, TabItem } from '@vardario/svelte-ui-kit';
 </script>
 ```
 
@@ -43,7 +43,7 @@ The last tab in that example shows not only how to show a disabled tab, but how 
 
 ```svelte example
 <script>
-  import { Tabs, TabItem } from 'flowbite-svelte';
+  import { Tabs, TabItem } from '@vardario/svelte-ui-kit';
 </script>
 
 <Tabs>
@@ -80,7 +80,7 @@ Use the `style="underline"` to achieve this alternative tabs component style wit
 
 ```svelte example
 <script>
-  import { Tabs, TabItem } from 'flowbite-svelte';
+  import { Tabs, TabItem } from '@vardario/svelte-ui-kit';
 </script>
 
 <Tabs style="underline">
@@ -110,7 +110,7 @@ Use icon components for a simple syntax. See <a href="/icons">Icons</a> for more
 
 ```svelte example
 <script>
-  import { Tabs, TabItem } from 'flowbite-svelte';
+  import { Tabs, TabItem } from '@vardario/svelte-ui-kit';
 </script>
 
 <Tabs style="underline">
@@ -151,7 +151,7 @@ If you want to use pills as a style for the tabs component use `style="pill"`.
 
 ```svelte example
 <script>
-  import { Tabs, TabItem } from 'flowbite-svelte';
+  import { Tabs, TabItem } from '@vardario/svelte-ui-kit';
 </script>
 
 <Tabs style="pill">
@@ -180,7 +180,7 @@ If you want to show the tabs on the full width relative to the parent element us
 
 ```svelte example
 <script>
-  import { Tabs, TabItem } from 'flowbite-svelte';
+  import { Tabs, TabItem } from '@vardario/svelte-ui-kit';
 </script>
 
 <Tabs style="full" defaultClass="flex rounded-lg divide-x divide-gray-200 shadow dark:divide-gray-700">
@@ -209,7 +209,7 @@ You can add other components to the `TabItem` component. Here we are adding a ti
 
 ```svelte example class="h-auto"
 <script>
-  import { Tabs, TabItem, Timeline, TimelineItem, Button } from 'flowbite-svelte';
+  import { Tabs, TabItem, Timeline, TimelineItem, Button } from '@vardario/svelte-ui-kit';
 </script>
 
 <Tabs >

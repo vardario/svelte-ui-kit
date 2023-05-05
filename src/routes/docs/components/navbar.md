@@ -30,7 +30,7 @@ Get started with the responsive navbar component from Flowbite to quickly set up
 
 ```svelte example hideOutput
 <script>
-  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte'
+  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from '@vardario/svelte-ui-kit'
 </script>
 ```
 
@@ -40,7 +40,7 @@ Use this example of a navigation bar built with the utility classes from Tailwin
 
 ```svelte example hideScript
 <script>
-  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte'
+  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from '@vardario/svelte-ui-kit'
 </script>
 
 <Navbar let:hidden let:toggle>
@@ -71,7 +71,7 @@ This example can be used to show a secondary dropdown menu when clicking on one 
 
 ```svelte example class="h-80"
 <script>
-  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, Dropdown, DropdownItem, Chevron, DropdownDivider } from 'flowbite-svelte'
+  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, Dropdown, DropdownItem, Chevron, DropdownDivider } from '@vardario/svelte-ui-kit'
 </script>
 
 <Navbar let:hidden let:toggle>
@@ -109,7 +109,7 @@ Use this example of a navbar element to also show a search input element that yo
 
 ```svelte example class="h-80"
 <script>
-  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, Button, Input } from 'flowbite-svelte'
+  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, Button, Input } from '@vardario/svelte-ui-kit'
 </script>
 
 <Navbar let:hidden let:toggle>
@@ -149,7 +149,7 @@ Use the following navbar element to show a call to action button alongside the l
 
 ```svelte example class="h-80 md:h-64"
 <script>
-  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, Button, Input } from 'flowbite-svelte'
+  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, Button, Input } from '@vardario/svelte-ui-kit'
 </script>
 
 <Navbar let:hidden let:toggle>
@@ -183,7 +183,7 @@ Use this example to keep the navbar positioned fixed to the top side as you scro
 
 ```svelte example class="h-80"
 <script>
-  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, ImagePlaceholder, Skeleton, TextPlaceholder } from 'flowbite-svelte'
+  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, ImagePlaceholder, Skeleton, TextPlaceholder } from '@vardario/svelte-ui-kit'
 </script>
 
 <div class="relative px-8">
@@ -219,7 +219,7 @@ Use this example to create a navigation bar with a user profile or button to tog
 
 ```svelte example class="h-80"
 <script>
-  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, Avatar, Dropdown, DropdownItem, DropdownHeader, DropdownDivider } from 'flowbite-svelte'
+  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, Avatar, Dropdown, DropdownItem, DropdownHeader, DropdownDivider } from '@vardario/svelte-ui-kit'
 </script>
 
 <Navbar let:hidden let:toggle>
@@ -258,7 +258,7 @@ Use this example to show a solid background for the navbar component instead of 
 
 ```svelte example
 <script>
-  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte'
+  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from '@vardario/svelte-ui-kit'
 </script>
 
 <Navbar let:hidden let:toggle rounded color="form">

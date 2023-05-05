@@ -24,7 +24,7 @@ Explore the following examples based on various styles, sizes, and positionings 
 
 ```svelte example hideOutput
 <script>
-  import { Banner } from "flowbite-svelte"
+  import { Banner } from "@vardario/svelte-ui-kit"
 </script>
 ```
 
@@ -34,7 +34,7 @@ Use this free example to show a text message for announcement with a CTA link, a
 
 ```svelte example class="flex flex-col relative" hideScript 
 <script>
-  import { Banner, Skeleton, ImagePlaceholder } from "flowbite-svelte"
+  import { Banner, Skeleton, ImagePlaceholder } from "@vardario/svelte-ui-kit"
 </script>
 
 <Skeleton class="py-4"/>
@@ -59,7 +59,7 @@ This example can be used to position the sticky banner to the bottom side of the
 
 ```svelte example class="flex flex-col relative" hideScript
 <script>
-  import { Banner, Skeleton, ImagePlaceholder } from "flowbite-svelte"
+  import { Banner, Skeleton, ImagePlaceholder } from "@vardario/svelte-ui-kit"
 </script>
 
 <Skeleton class="py-4"/>
@@ -84,7 +84,7 @@ Use this free example to show a text message for announcement with a CTA link.
 
 ```svelte example class="flex flex-col relative" hideScript
 <script>
-  import { Banner, Skeleton, ImagePlaceholder } from "flowbite-svelte"
+  import { Banner, Skeleton, ImagePlaceholder } from "@vardario/svelte-ui-kit"
 </script>
 
 <Skeleton class="py-4"/>
@@ -107,7 +107,7 @@ This example can be used to encourage your website visitors to sign up to your e
 
 ```svelte example class="flex flex-col relative" hideScript
 <script>
-  import { Banner, Skeleton, ImagePlaceholder } from "flowbite-svelte"
+  import { Banner, Skeleton, ImagePlaceholder } from "@vardario/svelte-ui-kit"
 </script>
 
 <Skeleton class="py-4"/>
@@ -128,7 +128,7 @@ This example can be used to share important information with your website visito
 
 ```svelte example class="flex flex-col relative" hideScript
 <script>
-  import { Banner, Skeleton, ImagePlaceholder } from "flowbite-svelte"
+  import { Banner, Skeleton, ImagePlaceholder } from "@vardario/svelte-ui-kit"
 </script>
 
 <Skeleton class="py-4"/>

@@ -26,7 +26,7 @@ On this page you will find all of the input types based on multiple variants, st
 
 ```svelte example hideOutput
 <script>
-  import { Input, Label, Helper } from 'flowbite-svelte';
+  import { Input, Label, Helper } from '@vardario/svelte-ui-kit';
 </script>
 ```
 
@@ -36,7 +36,7 @@ Use this example as a generic form element which includes multiple input fields 
 
 ```svelte example hideScript
 <script>
-  import { Input, Label, Helper, Button, Checkbox, A } from 'flowbite-svelte';
+  import { Input, Label, Helper, Button, Checkbox, A } from '@vardario/svelte-ui-kit';
 </script>
 
 <form>
@@ -91,7 +91,7 @@ User the size prop to change the input size. Choose one from 'sm:text-md' | 'tex
 
 ```svelte example hideScript class="space-y-6"
 <script>
-  import { Input, Label } from 'flowbite-svelte';
+  import { Input, Label } from '@vardario/svelte-ui-kit';
 </script>
 
 <Label class="space-y-2">
@@ -116,7 +116,7 @@ Get started with this example if you want to apply the disabled state to an inpu
 
 ```svelte example hideScript
 <script>
-  import { Input } from 'flowbite-svelte';
+  import { Input } from '@vardario/svelte-ui-kit';
 </script>
 
 <Input class="mb-6" disabled value="Disabled input" />
@@ -129,7 +129,7 @@ Use the following example to apply validation styles for success and error messa
 
 ```svelte example hideScript
 <script>
-  import { Input, Label, Helper } from 'flowbite-svelte';
+  import { Input, Label, Helper } from '@vardario/svelte-ui-kit';
 </script>
 
 <div class="mb-6">
@@ -149,7 +149,7 @@ Use the following example to apply validation styles for success and error messa
 
 ```svelte example hideScript class="space-y-6"
 <script>
-  import { Label, Input, Button, CloseButton } from 'flowbite-svelte';
+  import { Label, Input, Button, CloseButton } from '@vardario/svelte-ui-kit';
 </script>
 
 <Label class="space-y-2">
@@ -181,7 +181,7 @@ This example can be used to add a descriptive icon or additional text inside the
 
 ```svelte example hideScript class="space-y-6"
 <script>
-  import { Label, Input, Button, InputAddon, ButtonGroup, Checkbox } from 'flowbite-svelte';
+  import { Label, Input, Button, InputAddon, ButtonGroup, Checkbox } from '@vardario/svelte-ui-kit';
 </script>
 
 <div>
@@ -239,7 +239,7 @@ This example shows how to add `on:click` event handler to the icon in `Input`. B
 
 ```svelte example class="space-y-6"
 <script>
-  import { Button, Label, Input, ButtonGroup, InputAddon, ToolbarButton } from 'flowbite-svelte';
+  import { Button, Label, Input, ButtonGroup, InputAddon, ToolbarButton } from '@vardario/svelte-ui-kit';
   let show = false;
   let show1 = false;
 </script>
@@ -280,7 +280,7 @@ Use the helper prop to add your helper text. You can use HTML in the helper text
 
 ```svelte example hideScript
 <script>
-  import { Input, Label, Helper } from 'flowbite-svelte';
+  import { Input, Label, Helper } from '@vardario/svelte-ui-kit';
 </script>
 
 <Label class="block space-y-2">
@@ -296,7 +296,7 @@ By default the `Input` component binds the `value` as `string`. If you need a va
 
 ```svelte example
 <script>
-  import { NumberInput, Label } from 'flowbite-svelte';
+  import { NumberInput, Label } from '@vardario/svelte-ui-kit';
   let value = 5;
 </script>
 
@@ -313,7 +313,7 @@ By default the `Input` component binds the `value` as `string`. If you need a va
 
 ```svelte example hideScript
 <script>
-  import { Input, Label, Button } from 'flowbite-svelte';
+  import { Input, Label, Button } from '@vardario/svelte-ui-kit';
 </script>
 
 <form>
@@ -331,7 +331,7 @@ Use this example to show a dropdown menu right next to the input field.
 
 ```svelte example
 <script>
-  import { Input, InputAddon, ButtonGroup, Button, Chevron, Dropdown, DropdownItem } from 'flowbite-svelte';
+  import { Input, InputAddon, ButtonGroup, Button, Chevron, Dropdown, DropdownItem } from '@vardario/svelte-ui-kit';
 </script>
 
 <ButtonGroup class="w-full">
@@ -357,7 +357,7 @@ If you need a full control over `input` HTML element while still re-using the Fl
 
 ```svelte example class="space-y-4"
 <script>
-  import { Input } from 'flowbite-svelte';
+  import { Input } from '@vardario/svelte-ui-kit';
   let value = 5;
 </script>
 

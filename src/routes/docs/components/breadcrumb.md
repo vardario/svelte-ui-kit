@@ -25,7 +25,7 @@ Flowbite includes two styles of breadcrumb elements, one that has a transparent 
 
 ```svelte example hideOutput
 <script>
-	import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
+	import { Breadcrumb, BreadcrumbItem } from '@vardario/svelte-ui-kit';
 </script>
 ```
 
@@ -35,7 +35,7 @@ Use the following breadcrumb example to show the hierarchical structure of pages
 
 ```svelte example hideScript
 <script>
-	import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
+	import { Breadcrumb, BreadcrumbItem } from '@vardario/svelte-ui-kit';
 </script>
 <Breadcrumb aria-label="Default breadcrumb example">
   <BreadcrumbItem href="/" home>Home</BreadcrumbItem>
@@ -50,7 +50,7 @@ You can alternatively also use the breadcrumb components with a solid background
 
 ```svelte example hideScript
 <script>
-	import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
+	import { Breadcrumb, BreadcrumbItem } from '@vardario/svelte-ui-kit';
 </script>
 <Breadcrumb aria-label="Solid background breadcrumb example" solid>
   <BreadcrumbItem href="/" home>Home</BreadcrumbItem>
@@ -65,7 +65,7 @@ Use the `icon` slot to change icons.
 
 ```svelte example hideScript
 <script>
-	import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
+	import { Breadcrumb, BreadcrumbItem } from '@vardario/svelte-ui-kit';
 </script>
 <Breadcrumb aria-label="Solid background breadcrumb example" class="bg-gray-50 py-3 px-5 dark:bg-gray-900">
   <BreadcrumbItem href="/" home>

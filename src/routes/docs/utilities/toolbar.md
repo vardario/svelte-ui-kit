@@ -21,7 +21,7 @@ description: Use the following Tailwind CSS powered toolbars to show groups of t
 
 ```svelte example hideOutput
 <script>
-  import { Toolbar, ToolbarButton, ToolbarGroup } from 'flowbite-svelte';
+  import { Toolbar, ToolbarButton, ToolbarGroup } from '@vardario/svelte-ui-kit';
 </script>
 ```
 
@@ -29,7 +29,7 @@ description: Use the following Tailwind CSS powered toolbars to show groups of t
 
 ```svelte example
 <script>
-  import { Toolbar, ToolbarButton, ToolbarGroup } from 'flowbite-svelte';
+  import { Toolbar, ToolbarButton, ToolbarGroup } from '@vardario/svelte-ui-kit';
 </script>
 
 <Toolbar>
@@ -43,7 +43,7 @@ description: Use the following Tailwind CSS powered toolbars to show groups of t
 
 ```svelte example class="space-y-4"
 <script>
-  import { Toolbar, ToolbarButton, ToolbarGroup } from 'flowbite-svelte';
+  import { Toolbar, ToolbarButton, ToolbarGroup } from '@vardario/svelte-ui-kit';
 </script>
 
 <Toolbar color="red">
@@ -62,7 +62,7 @@ description: Use the following Tailwind CSS powered toolbars to show groups of t
 
 ```svelte example
 <script>
-  import { Toolbar, ToolbarButton, ToolbarGroup } from 'flowbite-svelte';
+  import { Toolbar, ToolbarButton, ToolbarGroup } from '@vardario/svelte-ui-kit';
 </script>
 
 <Toolbar color="green">
@@ -100,7 +100,7 @@ If you want to add other actions as buttons alongside your textarea component, s
 
 ```svelte example
 <script>
-  import { Toolbar, ToolbarButton, ToolbarGroup, Textarea, Button } from 'flowbite-svelte';
+  import { Toolbar, ToolbarButton, ToolbarGroup, Textarea, Button } from '@vardario/svelte-ui-kit';
 </script>
 
 <form>
@@ -128,7 +128,7 @@ Most often the textarea component is used as the main text field input element i
 
 ```svelte example class="space-y-4"
 <script>
-  import { Toolbar, ToolbarButton, ToolbarGroup, Textarea, Button } from 'flowbite-svelte';
+  import { Toolbar, ToolbarButton, ToolbarGroup, Textarea, Button } from '@vardario/svelte-ui-kit';
 </script>
 
 <form>

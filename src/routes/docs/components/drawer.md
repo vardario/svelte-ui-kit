@@ -21,7 +21,7 @@ Use the Drawer component (or “off-canvas”) to show a fixed element relative 
 
 ```svelte example hideOutput
 <script>
-  import { Drawer, Button, CloseButton } from 'flowbite-svelte';
+  import { Drawer, Button, CloseButton } from '@vardario/svelte-ui-kit';
   import { sineIn } from 'svelte/easing';
 </script>
 ```
@@ -34,7 +34,7 @@ For accessibility you should also set the `id` prop to the element. This will ad
 
 ```svelte example
 <script>
-  import { Drawer, Button, CloseButton } from 'flowbite-svelte';
+  import { Drawer, Button, CloseButton } from '@vardario/svelte-ui-kit';
   import { sineIn } from 'svelte/easing';
   let hidden1 = true; 
   let transitionParams = {
@@ -77,7 +77,7 @@ Use this example to show a navigational sidebar inside the drawer component.
 
 ```svelte example
 <script>
-  import { Drawer, Button, CloseButton, Sidebar, SidebarBrand, SidebarCta, SidebarDropdownItem, SidebarDropdownWrapper, SidebarGroup, SidebarItem, SidebarWrapper } from 'flowbite-svelte';
+  import { Drawer, Button, CloseButton, Sidebar, SidebarBrand, SidebarCta, SidebarDropdownItem, SidebarDropdownWrapper, SidebarGroup, SidebarItem, SidebarWrapper } from '@vardario/svelte-ui-kit';
   import { sineIn } from 'svelte/easing';
   let hidden2 = true;
   let spanClass = 'flex-1 ml-3 whitespace-nowrap';
@@ -158,7 +158,7 @@ Use this example to show a contact form inside the drawer component.
 
 ```svelte example
 <script>
-  import { Drawer, Button, CloseButton, Label, Input, Textarea, P, A, Checkbox } from 'flowbite-svelte'
+  import { Drawer, Button, CloseButton, Label, Input, Textarea, P, A, Checkbox } from '@vardario/svelte-ui-kit'
   import { sineIn } from 'svelte/easing';
 
   let hidden3 = true;
@@ -207,7 +207,7 @@ Use this example if you want to add form elements inside the drawer component in
 
 ```svelte example
 <script>
-  import { Drawer, Button, CloseButton, Label, Input, Textarea } from 'flowbite-svelte'
+  import { Drawer, Button, CloseButton, Label, Input, Textarea } from '@vardario/svelte-ui-kit'
   import { sineIn } from 'svelte/easing';
 
   let hidden4 = true;
@@ -264,7 +264,7 @@ Use the placement prop to position the drawer component either on the top, right
 
 ```svelte example
 <script>
-  import { Drawer, Button, CloseButton, Label, Input, Textarea } from 'flowbite-svelte'
+  import { Drawer, Button, CloseButton, Label, Input, Textarea } from '@vardario/svelte-ui-kit'
   import { sineIn } from 'svelte/easing';
 
   let hidden5 = true;
@@ -310,7 +310,7 @@ Set the `transitionParams` variable to new variables.
 
 ```svelte example
 <script>
-  import { Drawer, Button, CloseButton } from 'flowbite-svelte'
+  import { Drawer, Button, CloseButton } from '@vardario/svelte-ui-kit'
   import { sineIn } from 'svelte/easing';
 
   let hidden6 = true;
@@ -354,7 +354,7 @@ Use this example to show the drawer on the top side of the page.
 
 ```svelte example
 <script>
-  import { Drawer, Button, CloseButton, A } from 'flowbite-svelte'
+  import { Drawer, Button, CloseButton, A } from '@vardario/svelte-ui-kit'
   import { sineIn } from 'svelte/easing';
 
   let hidden7 = true;
@@ -405,7 +405,7 @@ Use this example to show the drawer on the bottom side of the page.
 
 ```svelte example
 <script>
-  import { Drawer, Button, CloseButton, A } from 'flowbite-svelte'
+  import { Drawer, Button, CloseButton, A } from '@vardario/svelte-ui-kit'
   import { sineIn } from 'svelte/easing';
 
   let hidden8 = true;
@@ -453,7 +453,7 @@ Use this example to enable the backdrop element by default.
 
 ```svelte example
 <script>
-  import { Drawer, Button, CloseButton, A } from 'flowbite-svelte'
+  import { Drawer, Button, CloseButton, A } from '@vardario/svelte-ui-kit'
   import { sineIn } from 'svelte/easing';
 
   let hiddenBackdropTrue = true;
@@ -497,7 +497,7 @@ Use the `backdrop={false}` prop to disable the backdrop element when the drawer 
 
 ```svelte example
 <script>
-  import { Drawer, Button, CloseButton, A } from 'flowbite-svelte'
+  import { Drawer, Button, CloseButton, A } from '@vardario/svelte-ui-kit'
   import { sineIn } from 'svelte/easing';
 
   let hiddenBackdropFalse = true;
@@ -541,7 +541,7 @@ Use `leftOffset|rightOffset|topOffset|bottomOffset` prop to change the position 
 
 ```svelte example
 <script>
-  import { Drawer, Button, CloseButton, A } from 'flowbite-svelte'
+  import { Drawer, Button, CloseButton, A } from '@vardario/svelte-ui-kit'
   import { sineIn } from 'svelte/easing';
 
   let hidden9 = true;
@@ -612,7 +612,7 @@ However sometimes you don't want that. Set `activateClickOutside` to false to di
 
 ```svelte example
 <script>
-  import { Drawer, Button, CloseButton } from 'flowbite-svelte';
+  import { Drawer, Button, CloseButton } from '@vardario/svelte-ui-kit';
   import { sineIn } from 'svelte/easing';
   let hidden10 = true; 
   let activateClickOutside = false
@@ -651,7 +651,7 @@ However sometimes you don't want that. Set `activateClickOutside` to false to di
 
 ```svelte example
 <script>
-  import { Drawer, Button, CloseButton, A } from 'flowbite-svelte'
+  import { Drawer, Button, CloseButton, A } from '@vardario/svelte-ui-kit'
   import { sineIn } from 'svelte/easing';
 
   let hiddenBackdropFalse = true;

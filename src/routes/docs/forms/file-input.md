@@ -26,7 +26,7 @@ The file input component can be used to upload one or more files from the device
 
 ```svelte example hideOutput
 <script>
-  import { Fileupload } from 'flowbite-svelte'
+  import { Fileupload } from '@vardario/svelte-ui-kit'
 </script>
 ```
 
@@ -34,7 +34,7 @@ The file input component can be used to upload one or more files from the device
 
 ```svelte example
 <script>
-  import { Fileupload, Label } from 'flowbite-svelte'
+  import { Fileupload, Label } from '@vardario/svelte-ui-kit'
   let value;
 </script>
 
@@ -49,7 +49,7 @@ The file input component can be used to upload one or more files from the device
 
 ```svelte example
 <script>
-  import { Fileupload, Label, Helper } from 'flowbite-svelte'
+  import { Fileupload, Label, Helper } from '@vardario/svelte-ui-kit'
 </script>
 
 <Label for="with_helper" class="pb-2">Upload file</Label>
@@ -63,7 +63,7 @@ When the user selected multiple files, the `value` represents the first file in 
 
 ```svelte example
 <script>
-  import { Fileupload, Label, Listgroup, ListgroupItem } from 'flowbite-svelte'
+  import { Fileupload, Label, Listgroup, ListgroupItem } from '@vardario/svelte-ui-kit'
   let files;  // FileList type
 </script>
 
@@ -83,7 +83,7 @@ When the user selected multiple files, the `value` represents the first file in 
 
 ```svelte example
 <script>
-  import { Fileupload, Label } from 'flowbite-svelte'
+  import { Fileupload, Label } from '@vardario/svelte-ui-kit'
 </script>
 
 <Label class="pb-2" for='small_size' >Small file input</Label>
@@ -98,7 +98,7 @@ When the user selected multiple files, the `value` represents the first file in 
 
 ```svelte example
 <script>
-  import { Dropzone } from 'flowbite-svelte'
+  import { Dropzone } from '@vardario/svelte-ui-kit'
 </script>
 
 <Dropzone id='dropzone'>

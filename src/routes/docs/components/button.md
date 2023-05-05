@@ -31,7 +31,7 @@ Import a button component in the script tag.
 
 ```svelte example hideOutput
 <script>
-  import { Button } from 'flowbite-svelte';
+  import { Button } from '@vardario/svelte-ui-kit';
 </script>
 ```
 
@@ -41,7 +41,7 @@ Use these default button styles with multiple colors to indicate an action or li
 
 ```svelte example class="flex flex-wrap gap-2" hideScript
 <script>
-  import { Button } from 'flowbite-svelte';
+  import { Button } from '@vardario/svelte-ui-kit';
 </script>
 
 <Button>Default</Button>
@@ -60,7 +60,7 @@ You can add a link to a Button component:
 
 ```svelte example class="flex flex-wrap gap-2" hideScript
 <script>
-  import { Button } from 'flowbite-svelte';
+  import { Button } from '@vardario/svelte-ui-kit';
 </script>
 <Button href="/">Home</Button>
 ```
@@ -71,7 +71,7 @@ The button pills can be used as an alternative style by using fully rounded edge
 
 ```svelte example class="flex flex-wrap gap-2" hideScript
 <script>
-  import { Button } from 'flowbite-svelte';
+  import { Button } from '@vardario/svelte-ui-kit';
 </script>
 <Button pill={true}>Default</Button>
 <Button color="alternative" pill={true}>Alternative</Button>
@@ -89,7 +89,7 @@ These beautifully colored buttons built with the gradient color stops utility cl
 
 ```svelte example class="flex flex-wrap gap-2" hideScript
 <script>
-  import { Button } from 'flowbite-svelte';
+  import { Button } from '@vardario/svelte-ui-kit';
 </script>
 <Button gradient color="blue">Blue</Button>
 <Button gradient color="green">Green</Button>
@@ -107,7 +107,7 @@ These buttons use a style that includes two contrasted colors creating an impres
 
 ```svelte example class="flex flex-wrap gap-2" hideScript
 <script>
-  import { Button } from 'flowbite-svelte';
+  import { Button } from '@vardario/svelte-ui-kit';
 </script>
 <Button gradient color="purpleToBlue">Purple to Blue</Button>
 <Button gradient color="cyanToBlue">Cyan to Blue</Button>
@@ -124,7 +124,7 @@ This is a special button style that incorporates a gradient color for the outlin
 
 ```svelte example class="flex flex-wrap gap-2" hideScript
 <script>
-  import { Button } from 'flowbite-svelte';
+  import { Button } from '@vardario/svelte-ui-kit';
 </script>
 <Button outline gradient color="purpleToBlue">Purple to Blue</Button>
 <Button outline gradient color="cyanToBlue">Cyan to Blue</Button>
@@ -141,7 +141,7 @@ These beautiful button elements with color shadows can be used since the release
 
 ```svelte example class="flex flex-wrap gap-2" hideScript
 <script>
-  import { Button } from 'flowbite-svelte';
+  import { Button } from '@vardario/svelte-ui-kit';
 </script>
 <Button shadow="blue" gradient color="blue">Blue</Button>
 <Button shadow="green" gradient color="green">Green</Button>
@@ -159,7 +159,7 @@ Use the following button styles to show the colors only for the border of the el
 
 ```svelte example class="flex flex-wrap gap-2" hideScript
 <script>
-  import { Button } from 'flowbite-svelte';
+  import { Button } from '@vardario/svelte-ui-kit';
 </script>
 <div class="flex flex-wrap gap-2">
   <Button outline>Default</Button>
@@ -177,7 +177,7 @@ Use these examples if you want to use smaller or larger buttons.
 
 ```svelte example class="gap-2" hideScript
 <script>
-  import { Button } from 'flowbite-svelte';
+  import { Button } from '@vardario/svelte-ui-kit';
 </script>
 <Button size="xs">Extra small</Button>
 <Button size="sm">Small</Button>
@@ -192,7 +192,7 @@ Use the following examples to add a SVG icon inside the button either on the lef
 
 ```svelte example class="flex flex-wrap gap-2" hideScript
 <script>
-  import { Button } from 'flowbite-svelte';
+  import { Button } from '@vardario/svelte-ui-kit';
 </script>
 <Button>
   <svg aria-hidden="true" class="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg> Buy Now
@@ -208,7 +208,7 @@ This example can be used to show a notification count or helper text inside a bu
 
 ```svelte example class="flex flex-wrap gap-2" hideScript
 <script>
-  import { Button } from 'flowbite-svelte';
+  import { Button } from '@vardario/svelte-ui-kit';
 </script>
 <Button>
   Messages
@@ -224,7 +224,7 @@ Sometimes you need a button to indicate an action using only an icon.
 
 ```svelte example class="flex flex-wrap gap-2" hideScript
 <script>
-  import { Button } from 'flowbite-svelte';
+  import { Button } from '@vardario/svelte-ui-kit';
 </script>
 <div class="flex flex-wrap items-center gap-2">
   <Button class="!p-2"><svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></Button>
@@ -240,7 +240,7 @@ Use the spinner components from Flowbite-Svelte to indicate a loader animation i
 
 ```svelte example class="flex flex-wrap gap-2"
 <script>
-  import { Button, Spinner } from 'flowbite-svelte';
+  import { Button, Spinner } from '@vardario/svelte-ui-kit';
 </script>
 <Button>
   <Spinner class="mr-3" size="4" color="white" />Loading ...
@@ -256,7 +256,7 @@ You can add any additional button attributes. The following example shows adding
 
 ```svelte example class="flex flex-wrap gap-2" hideScript
 <script>
-  import { Button } from 'flowbite-svelte';
+  import { Button } from '@vardario/svelte-ui-kit';
 </script>
 <Button disabled >Disabled</Button>
 ```
@@ -267,7 +267,7 @@ You can use on:click or any standard on:* to listen to the event.
 
 ```svelte example class="flex flex-wrap gap-2"
 <script>
-  import { Button } from 'flowbite-svelte';
+  import { Button } from '@vardario/svelte-ui-kit';
   const btn1 = () => {
     alert('You clicked btn1.');
   };

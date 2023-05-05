@@ -31,7 +31,7 @@ If you are using tooltip for avatar import `Tooltip`.
 
 ```svelte example hideOutput
 <script>
-  import { Avatar, Dropdown, DropdownHeader, DropdownItem, DropdownDivider, Tooltip } from "flowbite-svelte"
+  import { Avatar, Dropdown, DropdownHeader, DropdownItem, DropdownDivider, Tooltip } from "@vardario/svelte-ui-kit"
 </script>
 ```
 
@@ -41,7 +41,7 @@ Use this example to create a circle and rounded avatar on an image element.
 
 ```svelte example class="flex flex-col gap-4" hideScript
 <script>
-  import {Avatar} from 'flowbite-svelte'
+  import {Avatar} from '@vardario/svelte-ui-kit'
 </script>
 <div class="flex space-x-4">
   <Avatar src="/images/profile-picture-2.webp"/>
@@ -57,7 +57,7 @@ If you can use the `ring-&#123;color&#125;` class from Tailwind CSS to modify ri
 
 ```svelte example class="flex gap-4" hideScript
 <script>
-  import {Avatar} from 'flowbite-svelte'
+  import {Avatar} from '@vardario/svelte-ui-kit'
 </script>
 <Avatar src="/images/profile-picture-2.webp" border/>
 <Avatar src="/images/profile-picture-2.webp" border class="ring-red-400 dark:ring-red-300"/>
@@ -69,7 +69,7 @@ When there is no custom image available a placeholder is displayed.
 
 ```svelte example class="flex gap-4" hideScript
 <script>
-  import {Avatar} from 'flowbite-svelte'
+  import {Avatar} from '@vardario/svelte-ui-kit'
 </script>
 <Avatar />
 <Avatar rounded />
@@ -83,7 +83,7 @@ This example can be used to show the initials of the user’s first and last nam
 
 ```svelte example class="flex flex-col gap-4" hideScript
 <script>
-  import {Avatar} from 'flowbite-svelte'
+  import {Avatar} from '@vardario/svelte-ui-kit'
 </script>
   <Avatar>JL</Avatar>
 ```
@@ -94,7 +94,7 @@ Use this example to show a tooltip when hovering over the avatar.
 
 ```svelte example class="flex gap-4"
 <script>
-  import {Avatar, Tooltip} from 'flowbite-svelte'
+  import {Avatar, Tooltip} from '@vardario/svelte-ui-kit'
 </script>
   <Avatar data-name="Jese Leos" rounded src="/images/profile-picture-1.webp"/>
   <Avatar data-name="Robert Gouth" rounded src="/images/profile-picture-2.webp"/>
@@ -108,7 +108,7 @@ Use a dot element relative to the avatar component as an indicator for the user 
 
 ```svelte example class="flex gap-4" hideScript
 <script>
-  import {Avatar, Indicator} from 'flowbite-svelte'
+  import {Avatar, Indicator} from '@vardario/svelte-ui-kit'
 </script>
 <Avatar src="/images/profile-picture-3.webp" dot={{color:"red"}}/>
 <Avatar src="/images/profile-picture-3.webp" dot={{placement: "top-right", color:"red"}} rounded />
@@ -125,7 +125,7 @@ Use this example if you want to stack a group of users by overlapping the avatar
 
 ```svelte example class="flex flex-col gap-4" hideScript
 <script>
-  import {Avatar} from 'flowbite-svelte'
+  import {Avatar} from '@vardario/svelte-ui-kit'
 </script>
 <div class="flex mb-5">
 <Avatar src="/images/profile-picture-1.webp" stacked/>
@@ -147,7 +147,7 @@ This example can be used if you want to show additional information in the form 
 
 ```svelte example class="flex flex-col gap-4" hideScript
 <script>
-  import {Avatar} from 'flowbite-svelte'
+  import {Avatar} from '@vardario/svelte-ui-kit'
 </script>
 <div class="flex items-center space-x-4">
     <Avatar src="/images/profile-picture-1.webp" rounded/>
@@ -164,7 +164,7 @@ Use this example if you want to show a dropdown menu when clicking on the avatar
 
 ```svelte example class="flex justify-center h-96"
 <script>
-  import {Avatar, Dropdown, DropdownHeader, DropdownItem, DropdownDivider} from 'flowbite-svelte'
+  import {Avatar, Dropdown, DropdownHeader, DropdownItem, DropdownDivider} from '@vardario/svelte-ui-kit'
 </script>
 
   <Avatar id="user-drop" src="/images/profile-picture-3.webp" dot={{color:'green'}} />
@@ -187,7 +187,7 @@ Select size from  xs | sm | md | lg | xl.
 
 ```svelte example class="flex flex-col gap-4" hideScript
 <script>
-  import {Avatar} from 'flowbite-svelte'
+  import {Avatar} from '@vardario/svelte-ui-kit'
 </script>
 <div class=" flex flex-wrap justify-center space-x-4">
   <Avatar src="/images/profile-picture-3.webp" rounded size="xs" />

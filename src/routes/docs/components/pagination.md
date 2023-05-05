@@ -25,7 +25,7 @@ The pagination component can be used to navigate across a series of content and 
 
 ```svelte example hideOutput
 <script>
-  import { Pagination, PaginationItem } from 'flowbite-svelte'
+  import { Pagination, PaginationItem } from '@vardario/svelte-ui-kit'
 </script>
 ```
 
@@ -36,7 +36,7 @@ Use the following list of pagination items to indicate a series of content for y
 ```svelte example class="flex justify-center"
 <script>
   import { page } from '$app/stores';
-  import { Pagination } from 'flowbite-svelte'
+  import { Pagination } from '@vardario/svelte-ui-kit'
 
   $: activeUrl = $page.url.searchParams.get('page')
   let pages = [
@@ -80,7 +80,7 @@ The following pagination component example shows how you can use SVG icons inste
 ```svelte example class="flex justify-center"
 <script>
   import { page } from '$app/stores';
-  import { Pagination, ChevronLeft, ChevronRight } from 'flowbite-svelte'
+  import { Pagination, ChevronLeft, ChevronRight } from '@vardario/svelte-ui-kit'
 
   $: activeUrl = $page.url.searchParams.get('page')
   let pages = [
@@ -132,7 +132,7 @@ Use the following markup to show simple previous and next elements.
 
 ```svelte example class="flex justify-center"
 <script>
-  import { Pagination, PaginationItem } from 'flowbite-svelte'
+  import { Pagination, PaginationItem } from '@vardario/svelte-ui-kit'
   const previous = () => {
     alert('Previous btn clicked. Make a call to your server to fetch data.');
   };
@@ -153,7 +153,7 @@ Use the following code to show simple previous and next elements with icons.
 
 ```svelte example class="flex justify-center"
 <script>
-  import { Pagination, PaginationItem } from 'flowbite-svelte'
+  import { Pagination, PaginationItem } from '@vardario/svelte-ui-kit'
   const previous = () => {
     alert('Previous btn clicked. Make a call to your server to fetch data.');
   };
@@ -180,7 +180,7 @@ You can use the following markup to show the number of data shown inside a table
 
 ```svelte example 
 <script>
-  import { Pagination, PaginationItem } from 'flowbite-svelte'
+  import { Pagination, PaginationItem } from '@vardario/svelte-ui-kit'
 
   let helper = {start: 1, end: 10, total: 100}
 
@@ -211,7 +211,7 @@ You can use the following code to show the number of data shown inside a table e
 
 ```svelte example
 <script>
-  import { Pagination } from 'flowbite-svelte'
+  import { Pagination } from '@vardario/svelte-ui-kit'
 
   let helper = {start: 1, end: 10, total: 100}
 
@@ -247,7 +247,7 @@ You can use the following code to show the number of data shown inside a table e
 
 ```svelte example class="flex justify-center"
 <script lang="ts">
-  import { Pagination } from 'flowbite-svelte';
+  import { Pagination } from '@vardario/svelte-ui-kit';
 
   let pages = [{ name: 1}, { name: 2 }, { name: 3 }, { name: 4 }, { name: 5 }];
   const previous = () => {

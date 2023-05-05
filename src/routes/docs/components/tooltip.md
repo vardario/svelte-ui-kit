@@ -23,7 +23,7 @@ Flowbite-Svelte allows you to show extra information when hovering or focusing o
 
 ```svelte example hideOutput
 <script>
-  import { Tooltip } from 'flowbite-svelte';
+  import { Tooltip } from '@vardario/svelte-ui-kit';
 </script>
 ```
 
@@ -33,7 +33,7 @@ To get started with using tooltips all you need to do is set `triggeredBy` attri
 
 ```svelte example class="flex items-end h-32"
 <script>
-  import { Tooltip, Button } from 'flowbite-svelte';
+  import { Tooltip, Button } from '@vardario/svelte-ui-kit';
 </script>
 
 <Button>Default tooltip</Button>
@@ -46,7 +46,7 @@ You can use choose between dark and light version styles for the tooltip compone
 
 ```svelte example class="flex items-end gap-2 h-32"
 <script>
-  import { Tooltip, Button } from 'flowbite-svelte';
+  import { Tooltip, Button } from '@vardario/svelte-ui-kit';
   let style = 'dark';
 </script>
 
@@ -64,7 +64,7 @@ The positioning of the tooltip element relative to the triggering element (eg. b
 
 ```svelte example class="flex items-center gap-2 h-36"
 <script>
-  import { Tooltip, Button } from 'flowbite-svelte';
+  import { Tooltip, Button } from '@vardario/svelte-ui-kit';
   let placement = 'left';
 </script>
 
@@ -81,7 +81,7 @@ The positioning of the tooltip element relative to the triggering element (eg. b
 
 ```svelte example class="flex items-end gap-2 h-32"
 <script>
-  import { Tooltip, Button } from 'flowbite-svelte';
+  import { Tooltip, Button } from '@vardario/svelte-ui-kit';
 </script>
 
 <Button id="hover">Tooltip hover</Button>
@@ -94,7 +94,7 @@ The positioning of the tooltip element relative to the triggering element (eg. b
 
 ```svelte example class="flex items-end gap-2 h-32"
 <script>
-  import { Tooltip, Button } from 'flowbite-svelte';
+  import { Tooltip, Button } from '@vardario/svelte-ui-kit';
 </script>
 
 <Button id="disable-arrow">Default tooltip</Button>
@@ -110,7 +110,7 @@ When you want to add a fully custom styles, use `style="custom"`, `defaultClass`
 
 ```svelte example class="flex items-center h-64 gap-2"
 <script>
-  import { Tooltip, Button } from 'flowbite-svelte';
+  import { Tooltip, Button } from '@vardario/svelte-ui-kit';
 </script>
 
 <Button>Green tooltip</Button>

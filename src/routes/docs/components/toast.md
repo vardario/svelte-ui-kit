@@ -22,7 +22,7 @@ The toast component can be used to enhance your website’s interactivity by pus
 
 ```svelte example hideOutput
 <script>
-  import { Toast } from 'flowbite-svelte';
+  import { Toast } from '@vardario/svelte-ui-kit';
 </script>
 ```
 
@@ -32,7 +32,7 @@ Use this simple toast component with an icon, message, and dismissable close but
 
 ```svelte example class="flex justify-center" hideScript
 <script>
-  import { Toast } from 'flowbite-svelte';
+  import { Toast } from '@vardario/svelte-ui-kit';
 </script>
 
 <Toast>
@@ -50,7 +50,7 @@ This component can be used to show simple messages and notifications without the
 
 ```svelte example class="flex justify-center" hideScript
 <script>
-  import { Toast } from 'flowbite-svelte';
+  import { Toast } from '@vardario/svelte-ui-kit';
 </script>
 
 <Toast simple={true}>
@@ -67,7 +67,7 @@ Use these contextual toast components to show success, danger, or warning alert 
 
 ```svelte example hideScript
 <script>
-  import { Toast } from 'flowbite-svelte';
+  import { Toast } from '@vardario/svelte-ui-kit';
 </script>
 
 <Toast color="green" class="mb-2">
@@ -103,7 +103,7 @@ You can use any <A href="/icons">icon components.</A>
 
 ```svelte example hideScript
 <script>
-  import { Toast } from 'flowbite-svelte';
+  import { Toast } from '@vardario/svelte-ui-kit';
 </script>
 
 <Toast class="mb-2">
@@ -133,7 +133,7 @@ You can use any <A href="/icons">icon components.</A>
 
 ```svelte example
 <script>
-  import { Toast, Button } from 'flowbite-svelte';
+  import { Toast, Button } from '@vardario/svelte-ui-kit';
   import { slide } from 'svelte/transition';
 
   let show = true;
@@ -169,7 +169,7 @@ You can use one of <A href="https://svelte.dev/docs#run-time-svelte-easing" targ
 
 ```svelte example
 <script>
-  import { Toast } from 'flowbite-svelte';
+  import { Toast } from '@vardario/svelte-ui-kit';
   import { slide } from 'svelte/transition';
   import { quintOut, elasticOut } from 'svelte/easing';
 </script>
@@ -198,7 +198,7 @@ You can use one of <A href="https://svelte.dev/docs#run-time-svelte-easing" targ
 
 ```svelte example
 <script>
-  import { Toast } from 'flowbite-svelte';
+  import { Toast } from '@vardario/svelte-ui-kit';
   import { blur } from 'svelte/transition';
 </script>
 
@@ -220,7 +220,7 @@ You can use one of <A href="https://svelte.dev/docs#run-time-svelte-easing" targ
 
 ```svelte example
 <script>
-  import { Toast } from 'flowbite-svelte';
+  import { Toast } from '@vardario/svelte-ui-kit';
   import { fly } from 'svelte/transition';
 </script>
 
@@ -245,7 +245,7 @@ Use this toast component to also show an “undo” button to reverse the action
 
 ```svelte example hideScript
 <script>
-  import { Toast } from 'flowbite-svelte';
+  import { Toast } from '@vardario/svelte-ui-kit';
 </script>
 
 <Toast>
@@ -266,7 +266,7 @@ This component can be used to show messages and a CTA button when receiving chat
 
 ```svelte example
 <script>
-  import { Toast, Avatar, Button } from 'flowbite-svelte';
+  import { Toast, Avatar, Button } from '@vardario/svelte-ui-kit';
 </script>
 
 <Toast>
@@ -287,7 +287,7 @@ This component can be used to show notifications for an action from another user
 
 ```svelte example
 <script>
-  import { Toast, Avatar } from 'flowbite-svelte';
+  import { Toast, Avatar } from '@vardario/svelte-ui-kit';
 </script>
 
 <Toast>
@@ -311,7 +311,7 @@ Use this interactive toast component to encourage users to make a certain action
 
 ```svelte example
 <script>
-  import { Toast, Button } from 'flowbite-svelte';
+  import { Toast, Button } from '@vardario/svelte-ui-kit';
 </script>
 
 <Toast>
@@ -335,7 +335,7 @@ Use the position property to position these toast components relative to the mai
 
 ```svelte example hideScript
 <script>
-  import { Toast } from 'flowbite-svelte';
+  import { Toast } from '@vardario/svelte-ui-kit';
 </script>
 
 <div class="relative h-56">

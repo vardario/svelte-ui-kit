@@ -32,7 +32,7 @@ Let's import all necessary components in the script tag. We import a heart, thum
 
 ```svelte example hideOutput
 <script>
-  import { Rating, AdvancedRating, ScoreRating } from 'flowbite-svelte';
+  import { Rating, AdvancedRating, ScoreRating } from '@vardario/svelte-ui-kit';
 </script>
 ```
 
@@ -42,7 +42,7 @@ The default rating icon is a star. Set the total and rating props.
 
 ```svelte example hideScript
 <script>
-  import { Rating } from 'flowbite-svelte'
+  import { Rating } from '@vardario/svelte-ui-kit'
 </script>
 
 <Rating total={5} rating={4.66} />
@@ -54,7 +54,7 @@ The default rounding for the rate is `floor`, but by adding the `ceil` prop, you
 
 ```svelte example hideScript
 <script>
-  import { Rating } from 'flowbite-svelte'
+  import { Rating } from '@vardario/svelte-ui-kit'
 </script>
 
 <Rating total={5} rating={4.66} ceil />
@@ -66,7 +66,7 @@ If you also want to show a text near the stars you can use the `text` slot to ad
 
 ```svelte example hideScript
 <script>
-  import { Rating } from 'flowbite-svelte'
+  import { Rating } from '@vardario/svelte-ui-kit'
 </script>
 
 <Rating total={5} rating={3.21}>
@@ -80,7 +80,7 @@ Aggregate more results by using this example to show the amount of reviews and t
 
 ```svelte example hideScript
 <script>
-  import { Rating } from 'flowbite-svelte'
+  import { Rating } from '@vardario/svelte-ui-kit'
 </script>
 
 <Rating count rating={4.95} >
@@ -103,7 +103,7 @@ The default icon size is `24`. Set the `class` in a icon component to change col
 
 ```svelte example hideScript
 <script>
-  import { Rating } from 'flowbite-svelte'
+  import { Rating } from '@vardario/svelte-ui-kit'
 </script>
 
 <Rating total={5} rating={3.21}>
@@ -118,7 +118,7 @@ The default icon size is `24`. Set the `class` in a icon component to change col
 
 ```svelte example hideScript
 <script>
-  import { Rating } from 'flowbite-svelte'
+  import { Rating } from '@vardario/svelte-ui-kit'
 </script>
 
 <Rating total={5} rating={4.7}>
@@ -133,7 +133,7 @@ The default icon size is `24`. Set the `class` in a icon component to change col
 
 ```svelte example hideScript
 <script>
-  import { Rating } from 'flowbite-svelte'
+  import { Rating } from '@vardario/svelte-ui-kit'
 </script>
 
 <Rating total={5} rating={2.4}>
@@ -152,7 +152,7 @@ Set the `total`,` rating`, and `ratings` prop for AdvancedRation component. Use 
 
 ```svelte example hideScript
 <script>
-  import { AdvancedRating, Rating } from 'flowbite-svelte'
+  import { AdvancedRating, Rating } from '@vardario/svelte-ui-kit'
 </script>
 
 <AdvancedRating
@@ -179,7 +179,7 @@ As we describe in the Rating component, you can change an icon in the `ratingUp`
 
 ```svelte example hideScript
 <script>
-  import { AdvancedRating, Rating } from 'flowbite-svelte'
+  import { AdvancedRating, Rating } from '@vardario/svelte-ui-kit'
 </script>
 
 <AdvancedRating
@@ -210,7 +210,7 @@ As we describe in the Rating component, you can change an icon in the `ratingUp`
 
 ```svelte example hideScript
 <script>
-  import { ScoreRating } from 'flowbite-svelte'
+  import { ScoreRating } from '@vardario/svelte-ui-kit'
   let headerLabel = {
     desc1: '8.7',
     desc2: 'Excellent',
@@ -244,7 +244,7 @@ Use this component to show a single rating comment and its score alongside other
 
 ```svelte example hideScript
 <script>
-  import { RatingComment } from 'flowbite-svelte'
+  import { RatingComment } from '@vardario/svelte-ui-kit'
   let comment = {
     id: '1',
     user: {
@@ -288,7 +288,7 @@ Use this component to show the review content from a user alongside the avatar, 
 
 ```svelte example hideScript
 <script>
-  import { Review } from 'flowbite-svelte'
+  import { Review } from '@vardario/svelte-ui-kit'
   let review = {
     name: 'Jese Leos',
     imgSrc: '/images/profile-picture-2.webp',

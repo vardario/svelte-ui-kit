@@ -28,7 +28,7 @@ Date picker component
 
 ```svelte example hideOutput
 <script>
-    import { Datepicker } from "flowbite-svelte";
+    import { Datepicker } from "@vardario/svelte-ui-kit";
 </script>
 ```
 
@@ -44,7 +44,7 @@ to add the datepicker data attribute to any input element.
 
 ```svelte example hideOutput
 <script>
-    import { Datepicker } from "flowbite-svelte";
+    import { Datepicker } from "@vardario/svelte-ui-kit";
 </script>
 <Datepicker />
 ```
@@ -55,7 +55,7 @@ The component has `$$restProps` attributes that can be used to pass any other at
 
 ```svelte example hideOutput
 <script>
-    import { Datepicker } from "flowbite-svelte";
+    import { Datepicker } from "@vardario/svelte-ui-kit";
 </script>
 <Datepicker name="start" />
 ```
@@ -68,7 +68,7 @@ The range picker has input name of `start` and `end`.
 
 ```svelte example hideOutput
 <script>
-    import { Datepicker } from "flowbite-svelte";
+    import { Datepicker } from "@vardario/svelte-ui-kit";
 </script>
 <Datepicker range />
 ```
@@ -81,7 +81,7 @@ By adding the `datepickerButtons` prop you will enable the today and clear butto
 
 ```svelte example hideOutput
 <script>
-    import { Datepicker } from "flowbite-svelte";
+    import { Datepicker } from "@vardario/svelte-ui-kit";
 </script>
 <Datepicker datepickerButtons />
 ```
@@ -92,7 +92,7 @@ If you want to use a custom format such as mm/dd/yyyythen you can use the `datep
 
 ```svelte example hideOutput
 <script>
-    import { Datepicker } from "flowbite-svelte";
+    import { Datepicker } from "@vardario/svelte-ui-kit";
 </script>
 <Datepicker datepickerFormat="dd/mm/yyyy" />
 ```
@@ -104,7 +104,7 @@ prop. You can even combine right with bottom or left with top.
 
 ```svelte example hideOutput
 <script>
-    import { Datepicker } from "flowbite-svelte";
+    import { Datepicker } from "@vardario/svelte-ui-kit";
 </script>
 <Datepicker datepickerOrientation="bottom right" />
 ```
@@ -115,7 +115,7 @@ You can also add a title to the datepicker by using the `datepicker-title="title
 
 ```svelte example hideOutput
 <script>
-    import { Datepicker } from "flowbite-svelte";
+    import { Datepicker } from "@vardario/svelte-ui-kit";
 </script>
 <Datepicker datepickerTitle="My Vacation" />
 ```

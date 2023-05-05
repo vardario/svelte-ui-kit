@@ -32,7 +32,7 @@ Get started with a collection of list components built with Tailwind CSS for ord
 
 ```html
 <script>
-  import { List, Li } from 'flowbite-svelte';
+  import { List, Li } from '@vardario/svelte-ui-kit';
 </script>
 ```
 
@@ -42,7 +42,7 @@ Use this example to create a default unordered list of items.
 
 ```svelte example
 <script>
-  import { Li, List, Heading } from 'flowbite-svelte';
+  import { Li, List, Heading } from '@vardario/svelte-ui-kit';
 </script>
 
 <Heading tag="h2" customSize="text-lg font-semibold" class="mb-2 text-lg font-semibold text-gray-900 dark:text-white"
@@ -60,7 +60,7 @@ This example can be used to apply custom icons instead of the default bullets fo
 
 ```svelte example
 <script>
-  import { List, Li, Heading } from 'flowbite-svelte';
+  import { List, Li, Heading } from '@vardario/svelte-ui-kit';
 </script>
 
 <Heading tag="h2"  customSize="text-lg font-semibold" class="mb-2 text-lg font-semibold text-gray-900 dark:text-white"
@@ -111,7 +111,7 @@ Use this example to nested another list of items inside the parent list element.
 
 ```svelte example
 <script>
-  import { List, Li } from 'flowbite-svelte';
+  import { List, Li } from '@vardario/svelte-ui-kit';
 </script>
 
 <List tag="ul" class="space-y-4">
@@ -148,7 +148,7 @@ Use the `list="none"` prop to disable the list style bullets or numbers.
 
 ```svelte example
 <script>
-  import { List, Li, Heading } from 'flowbite-svelte';
+  import { List, Li, Heading } from '@vardario/svelte-ui-kit';
 </script>
 
 <Heading tag="h2"  customSize="text-lg font-semibold" class="mb-2 text-lg font-semibold  text-gray-900 dark:text-white"
@@ -166,7 +166,7 @@ Use the `tag="ol"` prop to create an ordered list of items with numbers.
 
 ```svelte example
 <script>
-  import { List, Li, Span, Heading } from 'flowbite-svelte';
+  import { List, Li, Span, Heading } from '@vardario/svelte-ui-kit';
 </script>
 
 <Heading tag="h2" customSize="text-lg font-semibold" class="mb-2 text-lg font-semibold  text-gray-900 dark:text-white"
@@ -184,7 +184,7 @@ This example can be used to nest multiple lists into each other.
 
 ```svelte example
 <script>
-  import { List, Li } from 'flowbite-svelte';
+  import { List, Li } from '@vardario/svelte-ui-kit';
 </script>
 
 <List tag="ol" list="decimal">
@@ -221,7 +221,7 @@ Create a description list by using the `tag="dl"` prop and set the term and name
 
 ```svelte example
 <script>
-  import { List, Li, DescriptionList } from 'flowbite-svelte';
+  import { List, Li, DescriptionList } from '@vardario/svelte-ui-kit';
 </script>
 
 <List tag="dl" color="text-gray-900 dark:text-white">
@@ -246,7 +246,7 @@ Use this example to create a list of items with custom SVG icons instead of the 
 
 ```svelte example
 <script>
-  import { List, Li, Span } from 'flowbite-svelte';
+  import { List, Li, Span } from '@vardario/svelte-ui-kit';
 </script>
 
 <List tag="ul" class="mb-8 space-y-4" list="none">
@@ -319,7 +319,7 @@ This example can be used to show more details for each list item such as the use
 
 ```svelte example
 <script>
-  import { List, Li } from 'flowbite-svelte';
+  import { List, Li } from '@vardario/svelte-ui-kit';
 </script>
 
 <List tag="ul" class="divide-y divide-gray-200 dark:divide-gray-700">
@@ -417,7 +417,7 @@ Use this example to create a horizontally aligned list of items.
 
 ```svelte example
 <script>
-  import { List, Li, A } from 'flowbite-svelte';
+  import { List, Li, A } from '@vardario/svelte-ui-kit';
 </script>
 
 <List tag="ul" list="none" ulClass="flex flex-wrap justify-center items-center mb-6">

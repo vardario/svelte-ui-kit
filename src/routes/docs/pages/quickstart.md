@@ -92,7 +92,7 @@ Now you are ready to go! Add the following to `src/routes/+page.svelte` and if y
 
 ```svelte example 
 <script>
-	import { Alert } from 'flowbite-svelte';
+	import { Alert } from '@vardario/svelte-ui-kit';
 </script>
 
 <div class="p-8">

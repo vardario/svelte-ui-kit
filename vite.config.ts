@@ -14,7 +14,7 @@ const config = {
 	},
 	resolve: {
 		alias: {
-			'flowbite-svelte': path.resolve(process.cwd(), './src/lib/index.ts')
+			'@vardario/svelte-ui-kit': path.resolve(process.cwd(), './src/lib/index.ts')
 		}
 	}
 };

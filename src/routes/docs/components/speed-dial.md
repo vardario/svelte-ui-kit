@@ -31,7 +31,7 @@ To initialize a speed dial component you need to wrap the trigger element and th
 
 ```svelte example class="relative h-96"
 <script>
-  import { SpeedDial, SpeedDialButton } from 'flowbite-svelte'
+  import { SpeedDial, SpeedDialButton } from '@vardario/svelte-ui-kit'
 </script>
 
 <SpeedDial defaultClass="absolute right-6 bottom-6">
@@ -56,7 +56,7 @@ The Speed Dial components accommodate a variety of Button component properties, 
 
 ```svelte example class="relative h-96"
 <script>
-  import { SpeedDial, SpeedDialButton } from 'flowbite-svelte'
+  import { SpeedDial, SpeedDialButton } from '@vardario/svelte-ui-kit'
 </script>
 
 <SpeedDial color='primary' defaultClass="absolute left-6 bottom-6">
@@ -192,7 +192,7 @@ Use this example to make the trigger button’s style square instead of a full c
 
 ```svelte example class="relative h-96"
 <script>
-  import { SpeedDial, SpeedDialButton } from 'flowbite-svelte'
+  import { SpeedDial, SpeedDialButton } from '@vardario/svelte-ui-kit'
 </script>
 
 <SpeedDial defaultClass="absolute right-6 bottom-6" pill={false}>
@@ -217,7 +217,7 @@ This example can be used to show the descriptive text inside the button instead 
 
 ```svelte example class="relative h-96"
 <script>
-  import { SpeedDial, SpeedDialButton } from 'flowbite-svelte'
+  import { SpeedDial, SpeedDialButton } from '@vardario/svelte-ui-kit'
 </script>
 
 <SpeedDial defaultClass="absolute right-24 bottom-6" tooltip="none">
@@ -257,7 +257,7 @@ Use this example to show the text of each button outside of the speed dial as an
 
 ```svelte example class="relative h-96"
 <script>
-  import { SpeedDial, SpeedDialButton } from 'flowbite-svelte'
+  import { SpeedDial, SpeedDialButton } from '@vardario/svelte-ui-kit'
 </script>
 
 <SpeedDial defaultClass="absolute right-24 bottom-6" tooltip="none" textOutside>
@@ -297,7 +297,7 @@ This example can be used to show a list of menu items instead of buttons when ac
 
 ```svelte example class="relative h-96"
 <script>
-  import { SpeedDial, Listgroup, ListgroupItem } from 'flowbite-svelte'
+  import { SpeedDial, Listgroup, ListgroupItem } from '@vardario/svelte-ui-kit'
 </script>
 
 <SpeedDial defaultClass="absolute right-24 bottom-6" tooltip="none" placement="top-end">
@@ -352,7 +352,7 @@ This example can be used to show an alternative style when showing a list of men
 
 ```svelte example class="relative h-96"
 <script>
-  import { SpeedDial, Listgroup, ListgroupItem } from 'flowbite-svelte'
+  import { SpeedDial, Listgroup, ListgroupItem } from '@vardario/svelte-ui-kit'
 </script>
 
 <SpeedDial defaultClass="absolute right-24 bottom-6" tooltip="none" placement="top-end">
@@ -408,7 +408,7 @@ Control the main button position using the flexbox utility classes from Tailwind
 
 ```svelte example class="relative h-[400px]"
 <script>
-  import { SpeedDial, SpeedDialButton } from 'flowbite-svelte'
+  import { SpeedDial, SpeedDialButton } from '@vardario/svelte-ui-kit'
 
   const placements = [
     ["left-2 top-2", "right", "bottom"],
@@ -444,7 +444,7 @@ The default trigger type is hover for each speed dial component.
 
 ```svelte example class="relative h-96"
 <script>
-  import { SpeedDial, SpeedDialButton } from 'flowbite-svelte'
+  import { SpeedDial, SpeedDialButton } from '@vardario/svelte-ui-kit'
 
 </script>
 

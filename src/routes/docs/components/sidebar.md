@@ -34,7 +34,7 @@ Disclaimer: this sidebar component is based on this <A class="text-primary-700" 
 ```svelte example hideOutput
 <script>
   import { Sidebar, SidebarBrand, SidebarCta, SidebarDropdownItem, SidebarDropdownWrapper, 
-           SidebarGroup, SidebarItem, SidebarWrapper } from 'flowbite-svelte';
+           SidebarGroup, SidebarItem, SidebarWrapper } from '@vardario/svelte-ui-kit';
 </script>
 ```
 
@@ -45,7 +45,7 @@ Use this example to show a responsive list of menu items inside the sidebar with
 ```svelte example
 <script>
   import { page } from '$app/stores';
-  import { Sidebar, SidebarGroup, SidebarItem, SidebarWrapper } from 'flowbite-svelte';
+  import { Sidebar, SidebarGroup, SidebarItem, SidebarWrapper } from '@vardario/svelte-ui-kit';
   let spanClass = 'flex-1 ml-3 whitespace-nowrap';
   $: activeUrl = $page.url.pathname
 </script>
@@ -106,7 +106,7 @@ Use this sidebar example to create multi-level menu items by using the dSidebarD
 
 ```svelte example
 <script>
-  import { Sidebar, SidebarGroup, SidebarItem, SidebarWrapper, SidebarDropdownItem, SidebarDropdownWrapper } from 'flowbite-svelte';
+  import { Sidebar, SidebarGroup, SidebarItem, SidebarWrapper, SidebarDropdownItem, SidebarDropdownWrapper } from '@vardario/svelte-ui-kit';
   let spanClass = 'flex-1 ml-3 whitespace-nowrap';
 </script>
 
@@ -172,7 +172,7 @@ You can change the icons using `arrowup` and `arrowdown` slots.
 
 ```svelte example
 <script>
-  import { Sidebar, SidebarGroup, SidebarItem, SidebarWrapper, SidebarDropdownItem, SidebarDropdownWrapper } from 'flowbite-svelte';
+  import { Sidebar, SidebarGroup, SidebarItem, SidebarWrapper, SidebarDropdownItem, SidebarDropdownWrapper } from '@vardario/svelte-ui-kit';
   let spanClass = 'flex-1 ml-3 whitespace-nowrap';
 </script>
 
@@ -210,7 +210,7 @@ Use the following example to show the active item. Use the `activeClass` prop to
 ```svelte example
 <script>
   import { page } from '$app/stores';
-  import { Sidebar, SidebarGroup, SidebarItem, SidebarWrapper } from 'flowbite-svelte';
+  import { Sidebar, SidebarGroup, SidebarItem, SidebarWrapper } from '@vardario/svelte-ui-kit';
   let spanClass = 'flex-1 ml-3 whitespace-nowrap';
   $: activeUrl = $page.url.pathname
 </script>
@@ -228,7 +228,7 @@ Use the following example to show the active item. Use the `activeClass` prop to
 ```svelte example
 <script>
   import { page } from '$app/stores';
-  import { Sidebar, SidebarGroup, SidebarItem, SidebarWrapper, SidebarDropdownWrapper, SidebarDropdownItem } from 'flowbite-svelte';
+  import { Sidebar, SidebarGroup, SidebarItem, SidebarWrapper, SidebarDropdownWrapper, SidebarDropdownItem } from '@vardario/svelte-ui-kit';
   let spanClass = 'flex-1 ml-3 whitespace-nowrap';
   $: activeUrl = $page.url.pathname
   $: containPath = ()=>{
@@ -260,7 +260,7 @@ Separate the content inside the sidebar component by applying a border separator
 
 ```svelte example
 <script>
-  import { Sidebar, SidebarGroup, SidebarItem, SidebarWrapper } from 'flowbite-svelte';
+  import { Sidebar, SidebarGroup, SidebarItem, SidebarWrapper } from '@vardario/svelte-ui-kit';
   let spanClass = 'flex-1 ml-3 whitespace-nowrap';
 </script>
 
@@ -343,7 +343,7 @@ Use this example to add a CTA button inside the sidebar component and encourage 
 ```svelte example
 <script>
   import { page } from '$app/stores';
-  import { Sidebar, SidebarGroup, SidebarItem, SidebarWrapper, SidebarCta } from 'flowbite-svelte';
+  import { Sidebar, SidebarGroup, SidebarItem, SidebarWrapper, SidebarCta } from '@vardario/svelte-ui-kit';
   let spanClass = 'flex-1 ml-3 whitespace-nowrap';
 </script>
 
@@ -424,7 +424,7 @@ Show the logo of your brand and link back to the homepage from the top part of t
 
 ```svelte example
 <script>
-  import { Sidebar, SidebarWrapper, SidebarBrand, SidebarItem, SidebarGroup } from 'flowbite-svelte'
+  import { Sidebar, SidebarWrapper, SidebarBrand, SidebarItem, SidebarGroup } from '@vardario/svelte-ui-kit'
   let spanClass = 'flex-1 ml-3 whitespace-nowrap';
 
   let site = {
@@ -493,7 +493,7 @@ You can add own transition by setting `transitionType` and `transitionParams`.
 <script>
   import { page } from '$app/stores';
   import { sineIn } from 'svelte/easing';
-  import { Sidebar, SidebarGroup, SidebarItem, SidebarWrapper, SidebarDropdownWrapper, SidebarDropdownItem } from 'flowbite-svelte';
+  import { Sidebar, SidebarGroup, SidebarItem, SidebarWrapper, SidebarDropdownWrapper, SidebarDropdownItem } from '@vardario/svelte-ui-kit';
   let spanClass = 'flex-1 ml-3 whitespace-nowrap';
   $: activeUrl = $page.url.pathname
   $: containPath = ()=>{

@@ -32,7 +32,7 @@ Use this example to set the font size of inline text elements using the `size` p
 
 ```svelte example class="flex flex-wrap items-center space-x-4"
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P size="xs">Aa</P>
@@ -56,7 +56,7 @@ This example can be used to the font weight of an inline text element using the 
 
 ```svelte example class="flex flex-wrap items-center space-x-4" hideScript
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P size="4xl" weight="thin">Aa</P>
@@ -76,7 +76,7 @@ Use the `color` prop to set the color of the inline text.
 
 ```svelte example class="flex flex-wrap items-center space-x-4" hideScript
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P color="text-blue-700 dark:text-blue-500">This text is in the blue color.</P>
@@ -92,7 +92,7 @@ Increase or decrease the spacing between letters using the `space` prop.
 
 ```svelte example class="flex flex-wrap items-center space-x-4" hideScript
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P space="tighter">Flowbite app will help you improve yourself by analysing your everyday life.</P>
@@ -111,7 +111,7 @@ Update the text decoration style using the `underline` and `decorationClass` pro
 
 ```svelte example 
 <script>
-  import { P, Span } from 'flowbite-svelte'
+  import { P, Span } from '@vardario/svelte-ui-kit'
 </script>
 
 <P>Track work across the enterprise through an open, collaborative platform. <Span underline>Link issues across Jira</Span> and ingest data from other <Span underline decorationClass="decoration-blue-500 decoration-double">software development</Span> tools, so your IT support and operations teams have richer contextual information to rapidly respond to <Span underline decorationClass="decoration-green-500 decoration-dotted">requests</Span>, <Span underline decorationClass="decoration-4 decoration-red-500 decoration-dashed">incidents</Span>, and <Span underline decorationClass="decoration-sky-500 decoration-wavy">changes</Span>.</P>
@@ -123,7 +123,7 @@ Set a strikethrough line on a text element using the `line-through` class.
 
 ```svelte example
 <script>
-  import { Span } from 'flowbite-svelte'
+  import { Span } from '@vardario/svelte-ui-kit'
 </script>
 
 <Span class="line-through">$109</Span><Span class='ml-3'>$79</Span>
@@ -135,7 +135,7 @@ Force uppercase characters for a given portion of text using the uppercase class
 
 ```svelte example
 <script>
-  import { P, Span } from 'flowbite-svelte'
+  import { P, Span } from '@vardario/svelte-ui-kit'
 </script>
 
 <P>The crypto <Span class='uppercase'>identity</Span> primitive.</P>
@@ -151,7 +151,7 @@ Use the `italic` prop to set italic font style to a text element.
 
 ```svelte example hideScript
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P italic>The crypto identity primitive.</P>
@@ -163,7 +163,7 @@ Text elements by default are non-italic.
 
 ```svelte example hideScript
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P>The crypto identity primitive.</P>
@@ -179,7 +179,7 @@ Use the `height="normal"` (default) prop to set default line height.
 
 ```svelte example hideScript
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P size="3xl" height="normal" class="max-w-lg" weight="semibold"
@@ -192,7 +192,7 @@ Use the `height="relaxed"` prop to increase the space between lines.
 
 ```svelte example hideScript
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P size="3xl" height="relaxed" class="max-w-lg" weight="semibold">The Al-powered app will help you improve yourself by analysing your everyday life.</P>
@@ -204,7 +204,7 @@ Use the `height="loose"` prop to set a large amount of space between text lines.
 
 ```svelte example hideScript
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P size="3xl" height="loose" class="max-w-lg" weight="semibold">The Al-powered app will help you improve yourself by analysing your everyday life.</P>
@@ -216,7 +216,7 @@ Use the `height="loose"` prop to set a large amount of space between text lines.
 
 ```svelte example hideScript
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P align="left">Get started with an enterprise-level, profesionally designed, fully responsive, and HTML
@@ -228,7 +228,7 @@ from Tailwind CSS and based on the Flowbite component library</P>
 
 ```svelte example hideScript
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P align="center">Get started with an enterprise-level, profesionally designed, fully responsive, and HTML
@@ -242,7 +242,7 @@ Use the `align="right"` prop to align the text element to the right side of the 
 
 ```svelte example hideScript
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P align="right">Get started with an enterprise-level, profesionally designed, fully responsive, and HTML
@@ -256,7 +256,7 @@ Use the `justify` prop to justify the text content.
 
 ```svelte example hideScript
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P justify>Get started with an enterprise-level, profesionally designed, fully responsive, and HTML
@@ -274,7 +274,7 @@ Use the `whitespace="normal"` prop to set the default whitespace behaviour.
 
 ```svelte example hideScript
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P whitespace="normal">This is some text. This is some text. This is some text. This is some text. This is some text.
@@ -287,7 +287,7 @@ Use the `whitespace="nowrap"` prop to prevent text being added to a new line whe
 
 ```svelte example class="overflow-y-scroll" hideScript
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P whitespace="nowrap">
@@ -303,7 +303,7 @@ Use the `whitespace="preline'` prop to add whitespace exactly how it has been se
 <!-- prettier-ignore -->
 ```svelte example hideScript
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P whitespace="preline">
@@ -319,7 +319,7 @@ Update the text decoration style using the `underline` and `decorationClass` pro
 
 ```svelte example hideScript
 <script>
-  import { P, Span } from 'flowbite-svelte'
+  import { P, Span } from '@vardario/svelte-ui-kit'
 </script>
 
 <P>Track work across the enterprise through an open, collaborative platform. <Span underline>Link issues across Jira</Span> and ingest data from other <Span underline decorationClass="decoration-blue-500 decoration-double">software development</Span> tools, so your IT support and operations teams have richer contextual information to rapidly respond to <Span underline decorationClass="decoration-green-500 decoration-dotted">requests</Span>, <Span underline decorationClass="decoration-4 decoration-red-500 decoration-dashed">incidents</Span>, and <Span underline decorationClass="decoration-sky-500 decoration-wavy">changes</Span>.</P>
@@ -331,7 +331,7 @@ Use the `opacity` and `color` props to set the opacity of inline text elements.
 
 ```svelte example hideScript
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P size='xl' opacity={100} color="text-blue-600 dark:text-blue-500">Flowbite app will help you improve yourself by analysing your everyday life.</P>

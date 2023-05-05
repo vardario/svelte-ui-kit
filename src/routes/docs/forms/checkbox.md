@@ -26,7 +26,7 @@ The checkbox component can be used to receive one or more selected options from 
 
 ```svelte example hideOutput
 <script>
-  import { Checkbox } from 'flowbite-svelte'
+  import { Checkbox } from '@vardario/svelte-ui-kit'
 </script>
 ```
 
@@ -36,7 +36,7 @@ Use this default example of a checbkox element in a checked and unchecked state.
 
 ```svelte example class="flex flex-col gap-4" hideScript
 <script>
-  import { Checkbox } from 'flowbite-svelte'
+  import { Checkbox } from '@vardario/svelte-ui-kit'
 </script>
 
 <Checkbox>Default checkbox</Checkbox>
@@ -49,7 +49,7 @@ This example can be used for the disabled state of the checkbox component by app
 
 ```svelte example class="flex flex-col gap-4" hideScript
 <script>
-  import { Checkbox } from 'flowbite-svelte'
+  import { Checkbox } from '@vardario/svelte-ui-kit'
 </script>
 
 <Checkbox disabled>Disabled checkbox</Checkbox>
@@ -62,7 +62,7 @@ If you need separate control over the label and the checkbox you can use the ver
 
 ```svelte example class="flex flex-col gap-4"
 <script>
-  import { Checkbox, Table, TableHead, TableHeadCell, TableBody, TableBodyCell, Label, TableBodyRow } from 'flowbite-svelte'
+  import { Checkbox, Table, TableHead, TableHeadCell, TableBody, TableBodyCell, Label, TableBodyRow } from '@vardario/svelte-ui-kit'
 </script>
 
 <Table>
@@ -93,7 +93,7 @@ Use this example if you want to add an anchor link inside the label of the check
 
 ```svelte example hideScript
 <script>
-  import { Checkbox } from 'flowbite-svelte'
+  import { Checkbox } from '@vardario/svelte-ui-kit'
 </script>
 
 <Checkbox>
@@ -108,7 +108,7 @@ Get started with this example if you want to add a secondary helper text for the
 
 ```svelte example
 <script>
-  import { Checkbox, Helper } from 'flowbite-svelte'
+  import { Checkbox, Helper } from '@vardario/svelte-ui-kit'
 </script>
 
 <Checkbox aria-describedby="helper-checkbox-text">Free shipping via Flowbite</Checkbox>
@@ -121,7 +121,7 @@ Use this example of a checkbox inside a card element to enable a larger area of 
 
 ```svelte example hideScript
 <script>
-  import { Checkbox } from 'flowbite-svelte'
+  import { Checkbox } from '@vardario/svelte-ui-kit'
 </script>
 
 <div class="rounded border border-gray-200 dark:border-gray-700">
@@ -138,7 +138,7 @@ Use this example to show a list of checkbox items grouped inside a card.
 
 ```svelte example hideScript
 <script>
-  import { Checkbox } from 'flowbite-svelte'
+  import { Checkbox } from '@vardario/svelte-ui-kit'
 </script>
 
 <p class="mb-4 font-semibold text-gray-900 dark:text-white">Technology</p>
@@ -158,7 +158,7 @@ Use this example to show a list of checkbox items inside a card horizontally.
 
 ```svelte example hideScript
 <script>
-  import { Checkbox } from 'flowbite-svelte'
+  import { Checkbox } from '@vardario/svelte-ui-kit'
 </script>
 
 <p class="mb-4 font-semibold text-gray-900 dark:text-white">Identification</p>
@@ -176,7 +176,7 @@ Use this example to show a list of checkbox items inside a dropdown menu.
 
 ```svelte example hideScript class="flex justify-center items-start h-96"
 <script>
-  import { Dropdown, DropdownItem, Checkbox, Button, Chevron, Search } from 'flowbite-svelte'
+  import { Dropdown, DropdownItem, Checkbox, Button, Chevron, Search } from '@vardario/svelte-ui-kit'
 </script>
 
 <Button><Chevron>Project users</Chevron></Button>
@@ -214,7 +214,7 @@ You can align the checkbox elements horizontally by using a wrapper tag and appl
 
 ```svelte example hideScript
 <script>
-  import { Checkbox } from 'flowbite-svelte'
+  import { Checkbox } from '@vardario/svelte-ui-kit'
 </script>
 
 <div class="flex gap-3">
@@ -229,7 +229,7 @@ You can use the property `inline` as the alternative.
 
 ```svelte example hideScript
 <script>
-  import { Checkbox } from 'flowbite-svelte'
+  import { Checkbox } from '@vardario/svelte-ui-kit'
 </script>
 
 <Checkbox inline class="mr-2">Inline 1</Checkbox>
@@ -242,7 +242,7 @@ You can use the property `inline` as the alternative.
 
 ```svelte example hideScript
 <script>
-  import { Checkbox } from 'flowbite-svelte'
+  import { Checkbox } from '@vardario/svelte-ui-kit'
 </script>
 
 <div class="flex gap-4">
@@ -261,7 +261,7 @@ Use this example of an advanced layout of checkbox elements where the label pare
 
 ```svelte example hideScript
 <script>
-  import { Checkbox } from 'flowbite-svelte'
+  import { Checkbox } from '@vardario/svelte-ui-kit'
 </script>
 
 <p class="mb-5 text-lg font-medium text-gray-900 dark:text-white">Choose technology:</p>
@@ -294,7 +294,7 @@ Use this example of an advanced layout of checkbox elements where the label pare
 
 ```svelte example
 <script>
-  import { Button, Checkbox } from 'flowbite-svelte'
+  import { Button, Checkbox } from '@vardario/svelte-ui-kit'
 
   let group = [2,3];
 </script>

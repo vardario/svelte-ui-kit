@@ -24,7 +24,7 @@ Get started with multiple sizes, colors, and styles built with the utility class
 
 ```svelte example hideOutput
 <script>
-  import { Modal } from 'flowbite-svelte'
+  import { Modal } from '@vardario/svelte-ui-kit'
 </script>
 ```
 
@@ -39,7 +39,7 @@ An option of automatic closing of the modal can be enabled by setting the `autoc
 
 ```svelte example
 <script>
-  import { Button, Modal } from 'flowbite-svelte'
+  import { Button, Modal } from '@vardario/svelte-ui-kit'
   let defaultModal = false;
 </script>
 
@@ -66,7 +66,7 @@ Notice lack of the `footer` slot.
 
 ```svelte example
 <script>
-  import { Button, Modal } from 'flowbite-svelte'
+  import { Button, Modal } from '@vardario/svelte-ui-kit'
   let popupModal = false;
 </script>
 
@@ -87,7 +87,7 @@ Use this modal example with form input element to receive information from your 
 
 ```svelte example
 <script>
-  import { Button, Modal, Label, Input, Checkbox } from 'flowbite-svelte'
+  import { Button, Modal, Label, Input, Checkbox } from '@vardario/svelte-ui-kit'
   let formModal = false;
 </script>
 
@@ -121,7 +121,7 @@ Use this web3 modal component to show crypto wallet connection options like Meta
 
 ```svelte example
 <script>
-  import { Button, Modal, Label, Input, Checkbox } from 'flowbite-svelte'
+  import { Button, Modal, Label, Input, Checkbox } from '@vardario/svelte-ui-kit'
   let walletModal = false;
 </script>
 
@@ -174,7 +174,7 @@ You can use five different modal sizing options starting from extra small to ext
 
 ```svelte example
 <script>
-  import { Button, Modal } from 'flowbite-svelte'
+  import { Button, Modal } from '@vardario/svelte-ui-kit'
   let sizesModal = false
   let size;
 </script>
@@ -205,7 +205,7 @@ You can use five different modal sizing options starting from extra small to ext
 
 ```svelte example
 <script>
-  import { Button, Modal } from 'flowbite-svelte'
+  import { Button, Modal } from '@vardario/svelte-ui-kit'
   let placement;
   let open = false;
 
@@ -244,7 +244,7 @@ You can use five different modal sizing options starting from extra small to ext
 
 ```svelte example
 <script>
-  import { Button, Modal, P } from 'flowbite-svelte'
+  import { Button, Modal, P } from '@vardario/svelte-ui-kit'
   let open = false;
   let color;
 </script>
@@ -270,7 +270,7 @@ You can use five different modal sizing options starting from extra small to ext
 
 ```svelte example
 <script>
-  import { Button, Modal } from 'flowbite-svelte'
+  import { Button, Modal } from '@vardario/svelte-ui-kit'
   let defaultModal = false;
 </script>
 

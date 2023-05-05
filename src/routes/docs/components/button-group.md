@@ -23,7 +23,7 @@ The button group component from Flowbite-Svelte can be used to stack together mu
 
 ```svelte example hideOutput
 <script>
-  import { ButtonGroup, Button } from 'flowbite-svelte';
+  import { ButtonGroup, Button } from '@vardario/svelte-ui-kit';
 </script>
 ```
 
@@ -33,7 +33,7 @@ Use the following code to stack together buttons into a single group.
 
 ```svelte example hideScript
 <script>
-  import { ButtonGroup, Button } from 'flowbite-svelte';
+  import { ButtonGroup, Button } from '@vardario/svelte-ui-kit';
 </script>
 <ButtonGroup>
   <Button>Profile</Button>
@@ -46,7 +46,7 @@ Use the following code to stack together buttons into a single group.
 
 ```svelte example hideScript class="flex flex-col flex-wrap gap-4"
 <script>
-  import { ButtonGroup, Button } from 'flowbite-svelte';
+  import { ButtonGroup, Button } from '@vardario/svelte-ui-kit';
 </script>
 <div class="text-gray-900 dark:text-gray-100">
   <div class="py-4">Pills</div>
@@ -88,7 +88,7 @@ You can also use the button group component as links.
 
 ```svelte example hideScript
 <script>
-  import { ButtonGroup, Button } from 'flowbite-svelte';
+  import { ButtonGroup, Button } from '@vardario/svelte-ui-kit';
 </script>
 <ButtonGroup>
   <Button href="/">Profile</Button>
@@ -103,7 +103,7 @@ You can also use SVG icons inside the grouped buttons.
 
 ```svelte example hideScript
 <script>
-  import { ButtonGroup, Button } from 'flowbite-svelte';
+  import { ButtonGroup, Button } from '@vardario/svelte-ui-kit';
 </script>
 <ButtonGroup>
   <Button>
@@ -127,7 +127,7 @@ Group a series of buttons together on a single line or stack them in a vertical 
 
 ```svelte example hideScript
 <script>
-  import { ButtonGroup, Button } from 'flowbite-svelte';
+  import { ButtonGroup, Button } from '@vardario/svelte-ui-kit';
 </script>
 <ButtonGroup>
   <Button outline color="dark">Profile</Button>
@@ -142,7 +142,7 @@ Group a series of buttons together on a single line or stack them in a vertical 
 
 ```svelte example hideScript
 <script>
-  import { ButtonGroup, Button } from 'flowbite-svelte';
+  import { ButtonGroup, Button } from '@vardario/svelte-ui-kit';
 </script>
 <ButtonGroup>
   <Button outline color="dark">
@@ -166,7 +166,7 @@ You can add the `on:click` event to the `Button` component.
 
 ```svelte example
 <script>
-  import { ButtonGroup, Button } from 'flowbite-svelte';
+  import { ButtonGroup, Button } from '@vardario/svelte-ui-kit';
   	const handleClick = ()=> {
 		alert('Clicked')
 	}

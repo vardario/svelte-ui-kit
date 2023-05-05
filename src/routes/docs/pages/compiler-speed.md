@@ -17,7 +17,7 @@ If your Svelte app only requires a few components, it's recommended that you imp
 <script>
   // import Alert from 'flowbite-svelte/Alert.svelte'
   // TODO: correct that so the above works
-  import { Alert } from 'flowbite-svelte'
+  import { Alert } from '@vardario/svelte-ui-kit'
 </script>
 
 <div class="p-8">

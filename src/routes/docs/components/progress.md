@@ -24,7 +24,7 @@ Import the `Progressbar` component in a script tag.
 
 ```svelte example hideOutput
 <script>
-  import { Progressbar } from 'flowbite-svelte'
+  import { Progressbar } from '@vardario/svelte-ui-kit'
 </script>
 ```
 
@@ -34,7 +34,7 @@ Use the following example of a progress bar element to show a completion rate of
 
 ```svelte example hideScript
 <script>
-  import { Progressbar } from 'flowbite-svelte'
+  import { Progressbar } from '@vardario/svelte-ui-kit'
 </script>
 
 <Progressbar progress="50" />
@@ -46,7 +46,7 @@ Use the `size` prop to change the size of a progress bar.
 
 ```svelte example hideScript
 <script>
-  import { Progressbar } from 'flowbite-svelte'
+  import { Progressbar } from '@vardario/svelte-ui-kit'
 </script>
 
 <div class="my-4">
@@ -76,7 +76,7 @@ Use the `labelInside` prop to add the progress in a progress bar.
 
 ```svelte example hideScript
 <script>
-  import { Progressbar } from 'flowbite-svelte'
+  import { Progressbar } from '@vardario/svelte-ui-kit'
 </script>
 
 <Progressbar progress="50" size="h-4" labelInside />
@@ -88,7 +88,7 @@ Use the `labelOutside` prop to add the progress outside of a progress bar.
 
 ```svelte example hideScript
 <script>
-  import { Progressbar } from 'flowbite-svelte'
+  import { Progressbar } from '@vardario/svelte-ui-kit'
 </script>
 
 <Progressbar progress="50" labelOutside="Flowbite-Svelte" />
@@ -100,7 +100,7 @@ Use the `color` prop to change the color of a progress bar.
 
 ```svelte example hideScript
 <script>
-  import { Progressbar } from 'flowbite-svelte'
+  import { Progressbar } from '@vardario/svelte-ui-kit'
 </script>
 
 <div class="my-4">
@@ -145,7 +145,7 @@ Use `labelInsideClass` prop to style your progressbar.
 
 ```svelte example hideScript
 <script>
-  import { Progressbar } from 'flowbite-svelte'
+  import { Progressbar } from '@vardario/svelte-ui-kit'
 </script>
 
 <Progressbar

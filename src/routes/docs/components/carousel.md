@@ -27,7 +27,7 @@ The carousel component can be used to cycle through a set of elements using cust
 
 ```svelte example hideOutput
 <script>
-  import { Carousel, CarouselTransition } from 'flowbite-svelte'
+  import { Carousel, CarouselTransition } from '@vardario/svelte-ui-kit'
   // ./imageData/+server.js has the following
   export const images = [
   {
@@ -86,7 +86,7 @@ The carousel component can be used to cycle through a set of elements using cust
 
 ```svelte example
 <script>
-  import { Carousel } from 'flowbite-svelte'
+  import { Carousel } from '@vardario/svelte-ui-kit'
   import { images } from './imageData/+server.js';
 </script>
 
@@ -101,7 +101,7 @@ The carousel component can be used to cycle through a set of elements using cust
 
 ```svelte example
 <script>
-  import { Carousel } from 'flowbite-svelte'
+  import { Carousel } from '@vardario/svelte-ui-kit'
   import { images } from './imageData/+server.js';
   let showThumbs=false
   let showCaptions=false
@@ -118,7 +118,7 @@ The carousel component can be used to cycle through a set of elements using cust
 
 ```svelte example
 <script>
-  import { Carousel } from 'flowbite-svelte'
+  import { Carousel } from '@vardario/svelte-ui-kit'
   import { images } from './imageData/+server.js';
   let showThumbs=false
 </script>
@@ -134,7 +134,7 @@ The carousel component can be used to cycle through a set of elements using cust
 
 ```svelte example
 <script>
-  import { Carousel } from 'flowbite-svelte'
+  import { Carousel } from '@vardario/svelte-ui-kit'
   import { images } from './imageData/+server.js';
   let showThumbs=false
   let showCaptions=false
@@ -151,7 +151,7 @@ The carousel component can be used to cycle through a set of elements using cust
 
 ```svelte example
 <script>
-  import { Carousel } from 'flowbite-svelte'
+  import { Carousel } from '@vardario/svelte-ui-kit'
   import { images } from './imageData/+server.js';
   let showThumbs=false
   let showCaptions=false
@@ -169,7 +169,7 @@ The carousel component can be used to cycle through a set of elements using cust
 
 ```svelte example
 <script>
-  import { Carousel } from 'flowbite-svelte'
+  import { Carousel } from '@vardario/svelte-ui-kit'
   import { images } from './imageData/+server.js';
   let showThumbs=false
   let showCaptions=false
@@ -187,7 +187,7 @@ The carousel component can be used to cycle through a set of elements using cust
 
 ```svelte example hideOutput
 <script>
-  import { Carousel, ChevronLeft, ChevronRight } from 'flowbite-svelte'
+  import { Carousel, ChevronLeft, ChevronRight } from '@vardario/svelte-ui-kit'
   import { images } from './imageData/+server.js';
 
   let icons={
@@ -209,7 +209,7 @@ The carousel component can be used to cycle through a set of elements using cust
 
 ```svelte example
 <script>
-  import { CarouselTransition } from 'flowbite-svelte'
+  import { CarouselTransition } from '@vardario/svelte-ui-kit'
   import { images } from './imageData/+server.js';
 </script>
 
@@ -224,7 +224,7 @@ The carousel component can be used to cycle through a set of elements using cust
 
 ```svelte example
 <script>
-  import { CarouselTransition } from 'flowbite-svelte'
+  import { CarouselTransition } from '@vardario/svelte-ui-kit'
   import { images } from './imageData/+server.js';
 </script>
 
@@ -237,7 +237,7 @@ The carousel component can be used to cycle through a set of elements using cust
 
 ```svelte example
 <script>
-  import { CarouselTransition } from 'flowbite-svelte'
+  import { CarouselTransition } from '@vardario/svelte-ui-kit'
   import { images } from './imageData/+server.js';
 </script>
 <div class="max-w-4xl">
@@ -249,7 +249,7 @@ The carousel component can be used to cycle through a set of elements using cust
 
 ```svelte example
 <script>
-  import { CarouselTransition } from 'flowbite-svelte'
+  import { CarouselTransition } from '@vardario/svelte-ui-kit'
   import { images } from './imageData/+server.js';
   import { bounceInOut } from 'svelte/easing';
 </script>

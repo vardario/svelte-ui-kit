@@ -32,7 +32,7 @@ A popular use case would be the “Frequently Asked Questions” section of a we
 
 ```svelte example hideOutput
 <script>
-  import { AccordionItem, Accordion } from 'flowbite-svelte'
+  import { AccordionItem, Accordion } from '@vardario/svelte-ui-kit'
 </script>
 ```
 
@@ -44,7 +44,7 @@ To prevent that behavior set `multiple` property to `true`.
 
 ```svelte example hideScript
 <script>
-  import {AccordionItem, Accordion} from 'flowbite-svelte'
+  import {AccordionItem, Accordion} from '@vardario/svelte-ui-kit'
 </script>
 <Accordion>
   <AccordionItem>
@@ -71,7 +71,7 @@ Use the `open` prop to make an item open on mount.
 
 ```svelte example hideScript
 <script>
-  import {AccordionItem, Accordion} from 'flowbite-svelte'
+  import {AccordionItem, Accordion} from '@vardario/svelte-ui-kit'
 </script>
 
 <Accordion>
@@ -92,7 +92,7 @@ You can control the look and feel of `AccordionItems` by overwriting the `active
 
 ```svelte example hideScript
 <script>
-  import {AccordionItem, Accordion} from 'flowbite-svelte'
+  import {AccordionItem, Accordion} from '@vardario/svelte-ui-kit'
 </script>
 
 <Accordion
@@ -115,7 +115,7 @@ Use `flush` prop to remove the rounded borders.
 
 ```svelte example hideScript
 <script>
-  import {AccordionItem, Accordion} from 'flowbite-svelte'
+  import {AccordionItem, Accordion} from '@vardario/svelte-ui-kit'
 </script>
 
 <Accordion flush>
@@ -136,7 +136,7 @@ Use the `arrowup` and `arrowdown` slots to set up and down icons.
 
 ```svelte example hideScript
 <script>
-  import {AccordionItem, Accordion} from 'flowbite-svelte'
+  import {AccordionItem, Accordion} from '@vardario/svelte-ui-kit'
 </script>
 
 <Accordion>
@@ -167,7 +167,7 @@ Use the `arrowup` and `arrowdown` slots to set up and down icons.
 
 ```svelte example hideScript
 <script>
-  import {AccordionItem, Accordion} from 'flowbite-svelte'
+  import {AccordionItem, Accordion} from '@vardario/svelte-ui-kit'
 </script>
 
 <Accordion>
@@ -195,7 +195,7 @@ Example how to use the `multiple` option together with expand all behavior.
 
 ```svelte example class="space-y-4"
 <script>
-  import {AccordionItem, Accordion, Button} from 'flowbite-svelte'
+  import {AccordionItem, Accordion, Button} from '@vardario/svelte-ui-kit'
   const items = Array(3);
 
   const open_all = () => items.forEach((_,i)=> items[i] = true)
@@ -228,7 +228,7 @@ The default transition of `AccordionItem`s is <A href="https://svelte.dev/docs#r
 
 ```svelte example hideScript
 <script>
-  import {AccordionItem, Accordion} from 'flowbite-svelte'
+  import {AccordionItem, Accordion} from '@vardario/svelte-ui-kit'
 </script>
 <Accordion>
   <AccordionItem>

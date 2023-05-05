@@ -29,7 +29,7 @@ At least one unique H1 tag should be available for each page on your website wit
 
 ```svelte example hideOutput
 <script>
-  import {  Heading, P, A, Mark, Secondary } from 'flowbite-svelte'
+  import {  Heading, P, A, Mark, Secondary } from '@vardario/svelte-ui-kit'
 </script>
 ```
 
@@ -39,7 +39,7 @@ Use this example of a H1 heading in the context of a paragraph and CTA button fo
 
 ```svelte example
 <script>
-  import {  Heading, P, Button } from 'flowbite-svelte'
+  import {  Heading, P, Button } from '@vardario/svelte-ui-kit'
 </script>
 
 <div  class="text-center">
@@ -57,7 +57,7 @@ Use this example of a second-level H2 heading as the main subtitle for each sect
 
 ```svelte example
 <script>
-  import {  Heading, P, A } from 'flowbite-svelte'
+  import {  Heading, P, A } from '@vardario/svelte-ui-kit'
 </script>
 
 <Heading tag="h2" customSize="text-4xl font-extrabold ">Payments tool for companies</Heading>
@@ -74,7 +74,7 @@ Use this example to highlight a certain portion of the heading text with a diffe
 
 ```svelte example
 <script>
-  import {  Heading, P, Span } from 'flowbite-svelte'
+  import {  Heading, P, Span } from '@vardario/svelte-ui-kit'
 </script>
 
 <Heading tag="h1" class="mb-4">Get back to growth with <Span highlight>the world's #1</Span> CRM.</Heading>
@@ -87,7 +87,7 @@ This example can be used to mark one part of the heading text with a solid backg
 
 ```svelte example
 <script>
-  import {  Heading, P, Mark } from 'flowbite-svelte'
+  import {  Heading, P, Mark } from '@vardario/svelte-ui-kit'
 </script>
 
 <Heading tag="h1" class='mb-4'>Regain <Mark>control</Mark> over your days</Heading>
@@ -100,7 +100,7 @@ Use this example to highlight a portion of the heading text by using a gradient 
 
 ```svelte example
 <script>
-  import {  Heading, P, Span } from 'flowbite-svelte'
+  import {  Heading, P, Span } from '@vardario/svelte-ui-kit'
 </script>
 
 <Heading tag="h1" class="mb-4" customSize="text-3xl font-extrabold  md:text-5xl lg:text-6xl"><Span gradient>Better Data</Span> Scalable AI.</Heading>
@@ -113,7 +113,7 @@ Get started with this example to underline an important part of the heading comp
 
 ```svelte example
 <script>
-  import {  Heading, P, Span } from 'flowbite-svelte'
+  import {  Heading, P, Span } from '@vardario/svelte-ui-kit'
 </script>
 
 <Heading tag="h1" class="mb-4">We invest in the <Span underline underDecoration="decoration-8 decoration-blue-400 dark:decoration-blue-600">world’s potential</Span></Heading>
@@ -126,7 +126,7 @@ Get started with this example to position a breadcrumb component above the headi
 
 ```svelte example
 <script>
-  import {  Heading, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte'
+  import {  Heading, Breadcrumb, BreadcrumbItem } from '@vardario/svelte-ui-kit'
 </script>
 
 <Breadcrumb class="mb-4">
@@ -143,7 +143,7 @@ Use this example to show a badge component inside the heading text element as a 
 
 ```svelte example
 <script>
-  import {  Heading, Badge } from 'flowbite-svelte'
+  import {  Heading, Badge } from '@vardario/svelte-ui-kit'
 </script>
 
 <Heading tag="h1" class='flex items-center' size='text-5xl'>Flowbite <Badge class="text-2xl font-semibold ml-2" >PRO</Badge></Heading>
@@ -155,7 +155,7 @@ This example can be used to add a secondary text inside the main heading compone
 
 ```svelte example
 <script>
-  import {  Heading, Secondary } from 'flowbite-svelte'
+  import {  Heading, Secondary } from '@vardario/svelte-ui-kit'
 </script>
 
 <Heading tag="h1" customSize="text-5xl font-extrabold">Flowbite <Secondary class="ml-2">This is secondary text</Secondary></Heading>
@@ -171,7 +171,7 @@ Use the `tag="h1"` as the most important text element to indicate the title of y
 
 ```svelte example
 <script>
-  import {  Heading } from 'flowbite-svelte'
+  import {  Heading } from '@vardario/svelte-ui-kit'
 </script>
 
 <Heading tag="h1">Heading 1</Heading>
@@ -183,7 +183,7 @@ The `tag="h2"` can be used as subtitles of the page’s sections.
 
 ```svelte example
 <script>
-  import {  Heading } from 'flowbite-svelte'
+  import {  Heading } from '@vardario/svelte-ui-kit'
 </script>
 
 <Heading tag="h2">Heading 2</Heading>
@@ -195,7 +195,7 @@ The `tag="h3"` can be used as subtitles of the page’s sections.
 
 ```svelte example
 <script>
-  import {  Heading } from 'flowbite-svelte'
+  import {  Heading } from '@vardario/svelte-ui-kit'
 </script>
 
 <Heading tag="h3">Heading 3</Heading>
@@ -207,7 +207,7 @@ The `tag="h4"` can be used as subtitles of the page’s sections.
 
 ```svelte example
 <script>
-  import {  Heading } from 'flowbite-svelte'
+  import {  Heading } from '@vardario/svelte-ui-kit'
 </script>
 
 <Heading tag="h4">Heading 4</Heading>
@@ -219,7 +219,7 @@ The `tag="h5"` can be used as subtitles of the page’s sections.
 
 ```svelte example
 <script>
-  import {  Heading } from 'flowbite-svelte'
+  import {  Heading } from '@vardario/svelte-ui-kit'
 </script>
 
 <Heading tag="h5">Heading 5</Heading>
@@ -231,7 +231,7 @@ The `tag="h6"` can be used as subtitles of the page’s sections.
 
 ```svelte example
 <script>
-  import {  Heading } from 'flowbite-svelte'
+  import {  Heading } from '@vardario/svelte-ui-kit'
 </script>
 
 <Heading tag="h6">Heading 6</Heading>

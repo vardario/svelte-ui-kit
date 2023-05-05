@@ -25,7 +25,7 @@ Make sure that you have the Flowbite JavaScript included in your project to enab
 
 ```svelte example hideOutput
 <script>
-  import { Popover } from 'flowbite-svelte'
+  import { Popover } from '@vardario/svelte-ui-kit'
 </script>
 ```
 
@@ -33,7 +33,7 @@ Make sure that you have the Flowbite JavaScript included in your project to enab
 
 ```svelte example class="flex h-44 items-end justify-center"
 <script>
-  import { Popover, Button } from 'flowbite-svelte'
+  import { Popover, Button } from '@vardario/svelte-ui-kit'
 </script>
 
 <Button  id="b1">Default popover</Button>
@@ -48,7 +48,7 @@ Use this example to show more information about a user profile when hovering ove
 
 ```svelte example class="flex h-72 items-end justify-center"
 <script>
-  import { Popover, Button, Avatar } from 'flowbite-svelte'
+  import { Popover, Button, Avatar } from '@vardario/svelte-ui-kit'
 </script>
 
 <Button  id="b2" class="-mb-2">User profile</Button>
@@ -89,7 +89,7 @@ This example can be used to show more information about a company profile.
 
 ```svelte example class="flex h-96 items-end justify-center"
 <script>
-  import { Popover, Button, Avatar } from 'flowbite-svelte'
+  import { Popover, Button, Avatar } from '@vardario/svelte-ui-kit'
 </script>
 
 <Button class="-mb-4">Company profile</Button>
@@ -142,7 +142,7 @@ Use this example to trigger a popover component with detailed information and an
 
 ```svelte example class="flex h-96 items-end"
 <script>
-  import { Popover } from 'flowbite-svelte'
+  import { Popover } from '@vardario/svelte-ui-kit'
 </script>
 
 <p class="font-light text-gray-500 dark:text-gray-400">Due to its central geographic location in Southern Europe, <a href="/" class="text-blue-600 underline dark:text-blue-500 hover:no-underline" id="popover-image">Italy</a> has historically been home to myriad peoples and cultures. In addition to the various ancient peoples dispersed throughout what is now modern-day Italy, the most predominant being the Indo-European Italic peoples who gave the peninsula its name, beginning from the classical era, Phoenicians and Carthaginians founded colonies mostly in insular Italy</p>
@@ -166,7 +166,7 @@ Show helpful information inside a popover when hovering over a question mark but
 
 ```svelte example class="h-96"
 <script>
-  import { Popover, ChevronRight } from 'flowbite-svelte'
+  import { Popover, ChevronRight } from '@vardario/svelte-ui-kit'
 </script>
 
 <div class="flex items-center text-sm font-light text-gray-500 dark:text-gray-400">This is just some informational text
@@ -191,7 +191,7 @@ Show a progress bar with details inside a popover when hovering over a settings 
 
 ```svelte example class="h-60 flex justify-center items-end"
 <script>
-  import { Popover, ChevronRight, Button } from 'flowbite-svelte'
+  import { Popover, ChevronRight, Button } from '@vardario/svelte-ui-kit'
 </script>
 
 <Button id="progress"><svg class="mr-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 12v3c0 1.657 3.134 3 7 3s7-1.343 7-3v-3c0 1.657-3.134 3-7 3s-7-1.343-7-3z"></path><path d="M3 7v3c0 1.657 3.134 3 7 3s7-1.343 7-3V7c0 1.657-3.134 3-7 3S3 8.657 3 7z"></path><path d="M17 5c0 1.657-3.134 3-7 3S3 6.657 3 5s3.134-3 7-3 7 1.343 7 3z"></path></svg> Storage status</Button>
@@ -215,7 +215,7 @@ Dynamically show the password strength progress when creating a new password pos
 
 ```svelte example
 <script>
-  import { Popover, Label, Input, Checkbox, Button } from 'flowbite-svelte'
+  import { Popover, Label, Input, Checkbox, Button } from '@vardario/svelte-ui-kit'
 </script>
 
 <form on:submit|preventDefault class="mb-8">
@@ -261,7 +261,7 @@ Set the position of the popover component relative to the trigger element by usi
 
 ```svelte example class="flex gap-4 flex-col justify-center items-center h-96"
 <script>
-  import { Popover, Button } from 'flowbite-svelte'
+  import { Popover, Button } from '@vardario/svelte-ui-kit'
   let placement;
 </script>
 
@@ -280,7 +280,7 @@ Set the position of the popover component relative to the trigger element by usi
 
 ```svelte example class="flex h-44 items-end justify-center gap-4"
 <script>
-  import { Popover, Button } from 'flowbite-svelte'
+  import { Popover, Button } from '@vardario/svelte-ui-kit'
 </script>
 
 <Button id='hover'>Hover popover</Button>
@@ -299,7 +299,7 @@ Increase or decrease the default offset by adding the `offset` attribute where t
 
 ```svelte example class="flex h-52 items-end justify-center"
 <script>
-  import { Popover, Button } from 'flowbite-svelte'
+  import { Popover, Button } from '@vardario/svelte-ui-kit'
 </script>
 
 <Button  id="offset">Default popover</Button>
@@ -314,7 +314,7 @@ Customize the animation of the popover component by using the transition functio
 
 ```svelte example class="flex h-44 items-end justify-center gap-8"
 <script>
-  import { Popover, Button } from 'flowbite-svelte'
+  import { Popover, Button } from '@vardario/svelte-ui-kit'
   import { blur, fade, slide } from 'svelte/transition';
 </script>
 
@@ -338,7 +338,7 @@ You can also disable the popover arrow by setting `arrow` attribute to `false`.
 
 ```svelte example class="flex h-44 items-end justify-center"
 <script>
-  import { Popover, Button } from 'flowbite-svelte'
+  import { Popover, Button } from '@vardario/svelte-ui-kit'
 </script>
 
 <Button  id="arrow">Default popover</Button>

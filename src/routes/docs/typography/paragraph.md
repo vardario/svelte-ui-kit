@@ -35,7 +35,7 @@ Use this example of a paragraph element to use inside article content or a landi
 
 ```svelte example
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P class="mb-3" weight="light" color="text-gray-500 dark:text-gray-400">
@@ -56,7 +56,7 @@ The leading text can be used as the first paragraph inside an article content pa
 
 ```svelte example
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P class="mb-3 md:text-xl" weight="light" size="lg" color="text-gray-500 dark:text-gray-400"
@@ -77,7 +77,7 @@ documents.
 
 ```svelte example
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P class="mb-3" color="text-gray-500 dark:text-gray-400" firstupper
@@ -98,7 +98,7 @@ This example can be used to add a custom styled link element inside the paragrap
 
 ```svelte example
 <script>
-  import { P, A } from 'flowbite-svelte'
+  import { P, A } from '@vardario/svelte-ui-kit'
 </script>
 
 <P weight="light" color="text-gray-500 dark:text-gray-400">
@@ -115,7 +115,7 @@ Use this example to highlight a piece of text inside the paragraph by using a bo
 
 ```svelte example
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P class="mb-3" weight="light" color="text-gray-500 dark:text-gray-400">
@@ -132,7 +132,7 @@ This example can be used to underline a certain part of the text inside the para
 
 ```svelte example
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P class="mb-3" weight="light" color="text-gray-500 dark:text-gray-400">
@@ -149,7 +149,7 @@ Use this example to make the font style of the text inside the paragraph italic.
 
 ```svelte example
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P class="mb-3" weight="light" color="text-gray-500 dark:text-gray-400">
@@ -166,7 +166,7 @@ Get started with this example to show a popover with extra information inside pa
 
 ```svelte example class="flex items-end h-96"
 <script>
-  import { Popover, P, A } from 'flowbite-svelte'
+  import { Popover, P, A } from '@vardario/svelte-ui-kit'
 </script>
 
 <P weight="font-light" color="text-gray-500 dark:text-gray-400"
@@ -214,7 +214,7 @@ Use this example to show multiple paragraphs on a single line.
 
 ```svelte example
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P class="mb-3" weight="light" color="text-gray-500 dark:text-gray-400">
@@ -235,7 +235,7 @@ Use this example to separate paragraphs into two columns for better readability.
 
 ```svelte example
 <script>
-  import { P, Layout } from 'flowbite-svelte'
+  import { P, Layout } from '@vardario/svelte-ui-kit'
 </script>
 
 <P class="mb-3" weight="light" color="text-gray-500 dark:text-gray-400">
@@ -269,7 +269,7 @@ This example can be used to separate paragraphs into three separate columns.
 
 ```svelte example
 <script>
-  import { P, Layout } from 'flowbite-svelte'
+  import { P, Layout } from '@vardario/svelte-ui-kit'
 </script>
 
 <P class="mb-3" weight="light" color="text-gray-500 dark:text-gray-400">
@@ -308,7 +308,7 @@ Use this example to separate paragraphs into two uneven columns.
 
 ```svelte example
 <script>
-  import { P, Layout } from 'flowbite-svelte'
+  import { P, Layout } from '@vardario/svelte-ui-kit'
 </script>
 
 <P class="mb-3" weight="light" color="text-gray-500 dark:text-gray-400">
@@ -355,7 +355,7 @@ to align it manually.
 
 ```svelte example
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P align="left">
@@ -371,7 +371,7 @@ Use the `align="center"` prop to align the paragraph text to the center.
 
 ```svelte example
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P align="center">
@@ -387,7 +387,7 @@ Use the `align="right"` prop to align the paragraph text the right side of the p
 
 ```svelte example
 <script>
-  import { P } from 'flowbite-svelte'
+  import { P } from '@vardario/svelte-ui-kit'
 </script>
 
 <P align="right">

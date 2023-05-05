@@ -26,7 +26,7 @@ The radio component can be used to allow the user to choose a single option from
 
 ```svelte example hideOutput
 <script>
-  import { Radio } from 'flowbite-svelte'
+  import { Radio } from '@vardario/svelte-ui-kit'
 </script>
 ```
 
@@ -36,7 +36,7 @@ Use the default example of a radio component with the checked and unchecked stat
 
 ```svelte example class="flex flex-col gap-4" hideScript
 <script>
-  import { Radio } from 'flowbite-svelte'
+  import { Radio } from '@vardario/svelte-ui-kit'
 </script>
 
 <Radio name="example">Default radio</Radio>
@@ -51,7 +51,7 @@ This example can be used for the disabled state of the radio component by applyi
 
 ```svelte example class="flex flex-col gap-4" hideScript
 <script>
-  import { Radio } from 'flowbite-svelte'
+  import { Radio } from '@vardario/svelte-ui-kit'
 </script>
 
 <Radio name="disabled-state" disabled>Disabled radio</Radio>
@@ -64,7 +64,7 @@ If you need separate control over the label and the radio you can use the verbos
 
 ```svelte example class="flex flex-col gap-4" hideScript
 <script>
-  import { Radio, Table, TableHead, TableHeadCell, TableBody, TableBodyCell, TableBodyRow, Label } from 'flowbite-svelte'
+  import { Radio, Table, TableHead, TableHeadCell, TableBody, TableBodyCell, TableBodyRow, Label } from '@vardario/svelte-ui-kit'
 </script>
 
 <Table>
@@ -95,7 +95,7 @@ Use this example if you want to add an anchor link inside the label of the radio
 
 ```svelte example hideScript
 <script>
-  import { Radio } from 'flowbite-svelte'
+  import { Radio } from '@vardario/svelte-ui-kit'
 </script>
 
 <Radio name="with-link">I agree with the <a href="/" class="text-blue-600 dark:text-blue-500 hover:underline ml-1">terms and conditions</a>.</Radio>
@@ -107,7 +107,7 @@ Get started with this example if you want to add a secondary helper text for the
 
 ```svelte example
 <script>
-  import { Radio, Helper } from 'flowbite-svelte'
+  import { Radio, Helper } from '@vardario/svelte-ui-kit'
 </script>
 
 <Radio aria-describedby="helper-checkbox-text">Free shipping via Flowbite</Radio>
@@ -120,7 +120,7 @@ Use this example of a radio inside a card element to enable a larger area of cli
 
 ```svelte example hideScript
 <script>
-  import { Radio } from 'flowbite-svelte'
+  import { Radio } from '@vardario/svelte-ui-kit'
 </script>
 
 <div class="grid grid-cols-2 gap-6">
@@ -139,7 +139,7 @@ Use this example to show a list of radio items grouped inside a card.
 
 ```svelte example hideScript
 <script>
-  import { Radio } from 'flowbite-svelte'
+  import { Radio } from '@vardario/svelte-ui-kit'
   let technology = 'svelte';
 </script>
 
@@ -158,7 +158,7 @@ Use this example to show a list of radio items inside a card horizontally.
 
 ```svelte example hideScript
 <script>
-  import { Radio } from 'flowbite-svelte'
+  import { Radio } from '@vardario/svelte-ui-kit'
 </script>
 
 <p class="mb-4 font-semibold text-gray-900 dark:text-white">Identification</p>
@@ -176,7 +176,7 @@ Here’s an example of a list group that you can use right away.
 
 ```svelte example hideScript class="flex justify-center items-start h-80"
 <script>
-  import { Radio, Dropdown, Button, Chevron, Helper } from 'flowbite-svelte'
+  import { Radio, Dropdown, Button, Chevron, Helper } from '@vardario/svelte-ui-kit'
   let group3=2;
 </script>
 
@@ -203,7 +203,7 @@ You can align the radio elements horizontally by using a wrapper tag and applyin
 
 ```svelte example
 <script>
-  import { Radio } from 'flowbite-svelte'
+  import { Radio } from '@vardario/svelte-ui-kit'
   let inline1 = 'second';
 </script>
 
@@ -219,7 +219,7 @@ You can use the property `inline` as the alternative.
 
 ```svelte example
 <script>
-  import { Radio } from 'flowbite-svelte'
+  import { Radio } from '@vardario/svelte-ui-kit'
   let inline2 = 'third';
 </script>
 
@@ -233,7 +233,7 @@ You can use the property `inline` as the alternative.
 
 ```svelte example
 <script>
-  import { Radio } from 'flowbite-svelte'
+  import { Radio } from '@vardario/svelte-ui-kit'
   let colors;
 </script>
 
@@ -254,7 +254,7 @@ Use this example of an advanced layout of radio elements where the label parent 
 
 ```svelte example hideScript
 <script>
-  import { Radio } from 'flowbite-svelte'
+  import { Radio } from '@vardario/svelte-ui-kit'
 </script>
 
 <p class="mb-5 text-lg font-medium text-gray-900 dark:text-white">Choose technology:</p>

@@ -26,7 +26,7 @@ The select input component can be used to gather information from users based on
 
 ```svelte example hideOutput
 <script>
-  import { Select } from 'flowbite-svelte';
+  import { Select } from '@vardario/svelte-ui-kit';
 </script>
 ```
 
@@ -36,7 +36,7 @@ Get started with the default example of a select input component to get a single
 
 ```svelte example
 <script>
-  import { Select, Label } from 'flowbite-svelte';
+  import { Select, Label } from '@vardario/svelte-ui-kit';
   let selected;
   let countries = [
     {value:"us", name: "United States"},
@@ -56,7 +56,7 @@ Apply the disable state to the select component to disallow the selection of new
 
 ```svelte example
 <script>
-  import { Select, Label } from 'flowbite-svelte';
+  import { Select, Label } from '@vardario/svelte-ui-kit';
   let countries = [
     {value:"us", name: "United States"},
     {value:"ca", name: "Canada"},
@@ -74,7 +74,7 @@ Use the underline style for the select component as an alternative appearance.
 
 ```svelte example
 <script>
-  import { Select, Label } from 'flowbite-svelte';
+  import { Select, Label } from '@vardario/svelte-ui-kit';
   let countries = [
     {value:"us", name: "United States"},
     {value:"ca", name: "Canada"},
@@ -92,7 +92,7 @@ Use this example if you want to create a multi-level dropdown and select compone
 
 ```svelte example
 <script>
-  import { Select, Dropdown, DropdownItem, ChevronDown } from 'flowbite-svelte';
+  import { Select, Dropdown, DropdownItem, ChevronDown } from '@vardario/svelte-ui-kit';
   let countries = [
     {value:"us", name: "United States"},
     {value:"ca", name: "Canada"},
@@ -143,7 +143,7 @@ Get started with the small, default, and large sizes for the select component fr
 
 ```svelte example
 <script>
-  import { Select, Label } from 'flowbite-svelte';
+  import { Select, Label } from '@vardario/svelte-ui-kit';
   let countries = [
     {value:"us", name: "United States"},
     {value:"ca", name: "Canada"},
@@ -172,7 +172,7 @@ If you want custom options, put them directly inside the component and leave the
 
 ```svelte example
 <script>
-  import { Select, Label } from 'flowbite-svelte';
+  import { Select, Label } from '@vardario/svelte-ui-kit';
   let selected;
   let countries = [
     {value:"us", name: "United States"},

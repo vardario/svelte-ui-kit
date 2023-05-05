@@ -32,7 +32,7 @@ User the size prop to change the input size. Choose one from 'sm:text-md' | 'tex
 
 ```svelte example
 <script>
-  import { Label, Input } from 'flowbite-svelte'
+  import { Label, Input } from '@vardario/svelte-ui-kit'
 </script>
 
 <div class='mb-6'>
@@ -55,7 +55,7 @@ Get started with this example if you want to apply the disabled state to an inpu
 
 ```svelte example
 <script>
-  import { Label, Input } from 'flowbite-svelte'
+  import { Label, Input } from '@vardario/svelte-ui-kit'
 </script>
 
 <Input id="disabled-input" class="mb-6" disabled value="Disabled input" />
@@ -68,7 +68,7 @@ Use the helper prop to add your helper text. You can use HTML in the helper text
 
 ```svelte example
 <script>
-  import { Label, Input, Helper } from 'flowbite-svelte'
+  import { Label, Input, Helper } from '@vardario/svelte-ui-kit'
 </script>
 
 <Label class='block mb-2' >Your email</Label>
@@ -82,7 +82,7 @@ With the Input component, you can add <a href="https://flowbite-svelte.vercel.ap
 
 ```svelte example
 <script>
-  import { Label, Input } from 'flowbite-svelte'
+  import { Label, Input } from '@vardario/svelte-ui-kit'
 </script>
 
 <div class="mb-6">
@@ -97,7 +97,7 @@ With the Input component, you can add <a href="https://flowbite-svelte.vercel.ap
 
 ```svelte example
 <script>
-  import { Label, Input, InputAddon, ButtonGroup } from 'flowbite-svelte'
+  import { Label, Input, InputAddon, ButtonGroup } from '@vardario/svelte-ui-kit'
 </script>
 
 <div class="mb-6">
@@ -117,7 +117,7 @@ Use the following example to apply validation styles for success and error messa
 
 ```svelte example
 <script>
-  import { Label, Input, Helper } from 'flowbite-svelte'
+  import { Label, Input, Helper } from '@vardario/svelte-ui-kit'
 </script>
 
 <div class="mb-6">
@@ -136,7 +136,7 @@ Use the following example to apply validation styles for success and error messa
 
 ```svelte example
 <script>
-  import { Textarea } from 'flowbite-svelte'
+  import { Textarea } from '@vardario/svelte-ui-kit'
   let textareaprops = {
     id: 'message',
     name: 'message',
@@ -155,7 +155,7 @@ Get started with the default example of a select input component to get a single
 
 ```svelte example
 <script>
-  import { Label, Select } from 'flowbite-svelte'
+  import { Label, Select } from '@vardario/svelte-ui-kit'
   let selected;
 
   let countries = [
@@ -174,7 +174,7 @@ Get started with the default example of a select input component to get a single
 
 ```svelte example class="flex flex-col gap-4"
 <script>
-  import { Checkbox } from 'flowbite-svelte'
+  import { Checkbox } from '@vardario/svelte-ui-kit'
 </script>
 
 <Checkbox>Default checkbox</Checkbox>
@@ -185,7 +185,7 @@ Get started with the default example of a select input component to get a single
 
 ```svelte example class="flex flex-col gap-4"
 <script>
-  import { Radio } from 'flowbite-svelte'
+  import { Radio } from '@vardario/svelte-ui-kit'
 </script>
 
 <Radio name="example">Default radio</Radio>
@@ -196,7 +196,7 @@ Get started with the default example of a select input component to get a single
 
 ```svelte example
 <script>
-  import { Label, Fileupload } from 'flowbite-svelte'
+  import { Label, Fileupload } from '@vardario/svelte-ui-kit'
 
   let fileuploadprops = {
     id : 'user_avatar'
@@ -215,7 +215,7 @@ Get started with the default example of a select input component to get a single
 
 ```svelte example class="flex flex-col gap-2"
 <script>
-  import { Toggle } from 'flowbite-svelte'
+  import { Toggle } from '@vardario/svelte-ui-kit'
 </script>
 
 <Toggle>Toggle me</Toggle>

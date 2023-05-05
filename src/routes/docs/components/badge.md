@@ -26,7 +26,7 @@ Import a badge component in the script tag.
 
 ```svelte example hideOutput
 <script>
-	import { Badge } from 'flowbite-svelte';
+	import { Badge } from '@vardario/svelte-ui-kit';
 </script>
 ```
 
@@ -36,7 +36,7 @@ Use the following badge elements to indicate counts or labels inside or outside 
 
 ```svelte example class="flex flex-wrap gap-2" hideScript
 <script>
-	import { Badge } from 'flowbite-svelte';
+	import { Badge } from '@vardario/svelte-ui-kit';
 </script>
 <Badge>Default</Badge>
 <Badge color="dark">Dark</Badge>
@@ -54,7 +54,7 @@ Use the `large` prop to create a large variant of the badges.
 
 ```svelte example class="flex flex-wrap gap-2" hideScript
 <script>
-	import { Badge } from 'flowbite-svelte';
+	import { Badge } from '@vardario/svelte-ui-kit';
 </script>
 <Badge large>Default</Badge>
 <Badge large color="dark">Dark</Badge>
@@ -72,7 +72,7 @@ Use the `border` prop to add a border accent to the badge component.
 
 ```svelte example class="flex flex-wrap gap-2" hideScript
 <script>
-	import { Badge } from 'flowbite-svelte';
+	import { Badge } from '@vardario/svelte-ui-kit';
 </script>
 <Badge border>Default</Badge>
 <Badge border color="dark">Dark</Badge>
@@ -90,7 +90,7 @@ Use the `rounded` prop to make the corners even more rounded like pills for the 
 
 ```svelte example class="flex flex-wrap gap-2" hideScript
 <script>
-	import { Badge } from 'flowbite-svelte';
+	import { Badge } from '@vardario/svelte-ui-kit';
 </script>
 <Badge rounded>Default</Badge>
 <Badge rounded color="dark">Dark</Badge>
@@ -108,7 +108,7 @@ You can also use badges as anchor elements to link to another page.
 
 ```svelte example class="flex flex-wrap gap-2" hideScript
 <script>
-	import { Badge } from 'flowbite-svelte';
+	import { Badge } from '@vardario/svelte-ui-kit';
 </script>
 <Badge href="/">Badge link</Badge>
 <Badge href="/" large>Badge link</Badge>
@@ -122,7 +122,7 @@ You can also use SVG icons inside the badge elements.
 
 ```svelte example class="flex flex-wrap gap-2" hideScript
 <script>
-	import { Badge } from 'flowbite-svelte';
+	import { Badge } from '@vardario/svelte-ui-kit';
 </script>
 <Badge color="dark" border>
   <svg aria-hidden="true" class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
@@ -140,7 +140,7 @@ You can also use the badge elements as index. Remember to add the `relative` cla
 
 ```svelte example class="flex flex-wrap gap-4" 
 <script>
-	import { Badge, Button } from 'flowbite-svelte';
+	import { Badge, Button } from '@vardario/svelte-ui-kit';
 </script>
 
 <Button class="relative" size='sm'>
@@ -198,7 +198,7 @@ Use this example to add a badge inside a button component for a count indicator.
 
 ```svelte example class="flex flex-wrap gap-4"
 <script>
-	import { Badge, Button } from 'flowbite-svelte';
+	import { Badge, Button } from '@vardario/svelte-ui-kit';
 </script>
 
 <Button>
@@ -215,7 +215,7 @@ Alternatively you can also use badges which indicate only a SVG icon.
 
 ```svelte example hideScript
 <script>
-	import { Badge } from 'flowbite-svelte';
+	import { Badge } from '@vardario/svelte-ui-kit';
 </script>
 <Badge color="dark" rounded large class="!p-1 !font-semibold">
   <svg aria-hidden="true" class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
@@ -241,7 +241,7 @@ Use the `dimissable` prop to dismiss the current badge.
 
 ```svelte example class="flex flex-wrap gap-4" hideScript
 <script>
-	import { Badge } from 'flowbite-svelte';
+	import { Badge } from '@vardario/svelte-ui-kit';
 </script>
 
 <Badge dismissable large>Default</Badge>
@@ -258,7 +258,7 @@ Use the `closeBtn` slot to add your desired button. Don't forget to use the slot
 
 ```svelte example class="gap-4" hideScript
 <script>
-	import { Badge } from 'flowbite-svelte';
+	import { Badge } from '@vardario/svelte-ui-kit';
 </script>
 
 <Badge dismissable>
@@ -276,7 +276,7 @@ A `dismiss` event will be dispatched during the dismissal, listen to it if neede
 
 ```svelte example class="gap-4"
 <script>
-	import { Badge } from 'flowbite-svelte';
+	import { Badge } from '@vardario/svelte-ui-kit';
 
   function handleDismiss(event) {
 		alert(event.detail.message);

@@ -107,7 +107,7 @@ Here are some examples using Svelte-Heros-v2.
 
 ```html
 <script>
-  import { AccordionItem } from 'flowbite-svelte';
+  import { AccordionItem } from '@vardario/svelte-ui-kit';
   import { ArrowDownCircle, ArrowUpCircle } from 'svelte-heros-v2';
 </script>
 
@@ -145,7 +145,7 @@ Here are some examples using Svelte-Heros-v2.
 
 ```html
 <script>
-  import { Alert } from 'flowbite-svelte';
+  import { Alert } from '@vardario/svelte-ui-kit';
   import { InformationCircle } from 'svelte-heros-v2';
 </script>
 
@@ -185,7 +185,7 @@ Here are some examples using Svelte-Heros-v2.
 
 ```html
 <script>
-  import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
+  import { Breadcrumb, BreadcrumbItem } from '@vardario/svelte-ui-kit';
   import { Home, ChevronDoubleRight } from 'svelte-heros-v2';
 </script>
 

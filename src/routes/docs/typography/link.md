@@ -24,7 +24,7 @@ Hyperlinks are a great way to reduce bounce rate of the current page and encoura
 
 ```html
 <script>
-  import { A } from 'flowbite-svelte';
+  import { A } from '@vardario/svelte-ui-kit';
 </script>
 ```
 
@@ -34,7 +34,7 @@ Use this example to set default styles to an inline link element.
 
 ```svelte example
 <script>
-  import { A } from 'flowbite-svelte';
+  import { A } from '@vardario/svelte-ui-kit';
 </script>
 
 <A class="font-medium hover:underline">Read more</A>
@@ -46,7 +46,7 @@ This example can be used to set a hyperlink on a button component.
 
 ```svelte example
 <script>
-  import { Button } from 'flowbite-svelte';
+  import { Button } from '@vardario/svelte-ui-kit';
 </script>
 
 <Button href="/">Read more</Button>
@@ -58,7 +58,7 @@ Use this example to set a link inside a paragraph with an underline style.
 
 ```svelte example
 <script>
-  import { A, P } from 'flowbite-svelte';
+  import { A, P } from '@vardario/svelte-ui-kit';
 </script>
 
 <P>The free updates that will be provided is based on the <A href="/" class="underline hover:no-underline">roadmap</A> that we have laid out for this project. It is also possible that we will provide extra updates outside of the roadmap as well.</P>
@@ -70,7 +70,7 @@ This example can be used to set a custom SVG icon inside the hyperlink element.
 
 ```svelte example
 <script>
-  import { A, P } from 'flowbite-svelte';
+  import { A, P } from '@vardario/svelte-ui-kit';
 </script>
 
 <P>500,000 people have made over a million apps with Glide. 
@@ -87,7 +87,7 @@ Use this example to set a hyperlink on a CTA element with text and a custom icon
 
 ```svelte example
 <script>
-  import { A } from 'flowbite-svelte';
+  import { A } from '@vardario/svelte-ui-kit';
 </script>
 
 <A textColor="text-gray-500 dark:text-gray-400 dark:hover:text-white" aClass="inline-flex justify-center items-center p-5 text-base font-medium bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700">
@@ -103,7 +103,7 @@ Use this example to set a hyperlink on a card component.
 
 ```svelte example
 <script>
-  import { Card } from 'flowbite-svelte';
+  import { Card } from '@vardario/svelte-ui-kit';
 </script>
 
 <Card href="/cards">
@@ -120,7 +120,7 @@ This example can be used to set a hyperlink on an image inside a card component.
 
 ```svelte example
 <script>
-  import { Card, Button } from 'flowbite-svelte';
+  import { Card, Button } from '@vardario/svelte-ui-kit';
 </script>
 
 <Card img="/images/image-1.webp" href="/cards">

@@ -27,7 +27,7 @@ The footer is one of the most underestimated sections of a website being located
 
 ```svelte example hideOutput
 <script>
-  import { Footer, FooterBrand, FooterCopyright, FooterIcon, FooterLink, FooterLinkGroup } from "flowbite-svelte"
+  import { Footer, FooterBrand, FooterCopyright, FooterIcon, FooterLink, FooterLinkGroup } from "@vardario/svelte-ui-kit"
 </script>
 ```
 
@@ -37,7 +37,7 @@ The footer is one of the most underestimated sections of a website being located
 
 ```svelte example
 <script>
-  import { Footer, FooterCopyright, FooterLinkGroup, FooterLink } from 'flowbite-svelte'
+  import { Footer, FooterCopyright, FooterLinkGroup, FooterLink } from '@vardario/svelte-ui-kit'
 </script>
 
 <Footer>
@@ -57,7 +57,7 @@ The footer is one of the most underestimated sections of a website being located
 
 ```svelte example
 <script>
-  import { Footer, FooterCopyright, FooterLinkGroup, FooterBrand, FooterLink } from 'flowbite-svelte'
+  import { Footer, FooterCopyright, FooterLinkGroup, FooterBrand, FooterLink } from '@vardario/svelte-ui-kit'
 </script>
 
 <Footer footerType="logo">
@@ -86,7 +86,7 @@ The footer is one of the most underestimated sections of a website being located
 
 ```svelte example
 <script>
-  import { Footer, FooterCopyright, FooterLinkGroup, FooterLink, FooterBrand, FooterIcon } from 'flowbite-svelte'
+  import { Footer, FooterCopyright, FooterLinkGroup, FooterLink, FooterBrand, FooterIcon } from '@vardario/svelte-ui-kit'
 </script>
 
 <Footer footerType="socialmedia">
@@ -150,7 +150,7 @@ The footer is one of the most underestimated sections of a website being located
 
 ```svelte example
 <script>
-  import { Footer, FooterLinkGroup, FooterLink, FooterBrand, FooterIcon, FooterCopyright } from 'flowbite-svelte'
+  import { Footer, FooterLinkGroup, FooterLink, FooterBrand, FooterIcon, FooterCopyright } from '@vardario/svelte-ui-kit'
 </script>
 
 <Footer footerType="sitemap">
@@ -213,7 +213,7 @@ Use this example to set create a sticky footer by using a fixed position to the 
 
 ```svelte example class="relative"
 <script>
-  import { Footer, FooterLinkGroup, FooterLink, ImagePlaceholder, TextPlaceholder, Skeleton, FooterCopyright } from 'flowbite-svelte'
+  import { Footer, FooterLinkGroup, FooterLink, ImagePlaceholder, TextPlaceholder, Skeleton, FooterCopyright } from '@vardario/svelte-ui-kit'
 </script>
 
 <div style="height:300px;" class="overflow-scroll pb-16">

@@ -30,7 +30,7 @@ Import Card in the script tag.
 
 ```svelte example hideOutput
 <script>
-  import { Card } from "flowbite-svelte";
+  import { Card } from "@vardario/svelte-ui-kit";
 </script>
 ```
 
@@ -41,7 +41,7 @@ Notice the `href` prop set, as that card is one big `<a/>` element.
 
 ```svelte example class="flex flex-wrap gap-2" hideScript
 <script>
-  import { Card } from "flowbite-svelte";
+  import { Card } from "@vardario/svelte-ui-kit";
 </script>
 <Card href="/cards">
   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
@@ -57,7 +57,7 @@ Use the following example of a card element if you also want to have an action b
 
 ```svelte example class="flex flex-wrap gap-2"
 <script>
-  import { Card, Button } from "flowbite-svelte";
+  import { Card, Button } from "@vardario/svelte-ui-kit";
 </script>
 <Card>
   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
@@ -76,7 +76,7 @@ This example can be used to show a CTA as a link instead of a button inside the 
 
 ```svelte example class="flex flex-wrap gap-2" hideScript
 <script>
-  import { Card } from "flowbite-svelte";
+  import { Card } from "@vardario/svelte-ui-kit";
 </script>
 <Card>
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 mb-2text-gray-500 dark:text-gray-400 "><path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 109.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1114.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg>
@@ -99,7 +99,7 @@ You can use the following example of a card element with an image for blog posts
 
 ```svelte example class="flex flex-wrap gap-2"
 <script>
-  import { Card, Button, Toggle } from "flowbite-svelte";
+  import { Card, Button, Toggle } from "@vardario/svelte-ui-kit";
   let vCard = false;
 </script>
 <div>
@@ -122,7 +122,7 @@ If you want to spice up your cards you can use the following card which has its 
 
 ```svelte example class="flex flex-wrap gap-2"
 <script>
-  import { Card, Button, Toggle } from "flowbite-svelte";
+  import { Card, Button, Toggle } from "@vardario/svelte-ui-kit";
   let hCard = false;
 </script>
 <div>
@@ -142,7 +142,7 @@ Use this user profile card example if you want to show a dropdown menu and butto
 
 ```svelte example class="flex flex-wrap gap-2"
 <script>
-  import { Card, MenuButton, Dropdown, DropdownItem, Avatar, Button } from "flowbite-svelte";
+  import { Card, MenuButton, Dropdown, DropdownItem, Avatar, Button } from "@vardario/svelte-ui-kit";
 </script>
 <Card padding='sm'>
   <div class="flex justify-end">
@@ -171,7 +171,7 @@ Use this card example where you can add form input elements that can be used for
 
 ```svelte example
 <script>
-  import { Card, Button, Label, Input, Checkbox } from "flowbite-svelte";
+  import { Card, Button, Label, Input, Checkbox } from "@vardario/svelte-ui-kit";
 </script>
 <Card>
 	<form class="flex flex-col space-y-6" action="/">
@@ -202,7 +202,7 @@ Use this card for your e-commerce websites and show information about the produc
 
 ```svelte example
 <script>
-  import { Card, Button, Rating, Badge } from "flowbite-svelte";
+  import { Card, Button, Rating, Badge } from "@vardario/svelte-ui-kit";
 </script>
 <Card padding="none">
 	<a href="/">
@@ -231,7 +231,7 @@ Use this CTA card example to encourage your users to visit a certain page such a
 
 ```svelte example
 <script>
-  import { Card, Button } from "flowbite-svelte";
+  import { Card, Button } from "@vardario/svelte-ui-kit";
 </script>
 <Card class="text-center" size="lg" padding='xl'>
   <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Work fast from anywhere</h5>
@@ -251,7 +251,7 @@ Use this card example if you want to show a list of data:
 
 ```svelte example
 <script>
-  import { Card, Listgroup, Avatar } from "flowbite-svelte";
+  import { Card, Listgroup, Avatar } from "@vardario/svelte-ui-kit";
    let list = [
     { img: { src: "/images/profile-picture-1.webp", alt: "Neil Sims",},
       name: "Neil Sims", email: "email@windster.com", value: "$320"
@@ -296,7 +296,7 @@ Show detailed information to potential customers about your product’s pricing 
 
 ```svelte example
 <script>
-  import { Card, Button } from "flowbite-svelte";
+  import { Card, Button } from "@vardario/svelte-ui-kit";
 </script>
 <Card padding="xl">
   <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Standard plan</h5>
@@ -346,7 +346,7 @@ Use this example to split cards into multiple sections such as for testimonials 
 
 ```svelte example hideScript
 <script>
-  import { Card } from "flowbite-svelte";
+  import { Card } from "@vardario/svelte-ui-kit";
 </script>
 <Card padding="none" size="xl" class="grid md:grid-cols-2">
   <figure class="flex flex-col justify-center items-center p-8 text-center bg-white rounded-t-lg border-b border-gray-200 md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">

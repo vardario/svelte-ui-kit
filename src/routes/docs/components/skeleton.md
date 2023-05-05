@@ -29,7 +29,7 @@ Use the skeleton component to indicate a loading status with placeholder element
 
 ```svelte example hideOutput
 <script>
-  import { CardPlaceholder, ImagePlaceholder, ListPlaceholder, Skeleton, TestimonialPlaceholder, TextPlaceholder, VideoPlaceholder, WidgetPlaceholder } from 'flowbite-svelte'
+  import { CardPlaceholder, ImagePlaceholder, ListPlaceholder, Skeleton, TestimonialPlaceholder, TextPlaceholder, VideoPlaceholder, WidgetPlaceholder } from '@vardario/svelte-ui-kit'
 </script>
 ```
 
@@ -37,7 +37,7 @@ Use the skeleton component to indicate a loading status with placeholder element
 
 ```svelte example
 <script>
-  import { Skeleton } from 'flowbite-svelte'
+  import { Skeleton } from '@vardario/svelte-ui-kit'
 </script>
 
   <Skeleton size="sm" class="my-8" />
@@ -51,7 +51,7 @@ Use the skeleton component to indicate a loading status with placeholder element
 
 ```svelte example
 <script>
-  import { ImagePlaceholder } from 'flowbite-svelte'
+  import { ImagePlaceholder } from '@vardario/svelte-ui-kit'
 </script>
 
 <ImagePlaceholder />
@@ -62,7 +62,7 @@ Use the skeleton component to indicate a loading status with placeholder element
 
 ```svelte example
 <script>
-  import { VideoPlaceholder } from 'flowbite-svelte'
+  import { VideoPlaceholder } from '@vardario/svelte-ui-kit'
 </script>
 
 <VideoPlaceholder />
@@ -76,7 +76,7 @@ Use the skeleton component to indicate a loading status with placeholder element
 
 ```svelte example
 <script>
-  import { TextPlaceholder } from 'flowbite-svelte'
+  import { TextPlaceholder } from '@vardario/svelte-ui-kit'
 </script>
 
 <TextPlaceholder />
@@ -90,7 +90,7 @@ Use the skeleton component to indicate a loading status with placeholder element
 
 ```svelte example
 <script>
-  import { CardPlaceholder } from 'flowbite-svelte'
+  import { CardPlaceholder } from '@vardario/svelte-ui-kit'
 </script>
 
 <CardPlaceholder />
@@ -104,7 +104,7 @@ Use the skeleton component to indicate a loading status with placeholder element
 
 ```svelte example
 <script>
-  import { WidgetPlaceholder } from 'flowbite-svelte'
+  import { WidgetPlaceholder } from '@vardario/svelte-ui-kit'
 </script>
 
 <WidgetPlaceholder />
@@ -114,7 +114,7 @@ Use the skeleton component to indicate a loading status with placeholder element
 
 ```svelte example
 <script>
-  import { ListPlaceholder } from 'flowbite-svelte'
+  import { ListPlaceholder } from '@vardario/svelte-ui-kit'
 </script>
 
 <ListPlaceholder />
@@ -124,7 +124,7 @@ Use the skeleton component to indicate a loading status with placeholder element
 
 ```svelte example
 <script>
-  import { TestimonialPlaceholder } from 'flowbite-svelte'
+  import { TestimonialPlaceholder } from '@vardario/svelte-ui-kit'
 </script>
 
 <TestimonialPlaceholder />

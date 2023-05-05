@@ -30,7 +30,7 @@ The timeline component can be used to show series of data in a chronological ord
 
 ```svelte example hideOutput
 <script>
-  import { Timeline, TimelineItem, TimelineItemVertical, TimelineItemHorizontal, TimelineHorizontal, Activity, ActivityItem, Group, GroupItem } from 'flowbite-svelte';
+  import { Timeline, TimelineItem, TimelineItemVertical, TimelineItemHorizontal, TimelineHorizontal, Activity, ActivityItem, Group, GroupItem } from '@vardario/svelte-ui-kit';
 </script>
 ```
 
@@ -38,7 +38,7 @@ The timeline component can be used to show series of data in a chronological ord
 
 ```svelte example
 <script>
-  import { Timeline, TimelineItem, Button } from 'flowbite-svelte';
+  import { Timeline, TimelineItem, Button } from '@vardario/svelte-ui-kit';
 </script>
 
 <Timeline>
@@ -80,7 +80,7 @@ Use this vertical timeline component with icons and badges to show a more advanc
 
 ```svelte example
 <script>
-  import { Timeline, TimelineItem } from 'flowbite-svelte';
+  import { Timeline, TimelineItem } from '@vardario/svelte-ui-kit';
 </script>
 
 <Timeline order="vertical">
@@ -156,7 +156,7 @@ Use this horizontally aligned timeline component to show a series of data in a c
 
 ```svelte example
 <script>
-  import { Timeline, TimelineItem } from 'flowbite-svelte';
+  import { Timeline, TimelineItem } from '@vardario/svelte-ui-kit';
 </script>
 
 <Timeline order="horizontal">
@@ -208,7 +208,7 @@ This component can be used to show the timline of a user’s activity history in
 
 ```svelte example
 <script>
-  import { Activity, ActivityItem } from 'flowbite-svelte';
+  import { Activity, ActivityItem } from '@vardario/svelte-ui-kit';
   let activities = [
     {
       title:
@@ -244,7 +244,7 @@ Use this component to group multiple data entries inside a single date and show 
 
 ```svelte example
 <script>
-  import { Group, GroupItem } from 'flowbite-svelte';
+  import { Group, GroupItem } from '@vardario/svelte-ui-kit';
   let groupTimelines = [
     {
       title:

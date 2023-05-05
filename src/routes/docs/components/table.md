@@ -30,7 +30,7 @@ Get started with multiple variants and styles of these table components.
 
 ```svelte example hideOutput
 <script>
-  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell, Checkbox, TableSearch } from 'flowbite-svelte';
+  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell, Checkbox, TableSearch } from '@vardario/svelte-ui-kit';
 </script>
 ```
 
@@ -40,7 +40,7 @@ Use the following example of a responsive table component to show multiple rows 
 
 ```svelte example
 <script>
-  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell } from 'flowbite-svelte';
+  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell } from '@vardario/svelte-ui-kit';
 </script>
 
 <Table>
@@ -79,7 +79,7 @@ Set the `striped` prop to `true` to alternate background colors of every second 
 
 ```svelte example
 <script>
-  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell } from 'flowbite-svelte';
+  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell } from '@vardario/svelte-ui-kit';
 </script>
 
 <Table striped={true}>
@@ -158,7 +158,7 @@ Set `hoverable` to `true` to change the background color of a data row when hove
 
 ```svelte example
 <script>
-  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell } from 'flowbite-svelte';
+  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell } from '@vardario/svelte-ui-kit';
 </script>
 
 <Table hoverable={true}>
@@ -215,7 +215,7 @@ Checkboxes can be used inside table data rows to select multiple data sets and a
 
 ```svelte example
 <script>
-  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell, Checkbox} from 'flowbite-svelte';
+  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell, Checkbox} from '@vardario/svelte-ui-kit';
 </script>
 
 <Table hoverable={true}>
@@ -282,7 +282,7 @@ Checkboxes can be used inside table data rows to select multiple data sets and a
 
 ```svelte example
 <script>
-  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell, TableSearch } from 'flowbite-svelte';
+  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell, TableSearch } from '@vardario/svelte-ui-kit';
   let searchTerm = '';
   let items = [
     { id: 1, maker: 'Toyota', type: 'ABC', make: 2017 },
@@ -321,7 +321,7 @@ By default, the `<TableHead>` component will create a single `<tr>` element with
 
 ```svelte example
 <script>
-  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell } from 'flowbite-svelte';
+  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell } from '@vardario/svelte-ui-kit';
 </script>
 
 <Table>
@@ -370,7 +370,7 @@ Use this example where the `<tfoot>` HTML element can be used in conjunction wit
 
 ```svelte example
 <script>
-  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell } from 'flowbite-svelte';
+  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell } from '@vardario/svelte-ui-kit';
 </script>
 
 <Table noborder={true}>
@@ -414,7 +414,7 @@ Improve accessibility by using a caption inside the table as a heading to better
 
 ```svelte example
 <script>
-  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell} from 'flowbite-svelte';
+  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell} from '@vardario/svelte-ui-kit';
 </script>
 
 <Table>
@@ -480,7 +480,7 @@ Use this example of a table component without any border between the table cells
 
 ```svelte example
 <script>
-  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell } from 'flowbite-svelte';
+  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell } from '@vardario/svelte-ui-kit';
 </script>
 
 <Table noborder={true}>
@@ -519,7 +519,7 @@ Use this example to apply a shadow border to the table component.
 
 ```svelte example
 <script>
-  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell } from 'flowbite-svelte';
+  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell } from '@vardario/svelte-ui-kit';
 </script>
 
 <Table shadow>
@@ -558,7 +558,7 @@ Use this example to enable horizontal scrolling if the content inside the table 
 
 ```svelte example
 <script>
-  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell, Checkbox} from 'flowbite-svelte';
+  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell, Checkbox} from '@vardario/svelte-ui-kit';
 </script>
 
 <Table>
@@ -646,7 +646,7 @@ Use one of colors from blue, green, red, yellow, purple for the `color` prop. Th
 
 ```svelte example
 <script>
-  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell } from 'flowbite-svelte';
+  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell } from '@vardario/svelte-ui-kit';
 </script>
 
 <Table color="primary" hoverable={true}>
@@ -681,7 +681,7 @@ Use one of colors from blue, green, red, yellow, purple for the `color` prop. Th
 
 ```svelte example
 <script>
-  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell, TableSearch } from 'flowbite-svelte';
+  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell, TableSearch } from '@vardario/svelte-ui-kit';
   let searchTerm = '';
   let items = [
     { id: 1, maker: 'Toyota', type: 'ABC', make: 2017 },
@@ -721,7 +721,7 @@ Use one of colors from blue, green, red, yellow, purple for the `color` prop. Th
 
 ```svelte example
 <script>
-  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell } from 'flowbite-svelte';
+  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell } from '@vardario/svelte-ui-kit';
 </script>
 
 <Table color="green" hoverable={true}>
@@ -760,7 +760,7 @@ Use this example to apply a different color to every second row inside the table
 
 ```svelte example
 <script>
-  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell } from 'flowbite-svelte';
+  import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell } from '@vardario/svelte-ui-kit';
 </script>
 
 <Table striped={true} color="purple">

@@ -26,7 +26,7 @@ The KBD (Keyboard) component can be used to indicate a textual user input from t
 
 ```svelte example hideOutput
 <script>
-  import { Kbd } from 'flowbite-svelte'
+  import { Kbd } from '@vardario/svelte-ui-kit'
 </script>
 ```
 
@@ -36,7 +36,7 @@ Here’s a list of KBD components that you can use inside any other element.
 
 ```svelte example hideScript
 <script>
-  import { Kbd } from 'flowbite-svelte'
+  import { Kbd } from '@vardario/svelte-ui-kit'
 </script>
 
 <Kbd class='px-2 py-1.5'>Shift</Kbd>
@@ -54,7 +54,7 @@ Use this example by nesting an inline KBD component inside a paragraph.
 
 ```svelte example hideScript
 <script>
-  import { Kbd } from 'flowbite-svelte'
+  import { Kbd } from '@vardario/svelte-ui-kit'
 </script>
 
 <p class="text-gray-500 dark:text-gray-400">
@@ -68,7 +68,7 @@ The KBD component can also be used inside table components to denote what type o
 
 ```svelte example
 <script>
-  import { Kbd, Table, TableHead, TableHeadCell, TableBody, TableBodyCell, TableBodyRow, ArrowKeyUp, ArrowKeyDown, ArrowKeyRight, ArrowKeyLeft } from 'flowbite-svelte'
+  import { Kbd, Table, TableHead, TableHeadCell, TableBody, TableBodyCell, TableBodyRow, ArrowKeyUp, ArrowKeyDown, ArrowKeyRight, ArrowKeyLeft } from '@vardario/svelte-ui-kit'
 </script>
 
 <Table>
@@ -120,7 +120,7 @@ Use this example to show arrow keys inside the KBD styled element.
 
 ```svelte example
 <script>
-  import { Kbd, ArrowKeyUp, ArrowKeyDown, ArrowKeyRight, ArrowKeyLeft } from 'flowbite-svelte'
+  import { Kbd, ArrowKeyUp, ArrowKeyDown, ArrowKeyRight, ArrowKeyLeft } from '@vardario/svelte-ui-kit'
 </script>
 
 <Kbd class="inline-flex items-center mr-1 px-2 py-1.5" >
@@ -147,7 +147,7 @@ Use this example if you need to show a key from the latin alphabet
 
 ```svelte example hideScript
 <script>
-  import { Kbd } from 'flowbite-svelte'
+  import { Kbd } from '@vardario/svelte-ui-kit'
 </script>
 
 <Kbd class="px-2 py-1.5">Q</Kbd>
@@ -184,7 +184,7 @@ Use this example to show a key inside a KBD component from the english numeral s
 
 ```svelte example hideScript
 <script>
-  import { Kbd } from 'flowbite-svelte'
+  import { Kbd } from '@vardario/svelte-ui-kit'
 </script>
 
 <Kbd class="px-2 py-1.5">1</Kbd>
@@ -205,7 +205,7 @@ This example can be used to denote function keys inside the KBD component.
 
 ```svelte example hideScript
 <script>
-  import { Kbd } from 'flowbite-svelte'
+  import { Kbd } from '@vardario/svelte-ui-kit'
 </script>
 
 <Kbd class="px-2 py-1.5">F1</Kbd>

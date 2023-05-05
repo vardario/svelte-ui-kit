@@ -32,7 +32,7 @@ Import Alert and set variables in the script tag.
 
 ```svelte example hideOutput
 <script>
-  import { Alert } from 'flowbite-svelte';
+  import { Alert } from '@vardario/svelte-ui-kit';
 </script>
 ```
 
@@ -42,7 +42,7 @@ Use the following examples of alert components to show messages as feedback to y
 
 ```svelte example class="flex flex-col gap-4"
 <script>
-  import {Alert} from "flowbite-svelte";
+  import {Alert} from "@vardario/svelte-ui-kit";
 </script>
 <Alert>
   <span class="font-medium">Info alert!</span> Change a few things up and try submitting again.
@@ -67,7 +67,7 @@ You can also include a descriptive icon to complement the message inside the ale
 
 ```svelte example class="flex flex-col gap-4" hideScript
 <script>
-  import {Alert} from "flowbite-svelte";
+  import {Alert} from "@vardario/svelte-ui-kit";
 </script>
 <Alert>
   <span slot="icon"><svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
@@ -102,7 +102,7 @@ Use this example to add a border accent to the alert component instead of just a
 
 ```svelte example class="flex flex-col gap-4" hideScript
 <script>
-  import {Alert} from "flowbite-svelte";
+  import {Alert} from "@vardario/svelte-ui-kit";
 </script>
 <Alert border>
   <span slot="icon"><svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
@@ -137,7 +137,7 @@ Use this example to show a list and a description inside an alert component.
 
 ```svelte example class="flex flex-col gap-4" hideScript
 <script>
-  import {Alert} from "flowbite-svelte";
+  import {Alert} from "@vardario/svelte-ui-kit";
 </script>
 <Alert>
   <span slot="icon"><svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
@@ -169,7 +169,7 @@ Use the following alert elements that are also dismissable.
 
 ```svelte example class="flex flex-col gap-4" hideScript
 <script>
-  import {Alert} from "flowbite-svelte";
+  import {Alert} from "@vardario/svelte-ui-kit";
 </script>
 <Alert dismissable>
     <span slot="icon"><svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
@@ -204,7 +204,7 @@ Use the following alert components with a border accent as an alternative style.
 
 ```svelte example class="flex flex-col gap-4" hideScript
 <script>
-  import {Alert} from "flowbite-svelte";
+  import {Alert} from "@vardario/svelte-ui-kit";
 </script>
 <Alert accent>
   <span slot="icon"><svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg></span>
@@ -234,7 +234,7 @@ The following alert components can be used if you wish to disclose more informat
 
 ```svelte example class="flex flex-col gap-4" hideScript
 <script>
-  import {Alert, Button} from "flowbite-svelte";
+  import {Alert, Button} from "@vardario/svelte-ui-kit";
 </script>
 <Alert color="blue">
   <span slot="icon"><svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg></span>
@@ -277,7 +277,7 @@ Use `color='none'` to disable coloring. Then use `class` to add your custom colo
 
 ```svelte example class="flex flex-col gap-4" hideScript
 <script>
-  import {Alert} from "flowbite-svelte";
+  import {Alert} from "@vardario/svelte-ui-kit";
 </script>
 <Alert color='none' class='bg-sky-500 text-pink-700'>
   Your content
@@ -290,7 +290,7 @@ Use the `close` event with `dismissable` prop.
 
 ```svelte example class="flex flex-col gap-4" hideScript
 <script>
-  import {Alert} from "flowbite-svelte";
+  import {Alert} from "@vardario/svelte-ui-kit";
   const closeAlert = ()=>{
     alert('Clicked closeAlert.')
   }

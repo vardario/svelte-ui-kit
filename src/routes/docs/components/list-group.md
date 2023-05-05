@@ -25,7 +25,7 @@ The list group component can be used to display a series of elements, buttons or
 
 ```svelte example hideOutput
 <script>
-  import { Listgroup, ListgroupItem } from 'flowbite-svelte'
+  import { Listgroup, ListgroupItem } from '@vardario/svelte-ui-kit'
 </script>
 ```
 
@@ -35,7 +35,7 @@ Here’s an example of a list group that you can use right away.
 
 ```svelte example
 <script>
-  import { Listgroup } from 'flowbite-svelte'
+  import { Listgroup } from '@vardario/svelte-ui-kit'
   let simpleList = ["Profile", "Settings", "Messages", "Download"]
 </script>
 
@@ -54,7 +54,7 @@ If list is active and data items contain `href` field entries are presented as `
 
 ```svelte example
 <script>
-  import { Listgroup } from 'flowbite-svelte'
+  import { Listgroup } from '@vardario/svelte-ui-kit'
   let links = [
     { name: "Accordions", href: "/accordion", current: true },
     { name: "Alerts", href: "/alerts" },
@@ -78,7 +78,7 @@ If list is active and data items do not contain `href` field entries are present
 
 ```svelte example
 <script>
-  import { Listgroup } from 'flowbite-svelte'
+  import { Listgroup } from '@vardario/svelte-ui-kit'
   let buttons = [
     { name: "Profile", mycustomfield: "data1", current: true },
     { name: "Settings", mycustomfield: "data2" },
@@ -98,7 +98,7 @@ Use the following example to create a list of buttons as a menu together with SV
 
 ```svelte example
 <script>
-  import { Listgroup, UserCircle, InformationCircle } from 'flowbite-svelte'
+  import { Listgroup, UserCircle, InformationCircle } from '@vardario/svelte-ui-kit'
   let icons = [
     { name: "Profile",   icon: UserCircle },
     { name: "Settings",  icon:InformationCircle },
@@ -120,7 +120,7 @@ Usage of hidden so far `ListgroupItem` helps you with proper layout.
 
 ```svelte example
 <script>
-  import { Listgroup, ListgroupItem, Avatar } from 'flowbite-svelte'
+  import { Listgroup, ListgroupItem, Avatar } from '@vardario/svelte-ui-kit'
 </script>
 
 <Listgroup active class="w-48">
