@@ -8,6 +8,7 @@
   setContext('toolbar', separators);
 
   export let color:
+    | 'primary'
     | 'gray'
     | 'red'
     | 'yellow'
@@ -24,6 +25,7 @@
   $: divClass = classNames('flex justify-between items-center', embedded || 'p-2', $$props.class);
 
   const divideColors = {
+    primary: 'divide-primary-400 dark:divide-primary-700',
     gray: 'divide-gray-400 dark:divide-gray-700',
     red: 'divide-red-400 dark:divide-red-700',
     yellow: 'divide-yellow-400 dark:divide-yellow-700',

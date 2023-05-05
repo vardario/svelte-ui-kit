@@ -11,6 +11,7 @@
 
   export let tag: string = 'div';
   export let color:
+    | 'primary'
     | 'gray'
     | 'red'
     | 'yellow'
@@ -46,6 +47,7 @@
 
   // your script goes here
   const bgColors = {
+    
     gray: 'bg-gray-50 dark:bg-gray-800',
     red: 'bg-red-50 dark:bg-gray-800',
     yellow: 'bg-yellow-50 dark:bg-gray-800 ',

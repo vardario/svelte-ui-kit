@@ -4,6 +4,7 @@
   import CloseButton from '../utils/CloseButton.svelte';
   import { fade } from 'svelte/transition';
   export let color:
+    | 'primary'
     | 'gray'
     | 'red'
     | 'yellow'
@@ -19,7 +20,7 @@
     | 'navbar'
     | 'navbarUl'
     | 'form'
-    | 'none' = 'blue';
+    | 'none' = 'primary';
   export let simple: boolean = false;
   export let position: 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right' | 'none' = 'none';
   export let open: boolean = true;

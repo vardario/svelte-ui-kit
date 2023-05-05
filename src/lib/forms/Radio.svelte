@@ -3,6 +3,7 @@
   import classNames from 'classnames';
 
   const colorClasses: Record<FormColorType, string> = {
+    primary: 'text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600',
     red: 'text-red-600 focus:ring-red-500 dark:focus:ring-red-600',
     green: 'text-green-600 focus:ring-green-500 dark:focus:ring-green-600',
     purple: 'text-purple-600 focus:ring-purple-500 dark:focus:ring-purple-600',
@@ -38,7 +39,7 @@
   import type { FormColorType } from '../types';
   import Label from './Label.svelte';
 
-  export let color: FormColorType = 'blue';
+  export let color: FormColorType = 'primary';
   export let custom: boolean = false;
   export let inline: boolean = false;
   export let group: number | string = '';

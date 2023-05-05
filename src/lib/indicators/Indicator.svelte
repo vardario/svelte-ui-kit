@@ -4,14 +4,14 @@
   export let color:
     | 'gray'
     | 'dark'
-    | 'blue'
+    | 'primary'
     | 'green'
     | 'red'
     | 'purple'
     | 'indigo'
     | 'yellow'
     | 'teal'
-    | 'none' = 'gray';
+    | 'none' = 'primary';
   export let rounded: boolean = false;
   export let size: 'xs' | 'sm' | 'md' | 'lg' | 'xl' = 'md';
   export let border: boolean = false;
@@ -29,6 +29,7 @@
   export let offset: boolean = true;
 
   const colors = {
+    primary: 'bg-gray-200',
     gray: 'bg-gray-200',
     dark: 'bg-gray-900 dark:bg-gray-700',
     blue: 'bg-blue-600',

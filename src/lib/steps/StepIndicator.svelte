@@ -5,11 +5,12 @@
   export let currentStep = 1;
 
   export let size: string = 'h-2.5';
-  export let color: 'gray' | 'red' | 'yellow' | 'green' | 'indigo' | 'purple' | 'pink' | 'blue' = 'blue';
+  export let color: 'primary' | 'gray' | 'red' | 'yellow' | 'green' | 'indigo' | 'purple' | 'pink' | 'blue' = 'primary';
   export let glow: boolean = false;
   export let hideLabel: boolean = false;
 
   const completedStepColors = {
+    primary: 'bg-primary-400 dark:bg-primary-500',
     gray: 'bg-gray-400 dark:bg-gray-500',
     red: 'bg-red-600 dark:bg-red-900',
     yellow: 'bg-yellow-400 dark:bg-yellow-600',
@@ -20,6 +21,7 @@
     blue: 'bg-blue-500 dark:bg-blue-900'
   };
   const currentStepColors = {
+    primary: 'bg-primary-700 dark:bg-primary-200',
     gray: 'bg-gray-700 dark:bg-gray-200',
     red: 'bg-red-900 dark:bg-red-500',
     yellow: 'bg-yellow-600 dark:bg-yellow-400',

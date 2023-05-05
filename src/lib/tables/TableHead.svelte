@@ -5,13 +5,14 @@
   export let theadClass: string = 'text-xs uppercase';
   export let defaultRow: boolean = true;
 
-  let color: 'blue' | 'green' | 'red' | 'yellow' | 'purple' | 'default' | 'custom';
+  let color: 'primary' | 'blue' | 'green' | 'red' | 'yellow' | 'purple' | 'default' | 'custom';
   color = getContext('color');
   let noborder: boolean = getContext('noborder');
   let striped: boolean = getContext('striped');
   let defaultBgColor = noborder || striped ? '' : 'bg-gray-50 dark:bg-gray-700';
   const bgColors = {
     default: defaultBgColor,
+    primary: 'bg-primary-600',
     blue: 'bg-blue-600',
     green: 'bg-green-600',
     red: 'bg-red-600',

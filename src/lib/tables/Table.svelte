@@ -8,6 +8,7 @@
   export let noborder: boolean = false;
   export let shadow: boolean = false;
   export let color:
+    | 'primary'
     | 'blue'
     | 'green'
     | 'red'
@@ -19,6 +20,7 @@
     | 'custom' = 'default';
 
   const colors = {
+    primary: 'text-primary-100 dark:text-primary-100',
     default: 'text-gray-500 dark:text-gray-400',
     blue: 'text-blue-100 dark:text-blue-100',
     green: 'text-green-100 dark:text-green-100',

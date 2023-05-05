@@ -649,7 +649,7 @@ Use one of colors from blue, green, red, yellow, purple for the `color` prop. Th
   import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell } from 'flowbite-svelte';
 </script>
 
-<Table color="blue" hoverable={true}>
+<Table color="primary" hoverable={true}>
   <TableHead>
     <TableHeadCell>Product name</TableHeadCell>
     <TableHeadCell>Color</TableHeadCell>

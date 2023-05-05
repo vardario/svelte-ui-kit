@@ -26,7 +26,28 @@
   export let shadow: 'blue' | 'green' | 'cyan' | 'teal' | 'lime' | 'red' | 'pink' | 'purple' | null = null;
   export let outline: boolean = false;
   const group = getContext('group');
-  export let color: 'alternative'| 'blue'| 'cyan'| 'dark'| 'light'| 'lime'| 'green'| 'pink'| 'primary'| 'red'| 'teal'| 'yellow'| 'purple'| 'purpleToBlue'| 'cyanToBlue'| 'greenToBlue'| 'purpleToPink'| 'pinkToOrange'| 'tealToLime'| 'redToYellow' = group ? (outline ? 'dark' : 'alternative') : 'blue';
+  export let color:
+    | 'primary'
+    | 'alternative'
+    | 'blue'
+    | 'cyan'
+    | 'dark'
+    | 'light'
+    | 'lime'
+    | 'green'
+    | 'pink'
+    | 'primary'
+    | 'red'
+    | 'teal'
+    | 'yellow'
+    | 'purple'
+    | 'purpleToBlue'
+    | 'cyanToBlue'
+    | 'greenToBlue'
+    | 'purpleToPink'
+    | 'pinkToOrange'
+    | 'tealToLime'
+    | 'redToYellow' = group ? (outline ? 'dark' : 'alternative') : 'primary';
   export let gradient: boolean = false;
 
   setContext<SpeedCtxType>('speed-dial', { pill, tooltip, textOutside });
@@ -42,7 +63,16 @@
 </script>
 
 <div class={divClass}>
-  <Button {pill} name="Open actions menu" aria-controls={id} aria-expanded="false" {color} {gradient} {outline} {shadow} class="!p-3">
+  <Button
+    {pill}
+    name="Open actions menu"
+    aria-controls={id}
+    aria-expanded="false"
+    {color}
+    {gradient}
+    {outline}
+    {shadow}
+    class="!p-3">
     <slot name="icon">
       <svg
         aria-hidden="true"

@@ -5,6 +5,7 @@
   const background = getContext('background');
 
   export let color:
+    | 'primary'
     | 'dark'
     | 'default'
     | 'gray'
@@ -21,6 +22,7 @@
   export let href: string | undefined = undefined;
 
   const colors = {
+    primary: 'text-primary-500 focus:ring-primary-400 hover:bg-primary-200 dark:hover:bg-gray-700',
     dark: 'text-gray-500 hover:text-gray-900 hover:bg-gray-200 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-700',
     gray: 'text-gray-500 focus:ring-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700',
     red: 'text-red-500 focus:ring-red-400 hover:bg-red-200 dark:hover:bg-gray-700',

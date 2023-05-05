@@ -1,8 +1,8 @@
 <script lang="ts">
   import classNames from 'classnames';
 
-  export let color: 'blue' | 'gray' | 'green' | 'red' | 'yellow' | 'pink' | 'purple' | 'white' | undefined =
-    'blue';
+  export let color: 'primary' | 'blue' | 'gray' | 'green' | 'red' | 'yellow' | 'pink' | 'purple' | 'white' | undefined =
+    'primary';
   export let bg: string = 'text-gray-300';
   export let size: string = '8';
   // these two props add fine control over the spinner colors
@@ -16,6 +16,7 @@
   }
 
   const fillColorClasses = {
+    primary: 'fill-primary-600',
     blue: 'fill-blue-600',
     gray: 'fill-gray-600 dark:fill-gray-300',
     green: 'fill-green-500',

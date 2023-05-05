@@ -6,6 +6,7 @@
   export let navDivClass: string = 'mx-auto flex flex-wrap justify-between items-center ';
   export let fluid: boolean = false;
   export let color:
+    | 'primary'
     | 'gray'
     | 'red'
     | 'yellow'
@@ -21,7 +22,7 @@
     | 'navbar'
     | 'navbarUl'
     | 'form'
-    | 'none' = 'navbar';
+    | 'none' = 'default';
 
   let hidden = true;
   let toggle = () => {
