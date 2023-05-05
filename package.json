@@ -691,6 +691,7 @@
     "dist"
   ],
   "svelte": "./dist/index.js",
-  "types": "./dist/index.d.ts"
+  "types": "./dist/index.d.ts",
+  "packageManager": "pnpm@8.3.1"
   
 }
