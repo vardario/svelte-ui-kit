@@ -10,12 +10,14 @@
   import classNames from 'classnames';
   import { getContext } from 'svelte';
   import type { InputType } from '../types';
+  import Label from './Label.svelte';
 
   export let type: InputType = 'text';
   export let value: string | number = '';
   export let size: FormSizeType | undefined = undefined;
   export let defaultClass: string = 'block w-full disabled:cursor-not-allowed disabled:opacity-50';
   export let color: 'base' | 'green' | 'red' = 'base';
+  export let label: string | undefined = undefined;
 
   const borderClasses = {
     base: 'border-gray-300 dark:border-gray-600',
@@ -26,8 +28,7 @@
 
   const ringClasses = {
     base: 'focus:border-primary-500 focus:ring-primary-500 dark:focus:border-primary-500 dark:focus:ring-primary-500',
-    green:
-      'focus:ring-green-500 focus:border-green-500 dark:focus:border-green-500 dark:focus:ring-green-500',
+    green: 'focus:ring-green-500 focus:border-green-500 dark:focus:border-green-500 dark:focus:ring-green-500',
     red: 'focus:ring-red-500 focus:border-red-500 dark:focus:ring-red-500 dark:focus:border-red-500'
   };
 
@@ -86,24 +87,29 @@
     <div class="{floatClass} left-0 pl-2.5 pointer-events-none"><slot name="left" /></div>
   {/if}
   <slot props={{ ...$$restProps, class: inputClass }}>
-    <input
-      {...$$restProps}
-      bind:value
-      on:blur
-      on:change
-      on:click
-      on:contextmenu
-      on:focus
-      on:keydown
-      on:keypress
-      on:keyup
-      on:mouseover
-      on:mouseenter
-      on:mouseleave
-      on:paste
-      on:input
-      use:setType={type}
-      class={inputClass} />
+    <div>
+      {#if label}
+        <Label for={$$restProps.id} class="block mb-2">{label}</Label>
+      {/if}
+      <input
+        {...$$restProps}
+        bind:value
+        on:blur
+        on:change
+        on:click
+        on:contextmenu
+        on:focus
+        on:keydown
+        on:keypress
+        on:keyup
+        on:mouseover
+        on:mouseenter
+        on:mouseleave
+        on:paste
+        on:input
+        use:setType={type}
+        class={inputClass} />
+    </div>
   </slot>
   {#if $$slots.right}
     <div class="{floatClass} right-0 pr-2.5"><slot name="right" /></div>

@@ -24,6 +24,22 @@ thumnailSize: w-40
 
 </script>
 
+# Basic Form
+
+```svelte example
+<script>
+  import { Form, Label, Input } from '@vardario/svelte-ui-kit'
+</script>
+
+<Form class='flex flex-col gap-6'>
+    <Input
+      id='default-input'
+      placeholder="Username"
+      label="Username"
+    />
+</Form>
+```
+
 The Input component allows you to change the input size, add disabled, helper text, and floating label.
 
 ## Input Sizes
@@ -32,21 +48,27 @@ User the size prop to change the input size. Choose one from 'sm:text-md' | 'tex
 
 ```svelte example
 <script>
-  import { Label, Input } from '@vardario/svelte-ui-kit'
+  import { Input,Form } from '@vardario/svelte-ui-kit'
 </script>
 
-<div class='mb-6'>
-  <Label for='large-input' class='block mb-2'>Large input</Label>
-  <Input id="large-input" size="lg" placeholder="Large input" />
-</div>
-<div class='mb-6'>
-  <Label for='default-input' class='block mb-2'>Default input</Label>
-  <Input id='default-input' placeholder="Default input" />
-</div>
-<div class='mb-6'>
-  <Label for='large-input' class='block mb-2'>Small input</Label>
-  <Input size="sm" placeholder="Small input" label="Small input"/>
-</div>
+<Form class='flex flex-col gap-6'>
+    <Input
+      id="large-input"
+      size="lg"
+      placeholder="Large input"
+      label="Large input"
+    />
+    <Input
+      id='default-input'
+      placeholder="Default input"
+      label="Default input"
+    />
+    <Input
+      size="sm"
+      placeholder="Small input"
+      label="Small input"
+      />
+</Form>
 ```
 
 ## Disabled
@@ -123,7 +145,9 @@ Use the following example to apply validation styles for success and error messa
 <div class="mb-6">
   <Label for='success' color='green' class='block mb-2'>Your name</Label>
   <Input id='success' color='green' placeholder="Success input" />
-  <Helper class='mt-2' color='green'><span class="font-medium">Well done!</span> Some success message.</Helper>
+  <Helper class='mt-2' color='green'>
+    <span class="font-medium">Well done!</span> Some success message.
+  </Helper>
 </div>
 <div class="mb-6">
   <Label for='error' color='red' class='block mb-2'>Your name</Label>
@@ -226,8 +250,8 @@ Get started with the default example of a select input component to get a single
 
 ## Props
 
-The component has the following props, type, and default values. See <A href="/docs/pages/typescript">types 
- page</A> for type information.
+The component has the following props, type, and default values. See <A href="/docs/pages/typescript">types
+page</A> for type information.
 
 ### Input
 
@@ -282,4 +306,3 @@ The component has the following props, type, and default values. See <A href="/d
 <TableProp>
   <TableDefaultRow items={items10} rowState='hover' />
 </TableProp>
-
