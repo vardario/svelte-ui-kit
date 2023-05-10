@@ -31,7 +31,7 @@
     : classNames(
         wrapperClass,
         'p-2.5 text-sm',
-        'focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-500 dark:focus:border-blue-500'
+        'focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500'
       );
 
   const headerClass = (header: boolean) =>

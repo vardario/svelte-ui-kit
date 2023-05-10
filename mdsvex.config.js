@@ -6,11 +6,9 @@ const config = defineConfig({
     componentLayout: './src/routes/layouts/component/+page.svelte'
   },
   extensions: ['.svelte.md', '.md', '.svx'],
-
   smartypants: {
     dashes: 'oldschool'
   },
-
   remarkPlugins: [[examples, { defaults: { Wrapper: '/src/routes/utils/ExampleWrapper.svelte' } }]],
   rehypePlugins: []
 });

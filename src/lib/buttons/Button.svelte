@@ -2,6 +2,10 @@
   import classNames from 'classnames';
   import { getContext } from 'svelte';
   import type { ButtonType } from '../types';
+  import type { Writable } from 'svelte/store';
+  import { hasContext } from 'svelte';
+  import { FORM, type FormContext } from '$lib/forms/Form.svelte';
+  import { Spinner } from '$lib';
 
   const group = getContext('group');
 
@@ -14,7 +18,6 @@
   export let type: ButtonType = 'button';
 
   export let color:
-    | 'primary'
     | 'alternative'
     | 'blue'
     | 'cyan'
@@ -36,23 +39,13 @@
     | 'tealToLime'
     | 'redToYellow' = group ? (outline ? 'dark' : 'alternative') : 'primary';
 
-  export let shadow:
-    | 'primary'
-    | 'blue'
-    | 'green'
-    | 'cyan'
-    | 'teal'
-    | 'lime'
-    | 'red'
-    | 'pink'
-    | 'purple'
-    | null = null;
+  export let shadow: 'primary' | 'blue' | 'green' | 'cyan' | 'teal' | 'lime' | 'red' | 'pink' | 'purple' | null = null;
 
-  const colorClasses = {    
+  const colorClasses = {
     blue: 'text-white bg-blue-700 hover:bg-blue-800 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800',
     dark: 'text-white bg-gray-800 hover:bg-gray-900 focus:ring-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700',
     alternative:
-      'text-gray-900 bg-white border border-gray-200 dark:border-gray-600 hover:bg-gray-100 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 hover:text-blue-700 focus:text-blue-700 dark:focus:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700',
+      'text-gray-900 bg-white border border-gray-200 dark:border-gray-600 hover:bg-gray-100 focus:ring-gray-200 dark:bg-gray-800 dark:text-gray-400 hover:text-primary-700 focus:text-primary-700 dark:focus:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700',
     light:
       'text-gray-900 bg-white border border-gray-300 hover:bg-gray-100 focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700',
     green:
@@ -66,7 +59,8 @@
   };
 
   const gradientClasses = {
-    primary: 'text-white bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700 hover:bg-gradient-to-br focus:ring-primary-300 dark:focus:ring-primary-800 ',
+    primary:
+      'text-white bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700 hover:bg-gradient-to-br focus:ring-primary-300 dark:focus:ring-primary-800 ',
     blue: 'text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-blue-300 dark:focus:ring-blue-800 ',
     green:
       'text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-green-300 dark:focus:ring-green-800',
@@ -106,7 +100,8 @@
   };
 
   const outlineClasses = {
-    primary: 'text-primary-700 hover:text-white border border-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:border-primary-500 dark:text-primary-500 dark:hover:text-white dark:hover:bg-primary-600 dark:focus:ring-primary-800',
+    primary:
+      'text-primary-700 hover:text-white border border-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:border-primary-500 dark:text-primary-500 dark:hover:text-white dark:hover:bg-primary-600 dark:focus:ring-primary-800',
     blue: 'text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-blue-300 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800',
     light:
       'text-gray-500 hover:text-gray-900 bg-white border border-gray-200 dark:border-gray-600 dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-400',
@@ -162,7 +157,8 @@
         rounded(false),
         shadow && coloredShadowClasses[shadow],
         $$props.disabled && 'cursor-not-allowed opacity-50',
-        $$props.class
+        $$props.class,
+        $loading === true && 'cursor-not-allowed opacity-50'
       );
 
   let gradientOutlineClass: string;
@@ -173,6 +169,13 @@
     'bg-white text-gray-900 dark:bg-gray-900 dark:text-white', // this is limitation - no transparency
     'transition-all duration-75 ease-in group-hover:bg-opacity-0 group-hover:text-inherit'
   );
+
+  let loading: Writable<boolean> | undefined = undefined;
+
+  if (hasContext(FORM)) {
+    const formContext = getContext<FormContext>(FORM);
+    loading = formContext.loading;
+  }
 </script>
 
 <svelte:element
@@ -186,11 +189,15 @@
   on:keydown
   on:keyup
   on:mouseenter
-  on:mouseleave>
-  {#if outline && gradient}
+  on:mouseleave
+  disabled={$loading === true}
+  >
+  {#if $loading === true}
+    <Spinner size="5" />
+  {:else if outline && gradient}
     <!-- Trick to prentend outline without using border
-		This has a limitation of no supporting transparency as
-		background is set to bg-white dark:bg-gray-900 -->
+  This has a limitation of no supporting transparency as
+  background is set to bg-white dark:bg-gray-900 -->
     <span class={gradientOutlineClass}><slot /></span>
   {:else}
     <slot />

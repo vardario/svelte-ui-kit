@@ -1,49 +1,41 @@
-<script>
-  import { Input, Label, Button, Checkbox, A, Breadcrumb, BreadcrumbItem, Heading, P } from '$lib'
-  let formData = {
-      first_name:'',
-      last_name: '',
-      company: '',
-      website:'',
-      email: '',
-    }
-  export const snapshot = { 
-    capture: () => formData, 
-    restore: (value) => (formData = value)
-  };
+<script lang="ts">
+  import { Form, Input, Card, Button, Select, Checkbox, Toggle } from '$lib';
+  import { z } from 'zod';
+  import type { PageData } from './$types';
+  export let data: PageData;
 </script>
 
-<form class="p-16">
-  <div class="grid gap-6 mb-6 md:grid-cols-2">
-    <div>
-      <Label for="first_name" class="mb-2">First name</Label>
-      <Input type="text" id="first_name" placeholder="John" required bind:value={formData.first_name} />
-    </div>
-    <div>
-      <Label for="last_name" class="mb-2">Last name</Label>
-      <Input type="text" id="last_name" placeholder="Doe" required bind:value={formData.last_name} />
-    </div>
-    <div>
-      <Label for="company" class="mb-2">Company</Label>
-      <Input type="text" id="company" placeholder="Flowbite" required bind:value={formData.company} />
-    </div>
-    <div>
-      <Label for="website" class="mb-2">Website URL</Label>
-      <Input type="url" id="website" placeholder="flowbite.com" bind:value={formData.website} />
-    </div>
+<main class="h-screen w-screen flex">
+  <div class="m-auto">
+    <Card class="w-96 px-4">
+      <Form
+        schema={data.schema}
+        object={data.data}
+        class="flex flex-col gap-2"
+        submit={async (values) => {
+          return new Promise((resolve, reject) => {
+            setTimeout(() => {
+              console.log(values);
+              resolve();
+            }, 1500);
+          });
+        }}>
+        <Input type="text" name="first_name" placeholder="John" label="First Name"/>
+        <Input type="text" name="last_name" placeholder="Doe" label="Last Name" />
+        <Input type="text" name="email" placeholder="Email" label="E-Mail" />
+        <Input type="datetime-local" name="date" placeholder="" label="Birthday" />
+        <Select
+          label="Language"
+          name="lng"
+          items={[
+            { value: 'de', name: 'german' },
+            { value: 'en-US', name: 'english' }
+          ]}
+          value="" />
+        <Checkbox name="toc">TOC</Checkbox>
+        <Toggle name="marketing">Marketing</Toggle>
+        <Button type="submit">Submit</Button>
+      </Form>
+    </Card>
   </div>
-  <div class="mb-6">
-    <Label for="email" class="mb-2">Email address</Label>
-    <Input type="email" id="email" placeholder="john.doe@company.com" required bind:value={formData.email} />
-  </div>
-  <div class="mb-6">
-    <Label for="password" class="mb-2">Password</Label>
-    <Input type="password" id="password" placeholder="•••••••••" />
-  </div>
-  <div class="mb-6">
-    <Label for="confirm_password" class="mb-2">Confirm password</Label>
-    <Input type="password" id="confirm_password" placeholder="•••••••••" />
-  </div>
-  <Checkbox class="mb-6 space-x-1" required>I agree with the <A href="/">terms and conditions</A>.</Checkbox>
-  <Button type="submit">Submit</Button>
-</form>
+</main>
