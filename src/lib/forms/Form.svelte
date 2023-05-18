@@ -36,13 +36,15 @@
   import set from 'lodash-es/set.js';
   import get from 'lodash-es/get.js';
   import type { z, AnyZodObject } from 'zod';
+  import { z as zod } from 'zod';
 
   import type { HTMLInputTypeAttribute } from 'svelte/elements';
 
   type T = $$Generic<AnyZodObject>;
   type Object = z.infer<typeof schema>;
 
-  export let schema: T;
+  //@ts-expect-error
+  export let schema: T = zod.any();
   export let object: Partial<Object> | undefined = undefined;
   export let submit: ((values: Object) => Promise<void>) | undefined = undefined;
   export let validationMode: FormValidationMode | undefined = FormValidationMode.OnSubmit;

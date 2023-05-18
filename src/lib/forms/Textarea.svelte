@@ -1,11 +1,17 @@
 <script lang="ts">
   import classNames from 'classnames';
-  import { getContext } from 'svelte';
+  import { getContext, hasContext } from 'svelte';
   import Wrapper from '../utils/Wrapper.svelte';
+  import { Helper, Label } from '$lib';
+  import type { Writable } from 'svelte/store';
+  import { FORM, type FormContext } from './Form.svelte';
+  import get from 'lodash-es/get';
 
   const background = getContext('background');
 
   export let value: string = '';
+  export let name: string | undefined = undefined;
+  export let label: string | undefined | null = undefined;
 
   let wrapped: boolean;
   $: wrapped = $$slots.header || $$slots.footer;
@@ -43,6 +49,33 @@
     $$slots.footer || 'rounded-b-lg',
     $$slots.header || 'rounded-t-lg'
   );
+
+  let onInput = (event: Event) => {};
+
+  let errors: Writable<{}> | undefined = undefined;
+  let error: string | undefined;
+  let shouldValidate: Writable<boolean> | undefined = undefined;
+
+  if (hasContext(FORM)) {
+    const formContext = getContext<FormContext>(FORM);
+    errors = formContext.errors;
+    shouldValidate = formContext.shouldValidate;
+    value = formContext.getValue(name ?? '', 'text') as string;
+
+    onInput = (event: Event) => {
+      const target = event.target as HTMLInputElement;
+      if (name) {
+        formContext.setValue(name, target.value, 'text');
+      }
+    };
+  }
+
+  $: {
+    error = get($errors, name ?? '');
+    if ($shouldValidate) {
+      // __color = (error && 'red') || 'green';
+    }
+  }
 </script>
 
 <Wrapper show={wrapped} class={wrapperClass}>
@@ -52,7 +85,11 @@
     </div>
   {/if}
   <Wrapper show={wrapped} class={innerWrapperClass}>
+    {#if label}
+      <Label for={$$restProps.id} class="block mb-2">{label}</Label>
+    {/if}
     <textarea
+      {name}
       bind:value
       on:blur
       on:change
@@ -67,8 +104,12 @@
       on:mouseleave
       on:mouseover
       on:paste
+      on:input={onInput}
       {...$$restProps}
       class={textareaClass} />
+    {#if error}
+      <Helper class="mt-2" color="red"><span class="font-medium">{error}</span></Helper>
+    {/if}
   </Wrapper>
   {#if $$slots.footer}
     <div class={headerClass(false)}>

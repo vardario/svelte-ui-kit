@@ -21,9 +21,9 @@
   export let size: FormSizeType | undefined = undefined;
   export let defaultClass: string = 'block w-full disabled:cursor-not-allowed disabled:opacity-50';
   export let color: 'base' | 'green' | 'red' = 'base';
-  export let label: string | undefined = undefined;
-  export let helper: string | undefined = undefined;
-  export let name: string | undefined;
+  export let label: string | undefined | null = undefined;
+  export let helper: string | undefined | null = undefined;
+  export let name: string | undefined = undefined;
 
   let __color = color;
 
