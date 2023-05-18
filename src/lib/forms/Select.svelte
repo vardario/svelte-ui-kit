@@ -12,7 +12,7 @@
   export let value: string | number;
   export let placeholder: string = 'Choose option ...';
   export let size: 'sm' | 'md' | 'lg' = 'md';
-  export let name: string | undefined;
+  export let name: string | undefined = undefined;
   export let label: string | undefined = undefined;
   export let helper: string | undefined = undefined;
   export let color: 'base' | 'green' | 'red' = 'base';
