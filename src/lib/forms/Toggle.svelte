@@ -8,6 +8,7 @@
   export let group: (string | number)[] = [];
   export let value: string | number = '';
   export let checked: boolean | undefined = undefined;
+  export let name: string | undefined = undefined;
 
   // tinted if put in component having its own background
   let background: boolean = getContext('background');
@@ -42,7 +43,7 @@
   );
 </script>
 
-<Checkbox custom {...$$restProps} class={$$props.class} {value} bind:checked bind:group on:click on:change>
+<Checkbox custom {...$$restProps} class={$$props.class} {value} bind:checked bind:group on:click on:change {name}>
   <span class={divClass} />
   <slot />
 </Checkbox>

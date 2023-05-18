@@ -14,7 +14,7 @@
   };
 
   export const labelClass = (inline: boolean, extraClass: string) =>
-    classNames(inline ? 'inline-flex' : 'flex', 'items-center', extraClass);
+    classNames(inline ? 'inline-flex' : 'flex', 'items-center','cursor-pointer', extraClass);
 
   export const inputClass = (
     custom: boolean,
@@ -24,6 +24,7 @@
     extraClass: string | boolean
   ) =>
     classNames(
+      'cursor-pointer',
       'w-4 h-4 bg-gray-100 border-gray-300 dark:ring-offset-gray-800 focus:ring-2',
       extraClass === true && 'mr-2',
       tinted ? 'dark:bg-gray-600 dark:border-gray-500' : 'dark:bg-gray-700 dark:border-gray-600',

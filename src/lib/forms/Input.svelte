@@ -8,9 +8,13 @@
 <script lang="ts">
   import Wrapper from '$lib/utils/Wrapper.svelte';
   import classNames from 'classnames';
-  import { getContext } from 'svelte';
+  import { getContext, hasContext } from 'svelte';
   import type { InputType } from '../types';
   import Label from './Label.svelte';
+  import { FORM, type FormContext } from './Form.svelte';
+  import { Helper } from '$lib';
+  import get from 'lodash-es/get.js';
+  import type { Writable } from 'svelte/store';
 
   export let type: InputType = 'text';
   export let value: string | number = '';
@@ -18,6 +22,10 @@
   export let defaultClass: string = 'block w-full disabled:cursor-not-allowed disabled:opacity-50';
   export let color: 'base' | 'green' | 'red' = 'base';
   export let label: string | undefined = undefined;
+  export let helper: string | undefined = undefined;
+  export let name: string | undefined;
+
+  let __color = color;
 
   const borderClasses = {
     base: 'border-gray-300 dark:border-gray-600',
@@ -62,13 +70,15 @@
 
   $: _size = size || clampSize(group?.size) || 'md';
   let inputClass: string;
+  $: __color = color;
   $: {
-    const _color = color === 'base' && background ? 'tinted' : color;
+    const _color = __color === 'base' && background ? 'tinted' : __color;
+
     inputClass = classNames(
       defaultClass,
       $$slots.left && leftPadding[_size],
       $$slots.right && rightPadding[_size],
-      ringClasses[color],
+      ringClasses[__color],
       colorClasses[_color],
       borderClasses[_color],
       inputPadding[_size],
@@ -80,6 +90,32 @@
     );
   }
   let floatClass = 'flex absolute inset-y-0 items-center text-gray-500 dark:text-gray-400';
+  let onInput = (event: Event) => {};
+
+  let errors: Writable<{}> | undefined = undefined;
+  let error: string | undefined;
+  let shouldValidate: Writable<boolean> | undefined = undefined;
+
+  if (hasContext(FORM)) {
+    const formContext = getContext<FormContext>(FORM);
+    errors = formContext.errors;
+    shouldValidate = formContext.shouldValidate;
+    value = formContext.getValue(name ?? '', type) as string | number;
+
+    onInput = (event: Event) => {
+      const target = event.target as HTMLInputElement;
+      if (name) {
+        formContext.setValue(name, target.value, type);
+      }
+    };
+  }
+
+  $: {
+    error = get($errors, name ?? '');
+    if ($shouldValidate) {
+      // __color = (error && 'red') || 'green';
+    }
+  }
 </script>
 
 <Wrapper class="relative w-full" show={$$slots.left || $$slots.right}>
@@ -92,7 +128,6 @@
         <Label for={$$restProps.id} class="block mb-2">{label}</Label>
       {/if}
       <input
-        {...$$restProps}
         bind:value
         on:blur
         on:change
@@ -106,9 +141,21 @@
         on:mouseenter
         on:mouseleave
         on:paste
-        on:input
+        on:input={onInput}
         use:setType={type}
-        class={inputClass} />
+        {name}
+        class={inputClass}
+        {...$$restProps} />
+      {#if $$slots.helper}
+        <div class="mt-2 font-medium">
+          <slot name="helper" />
+        </div>
+      {:else if helper}
+        <Helper class="mt-2"><span class="font-medium">{helper}</span></Helper>
+      {/if}
+      {#if error}
+        <Helper class="mt-2" color="red"><span class="font-medium">{error}</span></Helper>
+      {/if}
     </div>
   </slot>
   {#if $$slots.right}
