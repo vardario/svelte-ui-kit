@@ -6,7 +6,7 @@
   import type { Writable } from 'svelte/store';
   import { FORM, type FormContext } from './Form.svelte';
   import { Helper } from '$lib';
-  import { get } from 'lodash';
+  import _ from 'lodash';
 
   // properties forwarding
   export let color: FormColorType = 'primary';
@@ -77,7 +77,7 @@
   }
 
   $: {
-    error = get($errors, name ?? '');
+    error = _.get($errors, name ?? '');
     if ($shouldValidate) {
     }
   }
