@@ -69,7 +69,20 @@
   const inputPadding = { sm: 'p-2', md: 'p-2.5', lg: 'p-3' };
 
   $: _size = size || clampSize(group?.size) || 'md';
-  let inputClass: string;
+  let inputClass: string = classNames(
+    defaultClass,
+    $$slots.left && leftPadding[_size],
+    $$slots.right && rightPadding[_size],
+    ringClasses[color],
+    colorClasses[color],
+    borderClasses[color],
+    inputPadding[_size],
+    textSizes[_size],
+    group || 'rounded-lg',
+    group && 'first:rounded-l-lg last:rounded-r-lg',
+    group && 'border-l-0 first:border-l last:border-r',
+    $$props.class
+  );
   $: __color = color;
   $: {
     const _color = __color === 'base' && background ? 'tinted' : __color;
