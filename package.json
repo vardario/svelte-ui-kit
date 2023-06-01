@@ -1,6 +1,6 @@
 {
   "name": "@vardario/svelte-ui-kit",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
@@ -71,7 +71,6 @@
     "classnames": "^2.3.2",
     "flowbite": "^1.6.5",
     "lodash": "^4.17.21",
-    "lodash-es": "^4.17.21",
     "zod": "^3.21.4"
   },
   "engines": {
@@ -701,5 +700,5 @@
   ],
   "svelte": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "packageManager": "pnpm@8.3.1"
+  "packageManager": "pnpm@8.6.0"
 }

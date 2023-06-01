@@ -5,7 +5,7 @@
   import { Helper, Label } from '$lib';
   import type { Writable } from 'svelte/store';
   import { FORM, type FormContext } from './Form.svelte';
-  import get from 'lodash-es/get';
+  import { get} from 'lodash';
 
   const background = getContext('background');
 

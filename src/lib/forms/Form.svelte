@@ -33,8 +33,7 @@
 <script lang="ts">
   import { writable, type Writable } from 'svelte/store';
   import { setContext } from 'svelte';
-  import set from 'lodash-es/set.js';
-  import get from 'lodash-es/get.js';
+  import {get,set} from 'lodash';
   import type { z, AnyZodObject } from 'zod';
   import { z as zod } from 'zod';
 
