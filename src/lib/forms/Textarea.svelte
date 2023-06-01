@@ -5,7 +5,7 @@
   import { Helper, Label } from '$lib';
   import type { Writable } from 'svelte/store';
   import { FORM, type FormContext } from './Form.svelte';
-  import { get} from 'lodash';
+  import _ from 'lodash';
 
   const background = getContext('background');
 
@@ -71,7 +71,7 @@
   }
 
   $: {
-    error = get($errors, name ?? '');
+    error = _.get($errors, name ?? '');
     if ($shouldValidate) {
       // __color = (error && 'red') || 'green';
     }

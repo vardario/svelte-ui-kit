@@ -13,7 +13,7 @@
   import Label from './Label.svelte';
   import { FORM, type FormContext } from './Form.svelte';
   import { Helper } from '$lib';
-  import { get } from 'lodash';
+  import _ from 'lodash';
   import type { Writable } from 'svelte/store';
 
   export let type: InputType = 'text';
@@ -124,7 +124,7 @@
   }
 
   $: {
-    error = get($errors, name ?? '');
+    error = _.get($errors, name ?? '');
     if ($shouldValidate) {
       // __color = (error && 'red') || 'green';
     }

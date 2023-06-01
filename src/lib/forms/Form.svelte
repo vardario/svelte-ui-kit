@@ -33,7 +33,7 @@
 <script lang="ts">
   import { writable, type Writable } from 'svelte/store';
   import { setContext } from 'svelte';
-  import {get,set} from 'lodash';
+  import _ from 'lodash';
   import type { z, AnyZodObject } from 'zod';
   import { z as zod } from 'zod';
 
@@ -72,7 +72,7 @@
       return value === '' ? undefined : value;
     };
 
-    $values = set($values, path, convertValue());
+    $values = _.set($values, path, convertValue());
     if ($shouldValidate) {
       validateForm();
     }
@@ -84,7 +84,7 @@
 
       if (!parseResult.success) {
         $errors = parseResult.error.issues.reduce((acc, issue) => {
-          set(acc, issue.path.join('.'), issue.message);
+          _.set(acc, issue.path.join('.'), issue.message);
           return acc;
         }, {});
 
@@ -97,7 +97,7 @@
   }
 
   function getValue(path: string, type: HTMLInputTypeAttribute) {
-    return get($values, path);
+    return _.get($values, path);
   }
 
   function _submit() {
