@@ -13,13 +13,13 @@
   import Label from './Label.svelte';
   import { FORM, type FormContext } from './Form.svelte';
   import { Helper } from '$lib';
-  import get from 'lodash-es/get.js';
+  import { get } from 'lodash';
   import type { Writable } from 'svelte/store';
 
   export let type: InputType = 'text';
   export let value: string | number = '';
   export let size: FormSizeType | undefined = undefined;
-  export let defaultClass: string = 'block w-full disabled:cursor-not-allowed disabled:opacity-50';
+  export let defaultClass: string = 'block w-full disabled:cursor-not-allowed disabled:opacity-50 border';
   export let color: 'base' | 'green' | 'red' = 'base';
   export let label: string | undefined | null = undefined;
   export let helper: string | undefined | null = undefined;

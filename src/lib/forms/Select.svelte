@@ -6,7 +6,7 @@
   import { hasContext } from 'svelte';
   import { FORM, type FormContext } from './Form.svelte';
   import { getContext } from 'svelte';
-  import get from 'lodash-es/get';
+  import { get} from 'lodash';
 
   export let items: SelectOptionType[] = [];
   export let value: string | number;
